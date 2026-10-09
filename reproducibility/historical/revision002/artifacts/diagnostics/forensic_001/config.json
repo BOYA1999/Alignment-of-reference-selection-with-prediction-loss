@@ -1,0 +1,95 @@
+{
+  "diagnostic_id": "forensic_001",
+  "protocol_sha256": "e85bb5e05863f5667497fcadf2f8f38312ab82ab85120856e9505fa182a6b2c4",
+  "protocol_amendment": 1,
+  "protocol_amended_before_results": true,
+  "pilot_protocol_sha256": "8596c31c7c69a3532fe2c01ee95ad46dfe46ba22dd8730a3c7405daa30265cf9",
+  "pilot_config_sha256": "469f9b1a57303a8b0bf3c6212bb433f320da774f09750a59152463961e4a557b",
+  "trusted_runner_sha256": "c54c839b4363e3134ab9c8acf05db53822a66bf087cd5ec9810c84ab27efc6cf",
+  "trusted_estimators_sha256": "79dd68da10dc85ef85de3fff18430d53392d900558dc3fc9a54522e74e2649e2",
+  "source_data_sha256": {
+    "data/raw/expansion_data_train.csv": "c5214ad8c8a4d7d4d09082fcce24fe16c97a980a1e0873b91b8c8e474b79f6e4",
+    "data/raw/expansion_data_test.csv": "e21c0ef19795317216287e924e00ca3ef9388b7032a7fa4c7f27e2580372c85e",
+    "data/raw/expansion_data_raw.csv": "f674ec74cca1146bc386f832a32d4b8d921d3c312f92cb436cc005901c724a3c"
+  },
+  "rdkit_version": "2026.03.3",
+  "pilot_inputs": {
+    "artifacts/experiment/pilot_001/full/predictions/predictions.parquet": "303e3d5c14eceb3bce4b7e104235f9e98eb92dc6674d421951ef6751bbb37e0c",
+    "artifacts/experiment/pilot_001/full/predictions/row_audit.csv": "fffb902b1b9cb458c685c7e43befed948282a0b1d6a315f2c0a0c0bac77a452a",
+    "artifacts/experiment/pilot_001/full/scenario_results.csv": "53d83e90ec1cb2acc2a85575ca23d2a8c56e515f4eb1055f17a65680aafd28c0"
+  },
+  "truth_endpoints": ["LogD", "KSOL"],
+  "models": ["ecfp_rf", "ecfp_desc_xgb"],
+  "anchor": "HLM",
+  "mechanisms": ["mcar_hlm", "mar_hlm"],
+  "mechanism_contract": {
+    "truth_row_order": "ascending_row_index",
+    "mcar_hlm_oracle": "mean(row_audit.available_HLM[truth_idx])",
+    "mar_hlm_oracle": "row_audit.propensity_clipped_HLM[truth_idx]",
+    "mask_generator": "default_rng(seed).random(n) < p_oracle",
+    "reuse_mask_across_feature_sets_and_models": true,
+    "reestimate_oracle_with_lowdim": false,
+    "reclip_oracle": false
+  },
+  "mask_seeds": [31001, 31002, 31003, 31004, 31005, 31006, 31007, 31008, 31009, 31010, 31011, 31012, 31013, 31014, 31015, 31016, 31017, 31018, 31019, 31020, 31021, 31022, 31023, 31024, 31025, 31026, 31027, 31028, 31029, 31030, 31031, 31032, 31033, 31034, 31035, 31036, 31037, 31038, 31039, 31040],
+  "row_replay_seed": 31001,
+  "feature_sets": {
+    "full_2267": {
+      "components": ["ECFP_2048", "RDKit_217", "max_train_similarity", "normalized_identifier_order"]
+    },
+    "lowdim_12": {
+      "descriptors": ["MolWt", "MolLogP", "TPSA", "NumHDonors", "NumHAcceptors", "NumRotatableBonds", "RingCount", "FractionCSP3", "HeavyAtomCount", "MolMR"],
+      "components": ["listed_descriptors", "max_train_similarity", "normalized_identifier_order"]
+    }
+  },
+  "crossfit_folds": 3,
+  "fold_contract": {
+    "assignment_scope": "one ordered vector per endpoint",
+    "reuse_across_feature_sets_mechanisms_seeds_models": true,
+    "save_fold_id": true,
+    "save_ordered_fold_sha256": true
+  },
+  "propensity_model": {
+    "penalty": "l2",
+    "C": 1.0,
+    "solver": "liblinear",
+    "class_weight": null,
+    "max_iter": 1000,
+    "random_state": 20260910
+  },
+  "propensity_clip": [0.05, 0.95],
+  "loss_nuisance": {
+    "alpha": 10.0,
+    "solver": "lsqr",
+    "tol": 1e-6,
+    "truncate_predictions": false
+  },
+  "reproduction_tolerance": 1e-12,
+  "f1_contract": {
+    "expected_rows": 320,
+    "mcar_source": {"mechanism": "mcar", "mask": "HLM", "anchor": null, "expected_rows": 160},
+    "mar_source": {"mechanism": "mar", "mask": null, "anchor": "HLM", "expected_rows": 160},
+    "compare_columns": ["n_total", "n_observed", "generator_mean_probability", "full_truth", "cc", "ipw", "aipw", "se", "ess_fraction", "clip_fraction"],
+    "require_exact_unique_key_grid": true
+  },
+  "f2_contract": {
+    "expected_cells": 16,
+    "expected_rows": 35520,
+    "unique_key": ["endpoint", "mechanism", "seed", "feature_set", "model", "row_index"],
+    "required_row_columns": ["molecule_id", "scaffold_group", "scaffold_sha256", "fold_id", "R", "loss", "mhat", "p_fitted", "p_oracle", "augmentation_fitted", "pseudo_outcome_fitted", "influence_fitted", "augmentation_oracle", "pseudo_outcome_oracle", "influence_oracle"],
+    "cluster_se_formula": "sqrt((G/(G-1))*sum_g(sum_i_in_g(phi_i))^2)/N",
+    "hajek_formula": "sum(R*loss/p)/sum(R/p)"
+  },
+  "signature_thresholds": {
+    "oracle_aipw_fraction_of_fitted_aipw": 0.5,
+    "oracle_aipw_multiple_of_oracle_ipw": 2.0,
+    "lowdim_aipw_fraction_of_full": 0.5,
+    "minimum_clip_fraction_reduction": 0.2
+  },
+  "signature_contract": {
+    "aggregation": "pooled_median_absolute_bias_by_mechanism",
+    "propensity_feature_set": "full_2267",
+    "augmentation_feature_set": "full_2267",
+    "high_dimension_clip_difference": "median(full_2267_clip_fraction)-median(lowdim_12_clip_fraction)"
+  }
+}

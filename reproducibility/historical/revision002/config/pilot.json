@@ -1,0 +1,96 @@
+{
+  "protocol_id": "pilot_001",
+  "protocol_sha256": "8596c31c7c69a3532fe2c01ee95ad46dfe46ba22dd8730a3c7405daa30265cf9",
+  "seed": 20260910,
+  "mask_seeds": [31001, 31002, 31003, 31004, 31005, 31006, 31007, 31008, 31009, 31010, 31011, 31012, 31013, 31014, 31015, 31016, 31017, 31018, 31019, 31020, 31021, 31022, 31023, 31024, 31025, 31026, 31027, 31028, 31029, 31030, 31031, 31032, 31033, 31034, 31035, 31036, 31037, 31038, 31039, 31040],
+  "dataset": {
+    "repo": "openadmet/openadmet-expansionrx-challenge-data",
+    "revision": "6b898ccc43d10d25b230fb09e22a6e30c30022b5",
+    "doi": "10.57967/hf/9687",
+    "files": {
+      "expansion_data_train.csv": "c5214ad8c8a4d7d4d09082fcce24fe16c97a980a1e0873b91b8c8e474b79f6e4",
+      "expansion_data_test.csv": "e21c0ef19795317216287e924e00ca3ef9388b7032a7fa4c7f27e2580372c85e",
+      "expansion_data_raw.csv": "f674ec74cca1146bc386f832a32d4b8d921d3c312f92cb436cc005901c724a3c"
+    }
+  },
+  "truth_endpoints": ["LogD", "KSOL"],
+  "mask_endpoints": ["HLM", "MLM", "Caco_Papp", "MPPB", "MBPB"],
+  "mar_anchors": ["HLM", "MLM", "Caco_Papp"],
+  "primary_models": ["ecfp_rf", "ecfp_desc_xgb"],
+  "models": {
+    "ecfp_ridge": {"alpha": 1.0},
+    "ecfp_rf": {"n_estimators": 400, "min_samples_leaf": 2, "max_features": "sqrt"},
+    "ecfp_desc_xgb": {"n_estimators": 800, "max_depth": 6, "learning_rate": 0.03, "subsample": 0.8, "colsample_bytree": 0.8, "reg_lambda": 1.0}
+  },
+  "fingerprint": {"radius": 2, "n_bits": 2048, "use_chirality": true},
+  "rdkit_descriptors": {
+    "rdkit_version": "2026.03.3",
+    "source": "rdkit.Chem.Descriptors._descList",
+    "selection": "all descriptors finite across all 7608 ML-ready structures, sorted by name",
+    "expected_count": 217
+  },
+  "crossfit_folds": 3,
+  "availability_auc_folds": 5,
+  "propensity_model": {
+    "penalty": "l2",
+    "C": 1.0,
+    "solver": "liblinear",
+    "class_weight": null,
+    "max_iter": 1000,
+    "random_state": 20260910
+  },
+  "propensity_clip": [0.05, 0.95],
+  "loss_nuisance": {
+    "alpha": 10.0,
+    "solver": "lsqr",
+    "tol": 1e-6,
+    "scaling": "same StandardScaler fit on all rows of each nuisance-training fold; Ridge fit only on observed training rows",
+    "truncate_predictions": false
+  },
+  "estimators": {
+    "ipw": "Hajek ratio sum(R*L/p) / sum(R/p)",
+    "aipw": "mean(m + R*(L-m)/p)",
+    "ess": "sum(R/p)^2 / sum((R/p)^2)",
+    "aipw_cluster_se": "sqrt((G/(G-1))*sum_g(sum_i(phi_i))^2)/n"
+  },
+  "mnar_gamma": [-1.0, 1.0],
+  "mask_generation": {
+    "gate4_scope": "all 2282 valid late-cohort structures",
+    "gate4_auc_probability": "unclipped five-fold scaffold-grouped OOF",
+    "mcar_probability": "actual-mask observed fraction within the corresponding truth cohort",
+    "mar_probability": "clipped five-fold scaffold-grouped OOF anchor probability restricted to the truth cohort",
+    "sampling": "independent Bernoulli draws; do not force an exact observed count",
+    "mnar_y_scale": {"LogD": "released scale", "KSOL": "log10(y+1)"},
+    "mnar_z": "truth-cohort population mean and population SD (ddof=0)",
+    "mnar_recenter": "solve one intercept per truth endpoint x anchor x gamma so mean probability equals mean clipped MAR anchor probability",
+    "mnar_generator_clipping": "none after expit",
+    "mnar_direction": {"+1": "higher analysis-scale Y more observable", "-1": "higher analysis-scale Y less observable"}
+  },
+  "gate_6_aggregation": {
+    "rows": "2 truth endpoints x 3 MAR anchors x 40 seeds x 2 primary models = 480 equally weighted rows",
+    "bias_reduction": "1 - median(abs(AIPW - truth)) / median(abs(CC - truth))",
+    "coverage": "proportion of the same 480 AIPW 95% intervals containing truth",
+    "ess_acceptance": "all 480 rows must have ESS / observed_n >= 0.25; retain every row in descriptive arithmetic"
+  },
+  "gate_5_aggregation": {
+    "models": ["ecfp_rf", "ecfp_desc_xgb"],
+    "actual_settings": "2 truth endpoints x 5 empirical masks; any setting triggers by max model relative absolute CC bias >= 0.05 or a strict two-model winner change",
+    "mar_settings": "2 truth endpoints x 3 anchors; each setting aggregates all 40 seeds",
+    "mar_bias": "max_model median_seed(abs(CC-truth)/truth) >= 0.05",
+    "mar_rank": "at least 21 of 40 CC winners differ from the full-truth winner",
+    "excluded": ["MCAR", "MNAR"],
+    "tie_rule": "full-truth exact tie makes ranking non-adjudicative; complete-case exact tie is not a change"
+  },
+  "pilot_bootstrap_replicates": 200,
+  "gates": {
+    "minimum_parent_rows": 7608,
+    "minimum_truth_coverage": 0.9,
+    "maximum_normalized_mae": 1.0,
+    "minimum_predictable_masks": 2,
+    "minimum_propensity_auc": 0.65,
+    "minimum_ess_fraction": 0.25,
+    "minimum_cc_relative_bias": 0.05,
+    "minimum_aipw_bias_reduction": 0.25,
+    "minimum_aipw_ci_coverage": 0.85
+  }
+}

@@ -1,0 +1,1207 @@
+{
+  "status": "PASS",
+  "checks_passed": 233,
+  "checks_total": 233,
+  "abstract_words": 206,
+  "artifacts": [
+    {
+      "stem": "JPA_original_article_author_review",
+      "pages": 14,
+      "images": 4,
+      "tables": 2,
+      "docx_sha256": "4e30b86db409f81ba73147954b0b764fc72328cda984fa9318d8ac8602f386bb",
+      "pdf_sha256": "99067dd957f02a6592e783e5247e331144788f3dafa72bb624e65dc9902715c4"
+    },
+    {
+      "stem": "JPA_supplementary_material_author_review",
+      "pages": 23,
+      "images": 4,
+      "tables": 19,
+      "docx_sha256": "cc4d96267f4ff651ea3aaa47e26cc436de1fdbc01e673698a8282286be67b52a",
+      "pdf_sha256": "d4fd7e0cd9459bdb1aa3d024f499e22e6328958aaebe523c233834bc525e898e"
+    },
+    {
+      "stem": "JPA_cover_letter_author_review",
+      "pages": 1,
+      "images": 0,
+      "tables": 0,
+      "docx_sha256": "6713448f9f1247942a56213dbd28b846d30a312b9a97d4721a2123beb76784c1",
+      "pdf_sha256": "0322c1970dbd17b84e262cdd10efb18f99c65e83fec35f35b5c938cd2dd9f0f0"
+    },
+    {
+      "stem": "JPA_main_tables_submission",
+      "pages": 1,
+      "images": 0,
+      "tables": 2,
+      "docx_sha256": "d8f521cdd1afb337bae60896c0c826f69d5fd997b6abedb76db2c9937392c5a5",
+      "pdf_sha256": "764f44ba3063f1ea3cf3e5061f4ea1ddc647ba04a04ae1b1164e2eb9750c436d"
+    }
+  ],
+  "checks": [
+    [
+      "Integrity table inventory source",
+      true,
+      ""
+    ],
+    [
+      "Integrity table input and output denominator source",
+      true,
+      ""
+    ],
+    [
+      "Integrity table frozen output identity",
+      true,
+      ""
+    ],
+    [
+      "Integrity table replay row source",
+      true,
+      ""
+    ],
+    [
+      "Main table H1 numeric evidence",
+      true,
+      ""
+    ],
+    [
+      "Main table H2 numeric evidence",
+      true,
+      ""
+    ],
+    [
+      "Main table admission denominators source",
+      true,
+      ""
+    ],
+    [
+      "Main table direct-mask numeric evidence",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_MDR1_ER', 'mar', 'ecfp_desc_xgb') P",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_MDR1_ER', 'mar', 'ecfp_desc_xgb') M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_MDR1_ER', 'mar', 'ecfp_desc_xgb') P_x_M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_MDR1_ER', 'mar', 'ecfp_rf') P",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_MDR1_ER', 'mar', 'ecfp_rf') M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_MDR1_ER', 'mar', 'ecfp_rf') P_x_M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_MDR1_ER', 'mcar', 'ecfp_desc_xgb') P",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_MDR1_ER', 'mcar', 'ecfp_desc_xgb') M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_MDR1_ER', 'mcar', 'ecfp_desc_xgb') P_x_M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_MDR1_ER', 'mcar', 'ecfp_rf') P",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_MDR1_ER', 'mcar', 'ecfp_rf') M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_MDR1_ER', 'mcar', 'ecfp_rf') P_x_M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_SOL', 'mar', 'ecfp_desc_xgb') P",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_SOL', 'mar', 'ecfp_desc_xgb') M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_SOL', 'mar', 'ecfp_desc_xgb') P_x_M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_SOL', 'mar', 'ecfp_rf') P",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_SOL', 'mar', 'ecfp_rf') M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_SOL', 'mar', 'ecfp_rf') P_x_M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_SOL', 'mcar', 'ecfp_desc_xgb') P",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_SOL', 'mcar', 'ecfp_desc_xgb') M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_SOL', 'mcar', 'ecfp_desc_xgb') P_x_M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_SOL', 'mcar', 'ecfp_rf') P",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_SOL', 'mcar', 'ecfp_rf') M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_HLM', 'LOG_SOL', 'mcar', 'ecfp_rf') P_x_M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_MDR1_ER', 'mar', 'ecfp_desc_xgb') P",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_MDR1_ER', 'mar', 'ecfp_desc_xgb') M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_MDR1_ER', 'mar', 'ecfp_desc_xgb') P_x_M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_MDR1_ER', 'mar', 'ecfp_rf') P",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_MDR1_ER', 'mar', 'ecfp_rf') M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_MDR1_ER', 'mar', 'ecfp_rf') P_x_M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_MDR1_ER', 'mcar', 'ecfp_desc_xgb') P",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_MDR1_ER', 'mcar', 'ecfp_desc_xgb') M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_MDR1_ER', 'mcar', 'ecfp_desc_xgb') P_x_M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_MDR1_ER', 'mcar', 'ecfp_rf') P",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_MDR1_ER', 'mcar', 'ecfp_rf') M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_MDR1_ER', 'mcar', 'ecfp_rf') P_x_M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_SOL', 'mar', 'ecfp_desc_xgb') P",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_SOL', 'mar', 'ecfp_desc_xgb') M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_SOL', 'mar', 'ecfp_desc_xgb') P_x_M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_SOL', 'mar', 'ecfp_rf') P",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_SOL', 'mar', 'ecfp_rf') M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_SOL', 'mar', 'ecfp_rf') P_x_M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_SOL', 'mcar', 'ecfp_desc_xgb') P",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_SOL', 'mcar', 'ecfp_desc_xgb') M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_SOL', 'mcar', 'ecfp_desc_xgb') P_x_M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_SOL', 'mcar', 'ecfp_rf') P",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_SOL', 'mcar', 'ecfp_rf') M",
+      true,
+      ""
+    ],
+    [
+      "Electronic contrast ('LOG_RLM', 'LOG_SOL', 'mcar', 'ecfp_rf') P_x_M",
+      true,
+      ""
+    ],
+    [
+      "Electronic oracle ratio LOG_HLM mar lowdim_11",
+      true,
+      ""
+    ],
+    [
+      "Electronic oracle ratio LOG_HLM mcar lowdim_11",
+      true,
+      ""
+    ],
+    [
+      "Electronic oracle ratio LOG_RLM mar lowdim_11",
+      true,
+      ""
+    ],
+    [
+      "Electronic oracle ratio LOG_RLM mcar lowdim_11",
+      true,
+      ""
+    ],
+    [
+      "Electronic oracle ratio LOG_HLM mar full_2266",
+      true,
+      ""
+    ],
+    [
+      "Electronic oracle ratio LOG_HLM mcar full_2266",
+      true,
+      ""
+    ],
+    [
+      "Electronic oracle ratio LOG_RLM mar full_2266",
+      true,
+      ""
+    ],
+    [
+      "Electronic oracle ratio LOG_RLM mcar full_2266",
+      true,
+      ""
+    ],
+    [
+      "S8 aligned row identities LOG_HLM LOG_MDR1_ER ecfp_desc_xgb",
+      true,
+      ""
+    ],
+    [
+      "S8 aligned row identities LOG_HLM LOG_MDR1_ER ecfp_rf",
+      true,
+      ""
+    ],
+    [
+      "S8 aligned row identities LOG_HLM LOG_SOL ecfp_desc_xgb",
+      true,
+      ""
+    ],
+    [
+      "S8 aligned row identities LOG_HLM LOG_SOL ecfp_rf",
+      true,
+      ""
+    ],
+    [
+      "S8 aligned row identities LOG_RLM LOG_MDR1_ER ecfp_desc_xgb",
+      true,
+      ""
+    ],
+    [
+      "S8 aligned row identities LOG_RLM LOG_MDR1_ER ecfp_rf",
+      true,
+      ""
+    ],
+    [
+      "S8 aligned row identities LOG_RLM LOG_SOL ecfp_desc_xgb",
+      true,
+      ""
+    ],
+    [
+      "S8 aligned row identities LOG_RLM LOG_SOL ecfp_rf",
+      true,
+      ""
+    ],
+    [
+      "S10 unique estimates Low P",
+      true,
+      ""
+    ],
+    [
+      "S10 unique estimates Full P",
+      true,
+      ""
+    ],
+    [
+      "S10 unique estimates Oracle p",
+      true,
+      ""
+    ],
+    [
+      "S11 tail counts from original probabilities pxr_structure_10",
+      true,
+      ""
+    ],
+    [
+      "S11 tail counts from original probabilities pxr_structure_screen_12",
+      true,
+      ""
+    ],
+    [
+      "S11 lower-only diagnostics from original probabilities pxr_structure_10",
+      true,
+      ""
+    ],
+    [
+      "S11 lower-only diagnostics from original probabilities pxr_structure_screen_12",
+      true,
+      ""
+    ],
+    [
+      "33 sequential cited references",
+      true,
+      ""
+    ],
+    [
+      "33 verified bibliographic records",
+      true,
+      ""
+    ],
+    [
+      "33 BibTeX records",
+      true,
+      ""
+    ],
+    [
+      "Abstract at most 250 words",
+      true,
+      "206"
+    ],
+    [
+      "Five highlights at most 85 characters",
+      true,
+      ""
+    ],
+    [
+      "Main evidence boundary 11/16",
+      true,
+      ""
+    ],
+    [
+      "Main evidence boundary 10/16",
+      true,
+      ""
+    ],
+    [
+      "Main evidence boundary 1/16",
+      true,
+      ""
+    ],
+    [
+      "Main evidence boundary 323.07",
+      true,
+      ""
+    ],
+    [
+      "Main evidence boundary 0.00552",
+      true,
+      ""
+    ],
+    [
+      "Main evidence boundary 820",
+      true,
+      ""
+    ],
+    [
+      "Main evidence boundary 780",
+      true,
+      ""
+    ],
+    [
+      "Main evidence boundary not automatically cancel",
+      true,
+      ""
+    ],
+    [
+      "Main evidence boundary not a deployable",
+      true,
+      ""
+    ],
+    [
+      "Main evidence boundary not independent datasets",
+      true,
+      ""
+    ],
+    [
+      "JPA_original_article_author_review image count",
+      true,
+      ""
+    ],
+    [
+      "JPA_original_article_author_review table count",
+      true,
+      ""
+    ],
+    [
+      "JPA_original_article_author_review image alt text",
+      true,
+      ""
+    ],
+    [
+      "JPA_original_article_author_review black title",
+      true,
+      ""
+    ],
+    [
+      "JPA_original_article_author_review no raw LaTeX commands",
+      true,
+      ""
+    ],
+    [
+      "JPA_original_article_author_review Table 1 shape",
+      true,
+      "displayed 17x5; source 17x5"
+    ],
+    [
+      "JPA_original_article_author_review Table 1 headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_original_article_author_review Table 1 unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_original_article_author_review Table 1 complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_original_article_author_review Table 1 all displayed cells",
+      true,
+      "85 cells; "
+    ],
+    [
+      "JPA_original_article_author_review Table 2 shape",
+      true,
+      "displayed 5x5; source 5x5"
+    ],
+    [
+      "JPA_original_article_author_review Table 2 headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_original_article_author_review Table 2 unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_original_article_author_review Table 2 complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_original_article_author_review Table 2 all displayed cells",
+      true,
+      "25 cells; "
+    ],
+    [
+      "JPA_original_article_author_review valid PDF pages",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review image count",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review table count",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review image alt text",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review black title",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review no raw LaTeX commands",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S1 shape",
+      true,
+      "displayed 16x8; source 16x8"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S1 headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S1 unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S1 complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S1 all displayed cells",
+      true,
+      "128 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S2A shape",
+      true,
+      "displayed 16x9; source 16x9"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S2A headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S2A unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S2A complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S2A all displayed cells",
+      true,
+      "144 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S2B shape",
+      true,
+      "displayed 16x10; source 16x10"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S2B headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S2B unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S2B complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S2B all displayed cells",
+      true,
+      "160 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S3 shape",
+      true,
+      "displayed 8x9; source 8x9"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S3 headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S3 unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S3 complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S3 all displayed cells",
+      true,
+      "72 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S4 shape",
+      true,
+      "displayed 5x8; source 5x8"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S4 headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S4 unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S4 complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S4 all displayed cells",
+      true,
+      "40 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S5A shape",
+      true,
+      "displayed 2x5; source 2x5"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S5A headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S5A unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S5A complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S5A all displayed cells",
+      true,
+      "10 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S5B shape",
+      true,
+      "displayed 2x8; source 2x8"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S5B headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S5B unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S5B complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S5B all displayed cells",
+      true,
+      "16 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S6 shape",
+      true,
+      "displayed 12x9; source 12x9"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S6 headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S6 unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S6 complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S6 all displayed cells",
+      true,
+      "108 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S7 shape",
+      true,
+      "displayed 7x3; source 7x3"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S7 headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S7 unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S7 complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S7 all displayed cells",
+      true,
+      "21 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S8A shape",
+      true,
+      "displayed 8x7; source 8x7"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S8A headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S8A unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S8A complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S8A all displayed cells",
+      true,
+      "56 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S8B shape",
+      true,
+      "displayed 16x8; source 16x8"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S8B headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S8B unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S8B complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S8B all displayed cells",
+      true,
+      "128 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S9 shape",
+      true,
+      "displayed 8x6; source 8x6"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S9 headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S9 unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S9 complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S9 all displayed cells",
+      true,
+      "48 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S10 shape",
+      true,
+      "displayed 3x5; source 3x5"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S10 headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S10 unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S10 complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S10 all displayed cells",
+      true,
+      "15 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S11A shape",
+      true,
+      "displayed 2x5; source 2x5"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S11A headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S11A unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S11A complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S11A all displayed cells",
+      true,
+      "10 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S11B shape",
+      true,
+      "displayed 2x4; source 2x4"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S11B headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S11B unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S11B complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S11B all displayed cells",
+      true,
+      "8 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S12 shape",
+      true,
+      "displayed 8x9; source 8x9"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S12 headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S12 unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S12 complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S12 all displayed cells",
+      true,
+      "72 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S13 shape",
+      true,
+      "displayed 24x7; source 24x7"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S13 headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S13 unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S13 complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S13 all displayed cells",
+      true,
+      "168 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S14 shape",
+      true,
+      "displayed 16x9; source 16x9"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S14 headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S14 unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S14 complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S14 all displayed cells",
+      true,
+      "144 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S15 shape",
+      true,
+      "displayed 24x6; source 24x6"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S15 headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S15 unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S15 complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_supplementary_material_author_review Table S15 all displayed cells",
+      true,
+      "144 cells; "
+    ],
+    [
+      "JPA_supplementary_material_author_review valid PDF pages",
+      true,
+      ""
+    ],
+    [
+      "JPA_cover_letter_author_review image count",
+      true,
+      ""
+    ],
+    [
+      "JPA_cover_letter_author_review table count",
+      true,
+      ""
+    ],
+    [
+      "JPA_cover_letter_author_review image alt text",
+      true,
+      ""
+    ],
+    [
+      "JPA_cover_letter_author_review black title",
+      true,
+      ""
+    ],
+    [
+      "JPA_cover_letter_author_review no raw LaTeX commands",
+      true,
+      ""
+    ],
+    [
+      "JPA_cover_letter_author_review valid PDF pages",
+      true,
+      ""
+    ],
+    [
+      "JPA_main_tables_submission image count",
+      true,
+      ""
+    ],
+    [
+      "JPA_main_tables_submission table count",
+      true,
+      ""
+    ],
+    [
+      "JPA_main_tables_submission image alt text",
+      true,
+      ""
+    ],
+    [
+      "JPA_main_tables_submission black title",
+      true,
+      ""
+    ],
+    [
+      "JPA_main_tables_submission no raw LaTeX commands",
+      true,
+      ""
+    ],
+    [
+      "JPA_main_tables_submission Table 1 shape",
+      true,
+      "displayed 17x5; source 17x5"
+    ],
+    [
+      "JPA_main_tables_submission Table 1 headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_main_tables_submission Table 1 unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_main_tables_submission Table 1 complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_main_tables_submission Table 1 all displayed cells",
+      true,
+      "85 cells; "
+    ],
+    [
+      "JPA_main_tables_submission Table 2 shape",
+      true,
+      "displayed 5x5; source 5x5"
+    ],
+    [
+      "JPA_main_tables_submission Table 2 headings",
+      true,
+      ""
+    ],
+    [
+      "JPA_main_tables_submission Table 2 unique keys",
+      true,
+      ""
+    ],
+    [
+      "JPA_main_tables_submission Table 2 complete row identities",
+      true,
+      "missing set(); extra set()"
+    ],
+    [
+      "JPA_main_tables_submission Table 2 all displayed cells",
+      true,
+      "25 cells; "
+    ],
+    [
+      "JPA_main_tables_submission valid PDF pages",
+      true,
+      ""
+    ]
+  ]
+}

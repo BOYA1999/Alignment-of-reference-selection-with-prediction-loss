@@ -1,0 +1,120 @@
+{
+  "acceptance_state": "PASS_PENDING_POST_VERIFICATION_AUDIT",
+  "amendment_003_audit_sha256": "61a67e578d57ce790182646c61ba8da18ce8f49d7fb9f6853f4033b21156fe75",
+  "amendment_004_audit_sha256": "104484171d0e567463bf8584c49fcf84ea2bd8d36e0f9bf29a4b413f0e040373",
+  "config_amendment_003_sha256": "690875bca0afcd95a44946c57aa552c3287c1c80efb690cb412318565999ab60",
+  "config_amendment_004_sha256": "5be83a824a04f26729e1d51fe1aa547ebf750430ad1469a9dee7270b364a65df",
+  "decision_006_sha256": "96cd052f18c9442ebe9b3b3524da7b88539c0896f6541dbc675cf9cb094cee0b",
+  "decision_007_sha256": "faea63b749016aaaf570888ca5cbc99fda856088c53ac02f489fca3df7f45fe7",
+  "decision_008_sha256": "3cc6426bdebeb739d31d8d0cee1092d7de7ac8c4625b6b2004011390fec43216",
+  "decision_009_sha256": "6120e6d5332a295a1396613b64758d29302595f662bcddbd9f1ea5b1205e92f3",
+  "failed_verification_output_absent": true,
+  "failure_record_001_sha256": "3a6ac0a67988d3037831f9f21a084b814f78e701ec464c5e224b09018e74c8a1",
+  "failure_record_002_sha256": "455c8e3928099fb31452801b5cec1c12d3ab716eaba1a03dd4ca8ee59a94e634",
+  "full_output_path": "artifacts/confirmatory/confirm_001/full_recovery_001",
+  "full_run_manifest_sha256": "8da9b9c1d0425fff118d983a8491aceb57ae8b6085300eacf18cd8e0d7e6eac4",
+  "generator_storage_checks": {
+    "generator_vectors_sha256": "a6b817b9a3db207dd84f1a816a7374a5a21b186c853b73c2f2c422a1bfc830f7",
+    "stored_mar_score_shift_formula_cells_bit_exact": 4,
+    "stored_probability_hash_cells_bit_exact": 8
+  },
+  "lowdim_layout_evidence": {
+    "LOG_HLM": {
+      "dtype": "float64",
+      "elementwise_bit_identity": true,
+      "postconversion_f_contiguous": true,
+      "postconversion_strides_bytes": [
+        8,
+        7432
+      ],
+      "preconversion_c_contiguous": true,
+      "preconversion_strides_bytes": [
+        88,
+        8
+      ],
+      "shape": [
+        929,
+        11
+      ]
+    },
+    "LOG_RLM": {
+      "dtype": "float64",
+      "elementwise_bit_identity": true,
+      "postconversion_f_contiguous": true,
+      "postconversion_strides_bytes": [
+        8,
+        7376
+      ],
+      "preconversion_c_contiguous": true,
+      "preconversion_strides_bytes": [
+        88,
+        8
+      ],
+      "shape": [
+        922,
+        11
+      ]
+    }
+  },
+  "mode": "verification-replay-002",
+  "original_runner_sha256": "650a8b8f6b9bf65db69efc7ba60340aafa99c3c4b8b5bba957a8e6c6fa800c5c",
+  "original_verifier_sha256": "740e31590ec40f40f7783e59889d265c3d5d20296901c3968d4b593986238715",
+  "protocol_amendment_003_sha256": "458d0217da500b89a89c28018e07f2df18b3d741f1fb13e068451cef0a447adb",
+  "protocol_amendment_004_sha256": "00482a584e320e7b8188fe29a6db9f1f5bf1349874062c473e1d407273e8f3e3",
+  "pxr_layout_evidence": {
+    "pxr_structure_10": {
+      "dtype": "float64",
+      "elementwise_bit_identity": true,
+      "postconversion_f_contiguous": true,
+      "postconversion_strides_bytes": [
+        8,
+        85976
+      ],
+      "preconversion_c_contiguous": true,
+      "preconversion_strides_bytes": [
+        80,
+        8
+      ],
+      "shape": [
+        10747,
+        10
+      ],
+      "source_expected_linkage_bit_identity": true
+    },
+    "pxr_structure_screen_12": {
+      "dtype": "float64",
+      "elementwise_bit_identity": true,
+      "postconversion_f_contiguous": true,
+      "postconversion_strides_bytes": [
+        8,
+        85976
+      ],
+      "preconversion_c_contiguous": true,
+      "preconversion_strides_bytes": [
+        96,
+        8
+      ],
+      "shape": [
+        10747,
+        12
+      ],
+      "source_expected_linkage_bit_identity": true
+    }
+  },
+  "scientific_decision": "GO_WRITE_FALSIFICATION_BOUNDARY",
+  "scope": {
+    "full_output_write_performed": false,
+    "independent_remaining_99_seed_and_direct_or_pxr_nuisance_refit": false,
+    "independent_seed41001_crossfit_propensity_and_ridge_refit": true,
+    "independent_source_feature_prediction_generator_and_seed41001_formula_reconstruction": true,
+    "remaining_formal_nuisance_vectors_checked_by_hash_and_grid_invariants": true
+  },
+  "seed41001_independent_nuisance_refit_maximum_absolute_difference": {
+    "mhat": 0.0,
+    "p_fitted": 0.0,
+    "p_raw": 0.0
+  },
+  "status": "PASS",
+  "supplemental_verifier_001_sha256": "4e95a20d5a3c74d5c96122b80fc37cf5d44892c4438e846b781899fbf2212a57",
+  "supplemental_verifier_002_sha256": "4818856cd480688b4a85178c519023971ac4f48ad4ab6011a81b88827def1d9a"
+}

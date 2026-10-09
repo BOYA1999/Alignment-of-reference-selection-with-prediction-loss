@@ -1,0 +1,4 @@
+Probability,N,Stored median error,Clipped median error,Clipped maximum error
+Low P,16,702.6474,0.0060,0.0182
+Full P,16,702.5136,0.0747,0.1754
+Oracle p,16,702.6474,0.0057,0.0160

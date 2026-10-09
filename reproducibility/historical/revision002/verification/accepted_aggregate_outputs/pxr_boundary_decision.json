@@ -1,0 +1,28 @@
+{
+  "study_id": "confirm_001",
+  "decision": "ABSTAIN_NONIDENTIFIABLE_FULL_LIBRARY_DOSE_RESPONSE",
+  "selection_strata_extreme": true,
+  "propensity_triggers": [
+    {
+      "specification": "pxr_structure_10",
+      "clip": false,
+      "ess": false,
+      "smd": false,
+      "any": false
+    },
+    {
+      "specification": "pxr_structure_screen_12",
+      "clip": true,
+      "ess": true,
+      "smd": true,
+      "any": true
+    }
+  ],
+  "documentary_triggers": {
+    "missing_documented_promotion_branch_or_selection_variable": true,
+    "public_files_do_not_reconstruct_official_parent_and_promoted_populations": true,
+    "missing_nonadvanced_dose_response_truth_without_randomized_audit_or_identification_design": true
+  },
+  "full_library_point_estimate_allowed": false,
+  "allowed_output": "selection_map_overlap_diagnostics_and_overlap_restricted_description_only"
+}

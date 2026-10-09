@@ -1,0 +1,67 @@
+{
+  "status": "PASS_FULL_VERIFIED_AFTER_SUMMARY_RECOVERY",
+  "finished_utc": "2026-09-18T08:44:53.338167+00:00",
+  "recovery_note": "All ten split computations and primary CSV writes completed before a postprocessing column-name collision; summary-only recovery reused those preserved CSVs without refitting.",
+  "split_seeds": [
+    61453,
+    61454,
+    61455,
+    61456,
+    61457,
+    61458,
+    61459,
+    61460,
+    61461,
+    61462
+  ],
+  "mask_seeds": [
+    41001,
+    41100
+  ],
+  "estimate_rows": 80000,
+  "prediction_rows": 37170,
+  "all_fold_support": true,
+  "parent_frozen_file_count": 19,
+  "parent_frozen_sha256": {
+    "actual_mask_scenarios.csv": "92ce0f5302bad0e43a7310cfe3d2c85aa5d04e45f3f79765388b274a27045eb7",
+    "admission_gate.json": "fb100c8cad8d91680874f24219eae72e2e6765cd80f0c3941dd6fe43c4046d6e",
+    "availability_map.csv": "a7b38356d5783fdc3deb310ec8b46179ceecf0656e19b0f385f5b3d4a1ec63ed",
+    "bootstrap_intervals.csv": "44cade4a78cc14de38e32f63b904e319e18290bb24459bce3bbd9ee53626876c",
+    "cohort_audit.csv": "553b080eb61727af412087128a651ecdda883ef7a716386ba256a822e66efef0",
+    "factorial_contrasts.csv": "cdae19ad818539ee7b1c86daec5d231bdc2eda7c395f3eb705077f97300672ff",
+    "generator_vectors.parquet": "a6b817b9a3db207dd84f1a816a7374a5a21b186c853b73c2f2c422a1bfc830f7",
+    "nuisance_fold_assignments.parquet": "03dc22c344471ed09e51451fc9a79cd38b70f183565bf9034965f9b8b0e268a3",
+    "predictions.parquet": "7b996d697054c0144afe2f284dd3a5b83818c0b299cd804b41314931c7678bfb",
+    "pxr_boundary_decision.json": "aa4f17bcea4f42958968b0a8b8f53223bc60bca0d06d3d4834f04bcf55ada2b0",
+    "pxr_linkage_audit.csv": "d45fb99e8271038af8b264d603699382a62c1d1fc5d4c5e519c5e2981de9c1ba",
+    "pxr_overlap_summary.csv": "e36325a9478f35e3e0c53132c61088f80c76535e7925c9e60e2dda1b54e8b63c",
+    "pxr_selection_strata.csv": "fb5c4f6f2a6a3a8810bf4b677b82c68962f01193c2ad8d6cd694549bdf4339a6",
+    "row_replay_seed41001.parquet": "97674bcee17dcdb28f91d8ab23b87e6130dc79840a50985fad8cc6ba4507673e",
+    "run_manifest.json": "8da9b9c1d0425fff118d983a8491aceb57ae8b6085300eacf18cd8e0d7e6eac4",
+    "semisynthetic_scenarios.csv": "e2040fc4c7c4168b2786f154af1acedff95824413ac1a30f8ea5526163217a32",
+    "structure_audit.json": "a5233c5e7d9bfe74d201e761a59c50556d323ea67ab2d1b36f0477b1e6d4b6ea",
+    "summary.json": "784132d1df5ab6a99a934bf2c53d17c7d11f650beb4b733be222011f060986ae",
+    "verification.md": "7ef5b2cdb2d1885b074250402efd313aa9758b337b4f486147ddc10e0042af99"
+  },
+  "source_hashes": {
+    "protocol.md": "8e082a7f7841e52b12a91e5ec7c5857df14dd7e591ec85ad365044dba4a40f6a",
+    "script": "61b7b22e2080796653f8a168f0ca38d8ff0d0e9235de67815e47a1b013c175a6",
+    "source_derivative": "cd310dd3911a9f9763d0581e6202bc20aaf8a810523d01e9ab5e403681a386b4",
+    "split_assignments.csv": "bfde6fda078c3f1b7a359ee728007e79b70adf2ffffa2f9d5d2dd67bd65bc16d",
+    "confirmatory_config": "04fc27fc407a562853dd362d31a4c4cbc01bdb754199d5a18014cdfcbc7a5c23",
+    "frozen_predictions": "7b996d697054c0144afe2f284dd3a5b83818c0b299cd804b41314931c7678bfb",
+    "revision2_estimates": "b105a9f201a8502c98a34c69f7b740e784d39c5edb418ed1d3fadfea80f3df72"
+  },
+  "output_sha256": {
+    "aipw_loss_comparisons.csv": "62e63bcf4af2822b2e5e2ae1625ceda9d6ce595a64c9570dd47f8bdab8d4c81c",
+    "decision.json": "622fb20249441a5debddc7054b7c57d86cecf3feead7a9b30fcd6fdd9170e610",
+    "estimates.csv": "9d038769ad2a9073b931cfd4e5fb077b9006226b522c1c8bcb2363b743f19595",
+    "predictions.csv": "2934bfd9dd1d83270d941d1846011183978326663b3830c42e2e774878800d1a",
+    "predictor_ordering.csv": "35975d94319fe1cdc12fb41dfb7ff8766db78fc69e2b0d36f3975af7fa4f23c0",
+    "predictor_risk.csv": "545ead4f934499fc4c51512cf5da8be9e587bfad9bb9546c30ff56a689b95f5b",
+    "progress.log": "c3870a41826c2bbb3d1dd3dc8d08340c523d6d2c3b2b3b0389dcd31ea65cd148",
+    "split_raw_error_medians.csv": "29a89884892909acbd6ebb2df0df5a15d9af3f49f22fd6d2e350fe86ad12a733",
+    "summary.csv": "c801ac7f3bafd0ab305c1fed6c47e5c1c8f6c852fbfaf80ed6936cd8012b827e",
+    "verification.json": "c81b50ef01187f4f7b09ad81d552b6a4519d704643146952e68fc383a3bc887e"
+  }
+}

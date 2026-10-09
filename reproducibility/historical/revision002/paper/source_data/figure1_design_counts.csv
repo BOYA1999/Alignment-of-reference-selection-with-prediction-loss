@@ -1,0 +1,13 @@
+stage,item,numerator,denominator,value,unit,source_file,source_field,interpretation
+development,ExpansionRx contribution to confirmation,0,,0,rows,summary.json,forensic_role,hypothesis generation only
+confirmation,Biogen structures,3521,3521,1,fraction,structure_audit.json,biogen,unique canonical structures
+confirmation,Biogen derived train split,2463,3521,0.69951718261857432,fraction,cohort_audit.csv,train,not temporal or prospective
+confirmation,Biogen derived test split,1058,3521,0.30048281738142574,fraction,cohort_audit.csv,test,not an official Biogen split
+confirmation,HLM target cohort,929,1058,0.87807183364839314,fraction,cohort_audit.csv,LOG_HLM test,finite released reference
+confirmation,RLM target cohort,922,1058,0.87145557655954631,fraction,cohort_audit.csv,LOG_RLM test,finite released reference
+experiment,Semisynthetic result rows,6400,6400,1,fraction,run_manifest.json,grid_rows,complete frozen grid
+decision,H1 cells passed,4,4,1,fraction,summary.json,H1,mechanism confirmation
+decision,H2 cells passed,4,4,1,fraction,summary.json,H2,mechanism confirmation
+decision,Admission cells passed,8,16,0.5,fraction,admission_gate.json,known_truth_admission,all MAR cells failed
+decision,Direct regular overlap cells passed,8,8,1,fraction,admission_gate.json,direct_overlap,translation not adjudicated
+boundary,PXR follow-up available,2722,10747,0.2532799851121243,fraction,pxr_selection_strata.csv,sum,full-library risk not estimated; assumptions and loss unestablished

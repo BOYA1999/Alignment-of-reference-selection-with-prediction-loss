@@ -1,0 +1,39 @@
+[
+  {
+    "path": "artifacts/revision_001/forensic/fold_feature_summary.csv",
+    "original_sha256": "1f0c37cff71b18f3ca1faa14ad84bc325f4155547eddab98a39561e23d41dfe3",
+    "distributed_sha256": "a842e183da8d98e1b2bfeb67ae60a0fbe807804cc50a4d75c4d9729e58ea1284",
+    "removed_columns": [
+      "max_z_source_row"
+    ],
+    "reason": "Remove individual compound row index; retained aggregate columns preserve round-trip numeric values"
+  },
+  {
+    "path": "artifacts/revision_001/forensic/evaluation_summary.json",
+    "original_sha256": "b1e019916ff6a638de820842384289a9f8c28267ca7eebb38b7790eed68365d6",
+    "distributed_sha256": "4b24cdf508b51c0415df9da3af0c92bc34beded83d5f235d7333dcfba1ae815d",
+    "json_pointers": [
+      "/dominant_source_row_index",
+      "/dominant_molecule_id"
+    ],
+    "reason": "Remove local execution paths or individual compound identifiers; scientific aggregate values unchanged"
+  },
+  {
+    "path": "verification/accepted_aggregate_outputs/run_manifest.json",
+    "original_sha256": "8da9b9c1d0425fff118d983a8491aceb57ae8b6085300eacf18cd8e0d7e6eac4",
+    "distributed_sha256": "f29c1d0c513f7b3552d99038aec6126a28dd39095d533261972da511a63ec19e",
+    "json_pointers": [
+      "/command/0"
+    ],
+    "reason": "Remove local execution paths or individual compound identifiers; scientific aggregate values unchanged"
+  },
+  {
+    "path": "artifacts/revision_001/forensic/protocol.md",
+    "original_sha256": "d24e46651f0371ed1e31c54f5fc530beb1a268d10f3b5f7281183afb9e871a3b",
+    "distributed_sha256": "39674610479b5741c9fa73dfb3641e848d99b3919b429482875ffb7287e3cfa4",
+    "text_fields": [
+      "individual source-row label"
+    ],
+    "reason": "Generalize the single identified compound label; diagnostic definition and values unchanged"
+  }
+]

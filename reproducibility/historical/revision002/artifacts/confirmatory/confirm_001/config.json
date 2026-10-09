@@ -1,0 +1,1102 @@
+{
+  "study_id": "confirm_001",
+  "created_date": "2026-09-11",
+  "status": "FROZEN_PRE_RESULT",
+  "formal_run_authorized": true,
+  "protocol_sha256": "1819fa04713ee1a37df66c847825e5de3adcba736fba47c5c40b1c8db7796d7a",
+  "decision_path": "artifacts/decisions/003_go_confirm_001.md",
+  "pre_result_protocol_audit": {
+    "path": "artifacts/confirmatory/confirm_001/protocol_audit.md",
+    "sha256": "a4b4c630785c2cd6991872696d2bc2cf23a14235cc19c7331ee1f70731fb5b16",
+    "verdict": "CLEAR_TO_FREEZE",
+    "scope": "audited_READY_snapshot_and_authorized_only_the_mechanical_FROZEN_PRE_RESULT_transition"
+  },
+  "article_type": "Original Article",
+  "study_question": "Under selectively available ADMET references, can known-truth sentinel controls reproduce propensity and high-dimensional propensity-representation instability and prospectively block ineligible correction?",
+  "development_evidence": {
+    "dataset_role": "ExpansionRx_discovery_only",
+    "pilot_decision": "STOP_PILOT_NEGATIVE",
+    "pilot_decision_sha256": "cae33d663f875d5798ff2eccb9870ba2de7c0cbe04fdf012b9c252ff8b62733f",
+    "forensic_decision": "MECHANISM_SIGNAL_DETECTED",
+    "forensic_artifacts": {
+      "protocol.md": "e85bb5e05863f5667497fcadf2f8f38312ab82ab85120856e9505fa182a6b2c4",
+      "config.json": "72dfed2fd134fff7b5e6ccc6d6f0300659def6bd0d6d6f510aec4372a929c203",
+      "full/summary.json": "a26cb40c3fd453e9b2b9dc6f3d0108be889f9a3c62115f5a2083fcf23c953b52",
+      "full/scenario_decomposition.csv": "d0a0bd60b9b88f947c01a2a1e90ecce080b6d45ad9eeaf943e38fd0afcfbd49c",
+      "full/row_replay_seed31001.parquet": "af86a61856527e71a3dd293154b1a243bb7e4b0f983eae2f349f172e7dd1a2c0",
+      "full/run_manifest.json": "73009b973e7b4de88184f711cd072a75e168bbaa20c811c968dde59a22f3aa55",
+      "full/verification.md": "2c91d5d8abc29a8a337cc2c908e509d89726537db32a234e852ea9778561c2c3"
+    },
+    "confirmatory_signals": {
+      "PROPENSITY_INSTABILITY_SUPPORTED": {
+        "supported": true,
+        "oracle_to_fitted_aipw_absolute_estimation_error_ratio": {
+          "mcar_hlm": 0.14516191701979836,
+          "mar_hlm": 0.36804650938763317
+        },
+        "threshold": 0.5
+      },
+      "HIGH_DIMENSION_INSTABILITY_SUPPORTED": {
+        "supported": true,
+        "low_to_full_fitted_aipw_absolute_estimation_error_ratio": {
+          "mcar_hlm": 0.13528827333298227,
+          "mar_hlm": 0.2223513462599224
+        },
+        "clip_fraction_reduction": {
+          "mcar_hlm": 0.595852534562212,
+          "mar_hlm": 0.6988479262672811
+        },
+        "absolute_estimation_error_ratio_threshold": 0.5,
+        "clip_reduction_threshold": 0.2
+      }
+    },
+    "exploratory_negative_signal": {
+      "AUGMENTATION_INSTABILITY_SUPPORTED": {
+        "supported": false,
+        "oracle_aipw_to_oracle_ipw_absolute_estimation_error_ratio": {
+          "mcar_hlm": 1.1276780122981074,
+          "mar_hlm": 1.2489069933014143
+        },
+        "development_threshold": 2.0,
+        "confirmation_status": "exploratory_only_no_promotion"
+      }
+    }
+  },
+  "collision_audit": {
+    "path": "artifacts/scout/reference_availability_collision_audit_20260911.md",
+    "sha256": "5c65ac9f5519c774a7ea576c2824a3ba8e61fba2249f5d1258d9b0a967b3f303",
+    "decision": "REVISE_AND_RECHECK",
+    "exact_claim_addendum": {
+      "path": "artifacts/scout/confirm_001_exact_claim_collision_addendum_20260911.md",
+      "sha256": "d141c86b381c4febdc050cf47713afe847bad84a01f352f50bfd30ea24149350",
+      "decision": "CLEAR_NARROW_CLAIM",
+      "allowed_novelty_unit": "linked_ADMET_measurement_process_validation_and_abstention_architecture"
+    },
+    "allowed_novelty": "ADMET_specific_measurement_process_validation_and_falsification_gate",
+    "prohibited_novelty_claims": [
+      "new_AIPW_or_DML_estimator",
+      "new_general_ADMET_validation_framework",
+      "new_active_testing_estimator"
+    ],
+    "repeat_before_manuscript_freeze": true
+  },
+  "data_roles": {
+    "ExpansionRx": "discovery_only_no_confirmatory_aggregation",
+    "Biogen_public_ADME": "sole_confirmation",
+    "OpenADMET_PXR": "staged_selection_overlap_and_nonidentifiability_boundary_only"
+  },
+  "source_freeze": {
+    "required_before_formal_run": true,
+    "state": "GO_DATA_READY",
+    "audit_report": {
+      "path": "artifacts/scout/external_source_freeze_20260911.md",
+      "sha256": "79ecee56b1ca62ea38aa3bdfaff96e9e55213a0cc70c87d8dfd400a506d54bc9"
+    },
+    "authority_manifest": {
+      "path": "data/external/source_freeze_20260911/source_manifest.json",
+      "sha256": "be55555aed0b2a5bed095ae8d052500becd527c97c809d6db5b7a14e7548fd78",
+      "schema_version": "1.0",
+      "decision": "GO_DATA_READY",
+      "verified_at_utc": "2026-09-10T20:50:59.109Z"
+    },
+    "analysis_consumption_rule": {
+      "biogen": "consume_exact_frozen_derived_table_cd310dd3_do_not_regenerate_split",
+      "split_generation_dependencies": "provenance_replay_only_not_analysis_runtime",
+      "analysis_rdkit_version": "2026.03.3",
+      "pxr": "consume_exact_locally_staged_revision_pinned_files"
+    },
+    "structure_canonicalization": {
+      "parser": "RDKit_Chem.MolFromSmiles_with_default_sanitization",
+      "serializer": "Chem.MolToSmiles(mol,canonical=True,isomericSmiles=True)",
+      "salt_stripping": false,
+      "largest_fragment_selection": false,
+      "charge_neutralization": false,
+      "tautomer_normalization": false,
+      "stereochemistry_removal": false,
+      "biogen_parse_failures": 0,
+      "biogen_unique_canonical_smiles": 3521,
+      "biogen_cross_split_canonical_overlap": 0,
+      "formal_runner_must_recompute_and_hash_ordered_vector": true
+    },
+    "row_identity": {
+      "biogen_source_row_index": "zero_based_physical_data_row_position_excluding_header_in_frozen_3521_row_derivative; retain_after_sentinel_filter; sort_ascending",
+      "pxr_source_row_index": "zero_based_physical_data_row_position_excluding_header_in_frozen_21003_row_single_concentration_CSV; retain_after_exact_parent_filter; sort_ascending",
+      "cohort_row_index": "assign_zero_through_N_minus_1_after_ascending_source_row_index_sort",
+      "source_row_index_never_reset_after_filter": true,
+      "acyclic_group_label": "ACYCLIC_SOURCE_ROW_<source_row_index>",
+      "ordered_source_index_hash_encoding": "signed_little_endian_int64_raw_bytes"
+    },
+    "biogen": {
+      "official_repository": "https://github.com/molecularinformatics/Computational-ADME",
+      "official_repository_commit": "b00df003de117ce9e5b381afd886095c5f2af2d5",
+      "official_repository_commit_date_utc": "2024-02-13T00:11:10Z",
+      "paper_doi": "10.1021/acs.jcim.3c00160",
+      "license": {
+        "spdx": "MIT",
+        "source": "repository_LICENSE_at_pinned_revision",
+        "url": "https://raw.githubusercontent.com/molecularinformatics/Computational-ADME/b00df003de117ce9e5b381afd886095c5f2af2d5/LICENSE",
+        "git_blob_sha1": "2ccfd2e7611c760f611bac0305d030a12daff532",
+        "local_path": "data/external/source_freeze_20260911/biogen/LICENSE",
+        "bytes": 1077,
+        "sha256": "06557ca6eeee99c162df4e5e819167c6103f35faffb51f7b0a4833905280a740"
+      },
+      "official_data": {
+        "filename": "ADME_public_set_3521.csv",
+        "url": "https://raw.githubusercontent.com/molecularinformatics/Computational-ADME/b00df003de117ce9e5b381afd886095c5f2af2d5/ADME_public_set_3521.csv",
+        "git_blob_sha1": "a1fc97b07b02b22c4255d0d8c5a8efec878e8015",
+        "local_path": "data/external/source_freeze_20260911/biogen/ADME_public_set_3521.csv",
+        "bytes": 388279,
+        "sha256": "2cfabc2667740c224487876c33b23124159ef43294e0f9e4d926cb6276c95a3b",
+        "rows": 3521,
+        "columns": 10,
+        "column_names": [
+          "Internal ID",
+          "Vendor ID",
+          "SMILES",
+          "CollectionName",
+          "LOG HLM_CLint (mL/min/kg)",
+          "LOG MDR1-MDCK ER (B-A/A-B)",
+          "LOG SOLUBILITY PH 6.8 (ug/mL)",
+          "LOG PLASMA PROTEIN BINDING (HUMAN) (% unbound)",
+          "LOG PLASMA PROTEIN BINDING (RAT) (% unbound)",
+          "LOG RLM_CLint (mL/min/kg)"
+        ],
+        "non_null_counts": {
+          "Internal ID": 3521,
+          "Vendor ID": 3521,
+          "SMILES": 3521,
+          "CollectionName": 3521,
+          "LOG HLM_CLint (mL/min/kg)": 3087,
+          "LOG MDR1-MDCK ER (B-A/A-B)": 2642,
+          "LOG SOLUBILITY PH 6.8 (ug/mL)": 2173,
+          "LOG PLASMA PROTEIN BINDING (HUMAN) (% unbound)": 194,
+          "LOG PLASMA PROTEIN BINDING (RAT) (% unbound)": 168,
+          "LOG RLM_CLint (mL/min/kg)": 3054
+        },
+        "duplicate_internal_id_rows": 0,
+        "duplicate_exact_smiles_rows": 0,
+        "ordered_internal_id_tab_smiles_sha256_utf8_lf": "5b31164bdda1b74e01aa7ba5c2a8da86e71471a0264db80df6fd3ff9f39b2d85"
+      },
+      "official_readme": {
+        "local_path": "data/external/source_freeze_20260911/biogen/README.md",
+        "bytes": 4409,
+        "sha256": "056e4811aa4c0e6ca096b8d1ae5d33a5d91f3ba02d1aad1ebce0d779c67be425"
+      },
+      "source_to_derived_mapping": {
+        "Internal ID": "Name",
+        "SMILES": "SMILES",
+        "LOG SOLUBILITY PH 6.8 (ug/mL)": "LOG_SOL",
+        "LOG HLM_CLint (mL/min/kg)": "LOG_HLM",
+        "LOG RLM_CLint (mL/min/kg)": "LOG_RLM",
+        "LOG MDR1-MDCK ER (B-A/A-B)": "LOG_MDR1_ER",
+        "LOG PLASMA PROTEIN BINDING (HUMAN) (% unbound)": "LOG_HPPB",
+        "LOG PLASMA PROTEIN BINDING (RAT) (% unbound)": "LOG_RPPB"
+      },
+      "source_to_derived_field_mismatches": {
+        "Name_from_Internal_ID": 0,
+        "SMILES": 0,
+        "LOG_SOL": 0,
+        "LOG_HLM": 0,
+        "LOG_RLM": 0,
+        "LOG_MDR1_ER": 0,
+        "LOG_HPPB": 0,
+        "LOG_RPPB": 0
+      },
+      "source_only_columns_not_carried_forward": [
+        "Vendor ID",
+        "CollectionName"
+      ],
+      "analysis_derivative": {
+        "path": "evidence/upstream/expansion_ml_comparison/biogen_adme_3521.csv",
+        "bytes": 352231,
+        "sha256": "cd310dd3911a9f9763d0581e6202bc20aaf8a810523d01e9ab5e403681a386b4",
+        "rows": 3521,
+        "columns": 10,
+        "column_names": [
+          "Name",
+          "SMILES",
+          "LOG_SOL",
+          "LOG_HLM",
+          "LOG_RLM",
+          "LOG_MDR1_ER",
+          "LOG_HPPB",
+          "LOG_RPPB",
+          "cluster",
+          "ds"
+        ],
+        "source_rows_dropped": 0,
+        "lineage_verified": true,
+        "must_consume_exact_bytes": true
+      },
+      "split_provenance": {
+        "source_contains_split": false,
+        "construction_repository": "https://github.com/PatWalters/expansion-ml-comparison.git",
+        "construction_revision": "06582771d48af8096f6b05a5a247b177189a8fa4",
+        "construction_files_sha256": {
+          "00b_prepare_biogen.py": "9fdbce90bedf7a12389065212e4c487b73aa93aa16e9368daff5cb97698290b2",
+          "clustering.py": "d5780d9628a569b8d667a3c3f799c5d10034939ab1f4d9c62a239e6e266433a5",
+          "config.py": "8d8453e5c5271d36c526c716d2a20147f7c1906138cb04f4bf892c1e39af6772",
+          "requirements.txt": "46cd31038da425de4e37a3e69bd691672a1a20ccbd3626b02cab1c2288804f1c"
+        },
+        "clustering": "BitBIRCH_Lean_ECFP4_2048_n_samples_for_std_50_threshold_mean_plus_4sd_branching_50_diameter_merge_5_recluster_iterations_shuffle_false",
+        "seed": 61453,
+        "test_fraction": 0.3,
+        "clusters": 1905,
+        "singletons": 1123,
+        "largest_cluster": 49,
+        "held_out_clusters": 555,
+        "train_rows": 2463,
+        "test_rows": 1058,
+        "clusters_straddling_train_test": 0,
+        "ordered_cluster_vector_sha256_utf8_lf": "c85847e68f2d726c325b0255722180201c0cca464fe0e2cbabbdb35734020a79",
+        "ordered_ds_vector_sha256_utf8_lf": "8ea3ebb25b17919946dd12111f4aa9d1f8f6c619b7ff9e28b1752501bbb89a79",
+        "independent_replay_environment": {
+          "python": "3.12",
+          "numpy": "2.5.2",
+          "pandas": "3.0.5",
+          "scipy": "1.17.1",
+          "scikit_learn": "1.9.0",
+          "rdkit": "2026.03.5",
+          "bblean": "0.10.3"
+        },
+        "independent_cluster_vector_exact_match": true,
+        "independent_split_vector_exact_match": true,
+        "analysis_rule": "provenance_only_consume_frozen_derivative_do_not_regenerate_ds"
+      },
+      "exact_counts": {
+        "all_rows": 3521,
+        "train_rows": 2463,
+        "test_rows": 1058,
+        "train_finite": {
+          "LOG_SOL": 1501,
+          "LOG_HLM": 2158,
+          "LOG_RLM": 2132,
+          "LOG_MDR1_ER": 1838,
+          "LOG_HPPB": 128,
+          "LOG_RPPB": 109
+        },
+        "test_finite": {
+          "LOG_SOL": 672,
+          "LOG_HLM": 929,
+          "LOG_RLM": 922,
+          "LOG_MDR1_ER": 804,
+          "LOG_HPPB": 66,
+          "LOG_RPPB": 59
+        }
+      }
+    },
+    "pxr": {
+      "dataset_url": "https://huggingface.co/datasets/openadmet/pxr-challenge-train-test",
+      "dataset_doi": "10.57967/hf/9731",
+      "revision": "8041adfc295cac7f0bf85b73a2d87f21c5302ab1",
+      "last_modified_utc": "2026-09-02T10:40:11Z",
+      "license": {
+        "spdx": "CC-BY-4.0",
+        "source": "Hugging_Face_dataset_metadata_and_README_front_matter_at_pinned_revision",
+        "standalone_license_file_present": false,
+        "readme_sha256": "8c695adef4e113d8a59ae2c20fcfc3a5f30a82fb6bd6cd89a141a531d08995d0"
+      },
+      "repository_inventory": {
+        "total_files": 196,
+        "top_level_files": 12,
+        "structure_ground_truth_pdb_files": 184,
+        "downloaded_analysis_files": 3
+      },
+      "files": {
+        "readme": {
+          "filename": "README.md",
+          "url": "https://huggingface.co/datasets/openadmet/pxr-challenge-train-test/resolve/8041adfc295cac7f0bf85b73a2d87f21c5302ab1/README.md",
+          "git_blob_sha1": "88b6b90264d6225d134d511c97ba0fc177355d66",
+          "local_path": "data/external/source_freeze_20260911/pxr/README.md",
+          "bytes": 6311,
+          "sha256": "8c695adef4e113d8a59ae2c20fcfc3a5f30a82fb6bd6cd89a141a531d08995d0"
+        },
+        "single_concentration_train": {
+          "filename": "pxr-challenge_single_concentration_TRAIN.csv",
+          "url": "https://huggingface.co/datasets/openadmet/pxr-challenge-train-test/resolve/8041adfc295cac7f0bf85b73a2d87f21c5302ab1/pxr-challenge_single_concentration_TRAIN.csv",
+          "git_blob_sha1": "f1516cf2d39c997fb4e91e0ba06f258b9b40e83d",
+          "local_path": "data/external/source_freeze_20260911/pxr/pxr-challenge_single_concentration_TRAIN.csv",
+          "bytes": 6290720,
+          "sha256": "e781f8405e919a248b9b832a7cb24e8a615d400ee9dc50beea0d70d8aeaa8c2f",
+          "rows": 21003,
+          "columns": 19,
+          "unique_OCNT_ID": 10870,
+          "unique_exact_SMILES": 10870,
+          "only_null_field": "Molecule Name",
+          "null_Molecule_Name_rows": 15237,
+          "column_names": [
+            "Molecule Name",
+            "OCNT Batch",
+            "SMILES",
+            "plate_id",
+            "compound_class",
+            "concentration_M",
+            "log2_fc_estimate",
+            "log2_fc_stderr",
+            "t_statistic",
+            "p_value",
+            "fdr_bh",
+            "neg_log10_fdr",
+            "median_log2_fc",
+            "n_replicates",
+            "cohens_d",
+            "experiment_name",
+            "OCNT_ID",
+            "split",
+            "source"
+          ]
+        },
+        "dose_response_train": {
+          "filename": "pxr-challenge_TRAIN.csv",
+          "url": "https://huggingface.co/datasets/openadmet/pxr-challenge-train-test/resolve/8041adfc295cac7f0bf85b73a2d87f21c5302ab1/pxr-challenge_TRAIN.csv",
+          "git_blob_sha1": "a97d8abaf0decd677c79460a9a7e3e36b398972f",
+          "local_path": "data/external/source_freeze_20260911/pxr/pxr-challenge_TRAIN.csv",
+          "bytes": 858687,
+          "sha256": "fdc2252bb5763ab5742e78cb1ba692bebe131a972cf83aa1bd45e43d8c5bc223",
+          "rows": 4139,
+          "columns": 18,
+          "rows_with_any_null": 0,
+          "unique_OCNT_ID": 4139,
+          "unique_exact_SMILES": 4139,
+          "column_names": [
+            "Molecule Name",
+            "SMILES",
+            "OCNT Batch",
+            "pEC50",
+            "Emax_estimate (log2FC vs. baseline)",
+            "Emax.vs.pos.ctrl_estimate (dimensionless)",
+            "pEC50_std.error (-log10(molarity))",
+            "Emax_std.error (log2FC vs. baseline)",
+            "Emax.vs.pos.ctrl_std.error (dimensionless)",
+            "pEC50_ci.lower (-log10(molarity))",
+            "pEC50_ci.upper (-log10(molarity))",
+            "Emax_ci.lower (log2FC vs. baseline)",
+            "Emax_ci.upper (log2FC vs. baseline)",
+            "Emax.vs.pos.ctrl_ci.lower (dimensionless)",
+            "Emax.vs.pos.ctrl_ci.upper (dimensionless)",
+            "Split",
+            "OCNT_ID",
+            "source"
+          ]
+        }
+      },
+      "column_map": {
+        "id": "OCNT_ID",
+        "smiles": "SMILES",
+        "batch": "OCNT Batch",
+        "concentration": "concentration_M",
+        "control_indicator": "compound_class",
+        "screen_log2fc": "log2_fc_estimate",
+        "screen_fdr": "fdr_bh",
+        "dose_response_pec50": "pEC50",
+        "dose_response_emax": "Emax_estimate (log2FC vs. baseline)"
+      },
+      "parent_and_selection": {
+        "parent_filter": "compound_class == 'Library' and concentration_M == 8.251e-06",
+        "concentration_M_exact": 8.251e-06,
+        "nominal_source_description": "10_micromolar",
+        "parent_rows": 10747,
+        "parent_unique_OCNT_ID": 10747,
+        "parent_duplicate_OCNT_ID_rows": 0,
+        "duplicate_aggregation": "none_parent_filter_and_dose_response_table_are_unique_by_OCNT_ID",
+        "ordered_parent_OCNT_ID_sha256_utf8_lf": "df3e6a7832c051eeb8b98520c646541cb9207d2e28b07e5c19537f3206238402",
+        "join_key": "OCNT_ID",
+        "followup_available_rows": 2722,
+        "followup_unavailable_rows": 8025,
+        "ordered_availability_vector_sha256_utf8_lf": "cd91cb263eadd8577ab4923b645eede5238c0afa906bf56160b4647c1d7b3d62",
+        "exact_SMILES_join_matches": 2375,
+        "OCNT_Batch_join_matches": 2700,
+        "OCNT_ID_with_multiple_exact_SMILES_across_files": 351,
+        "OCNT_ID_with_multiple_OCNT_Batch_across_files": 23,
+        "formal_hit_expression": "log2_fc_estimate > 1 and fdr_bh < 0.05",
+        "formal_hit_rows": 873,
+        "formal_hits_with_followup": 869,
+        "formal_hits_without_followup": 4,
+        "nonhit_rows": 9874,
+        "nonhit_rows_with_followup": 1853,
+        "nonhit_rows_without_followup": 8021,
+        "ordered_formal_hit_vector_sha256_utf8_lf": "38958812c6cffbc216fc991caf23af9f9e8c640a96fe407ed84bb0150cc64b02",
+        "selection_label": "documented_mixed_route_outcome_informed_advancement_indicator",
+        "absence_label": "unavailable_followup_or_nonadvancement_not_negative_activity_or_assay_failure"
+      }
+    },
+    "expansionrx_discovery": {
+      "dataset_revision": "6b898ccc43d10d25b230fb09e22a6e30c30022b5",
+      "train_sha256": "c5214ad8c8a4d7d4d09082fcce24fe16c97a980a1e0873b91b8c8e474b79f6e4",
+      "test_sha256": "e21c0ef19795317216287e924e00ca3ef9388b7032a7fa4c7f27e2580372c85e",
+      "raw_sha256": "f674ec74cca1146bc386f832a32d4b8d921d3c312f92cb436cc005901c724a3c",
+      "role": "lineage_only_no_confirmation_rows"
+    }
+  },
+  "confirmation_cohort": {
+    "dataset": "Biogen_public_ADME",
+    "train_selector": "ds == 'train'",
+    "test_selector": "ds == 'test'",
+    "sentinel_endpoints": [
+      "LOG_HLM",
+      "LOG_RLM"
+    ],
+    "sentinel_target_cohort": "test_rows_with_finite_released_numeric_sentinel_reference",
+    "regular_anchors": [
+      "LOG_SOL",
+      "LOG_MDR1_ER"
+    ],
+    "weak_information_stress_anchors": [
+      "LOG_HPPB",
+      "LOG_RPPB"
+    ],
+    "actual_mask_definition": "is_finite_numeric_reference",
+    "blank_label": "unavailable_public_reference",
+    "prohibited_blank_inferences": [
+      "not_measured",
+      "assay_failure",
+      "inactive",
+      "invalid",
+      "censored"
+    ],
+    "assay_floor_boundary": "released_numeric_value_is_analysis_reference_not_latent_uncensored_truth"
+  },
+  "prediction_models": {
+    "fit_once_before_missingness_experiments": true,
+    "training_rows": "derived_train_split_with_finite_endpoint_reference",
+    "ecfp_rf": {
+      "features": "ECFP_2048",
+      "n_estimators": 400,
+      "criterion": "squared_error",
+      "min_samples_leaf": 2,
+      "max_features": "sqrt",
+      "n_jobs": 1,
+      "random_state": 20260910
+    },
+    "ecfp_desc_xgb": {
+      "features": "ECFP_2048_plus_RDKit_217",
+      "n_estimators": 800,
+      "max_depth": 6,
+      "learning_rate": 0.03,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 1.0,
+      "booster": "gbtree",
+      "tree_method": "hist",
+      "device": "cpu",
+      "n_jobs": 1,
+      "objective": "reg:squarederror",
+      "eval_metric": "rmse",
+      "random_state": 20260910
+    },
+    "selection_or_tuning_on_confirmation_results": false,
+    "performance_based_model_removal": false
+  },
+  "molecular_features": {
+    "rdkit_version": "2026.03.3",
+    "fingerprint": {
+      "type": "Morgan_ECFP",
+      "radius": 2,
+      "n_bits": 2048,
+      "use_chirality": true
+    },
+    "rdkit_descriptors": {
+      "expected_count": 217,
+      "order": "alphabetical_name",
+      "require_finite_on_every_frozen_biogen_structure": true,
+      "mismatch_action": "STOP_SOURCE_FREEZE"
+    },
+    "max_train_similarity": "maximum_Tanimoto_to_endpoint_specific_prediction_training_rows",
+    "exclude_identifier_or_source_row_order": true,
+    "representations": {
+      "lowdim_11": {
+        "dimension": 11,
+        "components": [
+          "MolWt",
+          "MolLogP",
+          "TPSA",
+          "NumHDonors",
+          "NumHAcceptors",
+          "NumRotatableBonds",
+          "RingCount",
+          "FractionCSP3",
+          "HeavyAtomCount",
+          "MolMR",
+          "max_train_similarity"
+        ]
+      },
+      "full_2266": {
+        "dimension": 2266,
+        "components": [
+          "ECFP_2048",
+          "RDKit_217",
+          "max_train_similarity"
+        ]
+      }
+    }
+  },
+  "analysis_environment": {
+    "python": "3.12.0",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "scikit_learn": "1.8.0",
+    "rdkit": "2026.03.3",
+    "xgboost": "3.3.0",
+    "pyarrow": "17.0.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "split_provenance_environment_is_separate": true
+  },
+  "nuisance_factorial": {
+    "propensity_representations": [
+      "lowdim_11",
+      "full_2266"
+    ],
+    "loss_representations": [
+      "lowdim_11",
+      "full_2266"
+    ],
+    "full_factorial_cells": 4,
+    "confirmatory_loss_representation": "lowdim_11",
+    "full_loss_representation_status": "exploratory_only",
+    "propensity_by_loss_interaction_status": "exploratory_only",
+    "augmentation_instability_status": "negative_development_signal_exploratory_only_no_promotion"
+  },
+  "folds": {
+    "n_splits": 3,
+    "splitter": "GroupKFold",
+    "shuffle": false,
+    "random_state": null,
+    "group": "Bemis_Murcko_scaffold_from_canonicalized_structure",
+    "group_encoding": {
+      "cyclic": "SCAFFOLD::<Chem.MolToSmiles(MurckoScaffold.GetScaffoldForMol(mol),canonical=True,isomericSmiles=True)>",
+      "acyclic_empty_scaffold": "ACYCLIC_SOURCE_ROW_<source_row_index>",
+      "ordered_vector_hash": "UTF8_group_strings_joined_by_LF_without_terminal_LF"
+    },
+    "row_order": "ascending_retained_source_row_index",
+    "cohort_row_index_not_used_in_group_label": true,
+    "persist_hashes": [
+      "ordered_source_row_index_int64_le",
+      "ordered_group_strings_utf8_lf",
+      "ordered_fold_ids_int64_le"
+    ],
+    "one_vector_per_sentinel": true,
+    "reuse_across_anchors_mechanisms_seeds_models_and_factorial": true,
+    "ordered_vector_hash_encoding": "little_endian_signed_int64_raw_bytes",
+    "minimum_observed_training_rows_per_fold": 20,
+    "minimum_unavailable_training_rows_per_fold": 20,
+    "insufficient_support_action": "NONADJUDICATIVE_STOP_NO_RANDOM_FOLD_SUBSTITUTE"
+  },
+  "nuisance_models": {
+    "scaling": "fold_specific_StandardScaler_fit_on_all_nuisance_training_rows",
+    "propensity": {
+      "model": "LogisticRegression",
+      "penalty": "l2",
+      "C": 1.0,
+      "solver": "liblinear",
+      "class_weight": null,
+      "max_iter": 1000,
+      "random_state": 20260910,
+      "clip": [
+        0.05,
+        0.95
+      ]
+    },
+    "loss": {
+      "model": "Ridge",
+      "alpha": 10.0,
+      "solver": "lsqr",
+      "tol": 1e-06,
+      "fit_rows": "observed_nuisance_training_rows_only",
+      "truncate_predictions": false
+    }
+  },
+  "mask_contract": {
+    "mask_seeds": {
+      "start": 41001,
+      "stop_inclusive": 41100,
+      "count": 100
+    },
+    "reuse_one_R_vector_across_models_and_factorial_cells": true,
+    "rng_contract": "for_each_endpoint_anchor_mechanism_seed_instantiate_fresh_default_rng(seed)_and_draw_one_length_N_vector; same_endpoint_and_seed_intentionally_share_uniforms_across_anchors_and_mechanisms; never_carry_mutable_rng_across_cells",
+    "regular_anchors_only_in_semisynthetic_controls": true,
+    "mcar": {
+      "oracle_probability": "mean_direct_empirical_R_anchor_within_sentinel_target_cohort",
+      "generator": "default_rng(seed).random(N) < p_oracle"
+    },
+    "mar": {
+      "generator_features": "lowdim_11",
+      "generator_scaler": "StandardScaler_fit_on_complete_sentinel_target_cohort",
+      "generator_model": {
+        "model": "LogisticRegression",
+        "penalty": "l2",
+        "C": 1.0,
+        "solver": "liblinear",
+        "class_weight": null,
+        "max_iter": 1000,
+        "random_state": 20260910
+      },
+      "unshifted_score": "decision_function_on_complete_sentinel_target_cohort",
+      "oracle_clip": [
+        0.1,
+        0.9
+      ],
+      "intercept_shift_target": "mean_clipped_probability_equals_direct_empirical_coverage",
+      "intercept_shift_solver": {
+        "method": "bisection",
+        "initial_lower": -50.0,
+        "initial_upper": 50.0,
+        "updates": 200,
+        "update": "if_clipped_mean_at_midpoint_below_target_replace_lower_else_replace_upper",
+        "returned_delta": "midpoint_of_final_bounds"
+      },
+      "intercept_shift_absolute_tolerance": 1e-10,
+      "generator": "default_rng(seed).random(N) < p_oracle",
+      "interpretation": "benign_identifiable_semisynthetic_control_not_physical_missingness_model"
+    },
+    "direct_empirical": {
+      "R": "actual_anchor_availability_on_sentinel_target_cohort",
+      "oracle_probability_available": false,
+      "mechanism_label": "empirical_reference_availability_not_MCAR_MAR_or_MNAR"
+    }
+  },
+  "estimands_and_estimators": {
+    "loss": "abs(Y - prediction)",
+    "truth": "mean(loss)",
+    "complete_case": "sum(R*loss)/sum(R)",
+    "outcome_regression": "mean(mhat)",
+    "hajek_ipw": "sum(R*loss/p)/sum(R/p)",
+    "augmentation": "R*(loss-mhat)/p",
+    "pseudo_outcome": "mhat+augmentation",
+    "aipw": "mean(pseudo_outcome)",
+    "influence": "pseudo_outcome-mean(pseudo_outcome)",
+    "cluster_se": "sqrt((G/(G-1))*sum_g(sum_i_in_g(influence_i))^2)/N",
+    "confidence_interval": "aipw_plus_or_minus_1.96_times_cluster_se",
+    "coverage": "inclusive_lower_le_truth_le_upper",
+    "ess": "sum(R/p)^2/sum((R/p)^2)",
+    "ess_over_observed": "ess/sum(R)",
+    "p_fitted": "clip(p_raw,0.05,0.95)",
+    "clip_fraction": "mean((p_raw<0.05) or (p_raw>0.95)); strict_boundaries_over_all_N_rows",
+    "smd": "abs(sum(R*x/p)/sum(R/p)-mean_full(x))/sd_full_ddof0(x); x_is_original_unscaled_frozen_target_cohort_audit_feature_not_fold_scaled",
+    "maximum_normalized_observed_weight": "max_i_with_R1((R_i/p_i)/sum_j(R_j/p_j))",
+    "quantiles": "numpy.quantile(method='linear')_without_prerounding",
+    "formula_replay_absolute_tolerance": 1e-12
+  },
+  "confirmatory_hypotheses": {
+    "aggregation_rows_per_endpoint_mechanism": 400,
+    "aggregation": "pooled_median_absolute_estimation_error_over_2_regular_anchors_x_100_seeds_x_2_models_with_M_lowdim_11",
+    "oracle_row_deduplication": "select_exactly_P_full_2266_M_lowdim_11_rows_for_H1_oracle_and_fitted_terms; oracle_is_not_pooled_across_duplicated_P_rows",
+    "zero_or_nonfinite_denominator_action": "STOP_NO_EXTERNAL_CONFIRMATION",
+    "H1_PROPENSITY_INSTABILITY_CONFIRMED": {
+      "numerator": "median_absolute_estimation_error_oracle_aipw_P_full_2266_M_lowdim_11",
+      "denominator": "median_absolute_estimation_error_fitted_aipw_P_full_2266_M_lowdim_11",
+      "maximum_ratio": 0.5,
+      "required_cells": "both_sentinel_endpoints_separately_x_both_MCAR_and_MAR"
+    },
+    "H2_HIGH_DIMENSION_INSTABILITY_CONFIRMED": {
+      "error_numerator": "median_absolute_estimation_error_fitted_aipw_P_lowdim_11_M_lowdim_11",
+      "error_denominator": "median_absolute_estimation_error_fitted_aipw_P_full_2266_M_lowdim_11",
+      "maximum_error_ratio": 0.5,
+      "minimum_median_clip_fraction_reduction_full_minus_low": 0.2,
+      "required_cells": "both_sentinel_endpoints_separately_x_both_MCAR_and_MAR"
+    },
+    "conjunctive_confirmation": "H1_and_H2_must_both_pass_all_required_cells",
+    "augmentation": {
+      "status": "exploratory_negative",
+      "report": "oracle_aipw_to_oracle_ipw_absolute_estimation_error_ratio_by_endpoint_mechanism_and_M",
+      "aggregation_rows_per_endpoint_mechanism_M": 400,
+      "oracle_duplicate_selection": "select_P_full_2266_for_both_terms",
+      "expected_rows": 8,
+      "gate": null,
+      "post_result_promotion_allowed": false
+    },
+    "factorial_contrasts": {
+      "cell_statistic": "E[p,m]=median_over_100_seeds(abs(AIPW[p,m]-truth))",
+      "strata": "2_endpoints_x_2_regular_anchors_x_2_mechanisms_x_2_models",
+      "P": "0.5*((E[full,low]-E[low,low])+(E[full,full]-E[low,full]))",
+      "M": "0.5*((E[low,full]-E[low,low])+(E[full,full]-E[full,low]))",
+      "P_x_M": "(E[full,full]-E[low,full])-(E[full,low]-E[low,low])",
+      "expected_rows": 48,
+      "status": "exploratory_only"
+    },
+    "bootstrap": {
+      "resamples": 10000,
+      "random_state": 52001,
+      "rng": "instantiate_default_rng_52001_once",
+      "unit": "whole_mask_seed",
+      "retain_within_seed_cells": [
+        "anchors",
+        "prediction_models",
+        "propensity_representations",
+        "loss_representations"
+      ],
+      "draws_per_resample": 100,
+      "seed_index_matrix_shape": [10000, 100],
+      "exact_draw_api": "default_rng(52001).integers(0,100,size=(10000,100),endpoint=False,dtype=np.int64)",
+      "seed_label_mapping": "integer_j_indexes_the_jth_ascending_seed_label_from_41001_through_41100",
+      "seed_index_matrix_hash_encoding": "C_order_little_endian_int64_raw_bytes",
+      "seed_index_matrix_sha256_numpy_1_26_4": "0a0fa03a209b619393428cea5c45ac58e7c4dd2d2f70c573425b93dfd35ba481",
+      "persist_seed_index_matrix_sha256": true,
+      "reuse_same_seed_index_matrix_across_all_12_statistics": true,
+      "interval": "numpy_quantile_[0.025,0.975]_method_linear",
+      "adjudicative": false
+    }
+  },
+  "admission_gate": {
+    "candidate_specification": {
+      "propensity_representation": "lowdim_11",
+      "loss_representation": "lowdim_11"
+    },
+    "required_cells": 16,
+    "cell_grid": "2_sentinels_x_2_regular_anchors_x_2_models_x_2_mechanisms",
+    "all_cells_must_pass": true,
+    "error_ratio_denominator_rule": "B_CC_zero_or_nonfinite_or_resulting_ratio_nonfinite_is_NONADJUDICATIVE_FAIL_with_no_continuity_correction",
+    "criteria": {
+      "maximum_median_aipw_to_complete_case_absolute_estimation_error_ratio_mcar": 1.25,
+      "mcar_interpretation": "noninferiority_guard_not_improvement_claim",
+      "maximum_median_aipw_to_complete_case_absolute_estimation_error_ratio_mar": 0.75,
+      "minimum_empirical_95pct_coverage": 0.9,
+      "minimum_fifth_percentile_ess_over_observed": 0.5,
+      "maximum_median_clip_fraction": 0.1,
+      "maximum_95th_percentile_clip_fraction": 0.2,
+      "maximum_95th_percentile_max_abs_smd": 0.1,
+      "require_fold_class_support": true,
+      "require_all_finite": true
+    },
+    "interpretation": "necessary_not_sufficient_for_MAR_or_cross_endpoint_transportability",
+    "failure_action": "NO_INTERPRETED_FITTED_PROPENSITY_CORRECTION"
+  },
+  "direct_mask_translation_gate": {
+    "anchors": [
+      "LOG_SOL",
+      "LOG_MDR1_ER"
+    ],
+    "cells": 8,
+    "cell_grid": "2_sentinels_x_2_regular_anchors_x_2_models",
+    "candidate_specification": "P_lowdim_11_M_lowdim_11",
+    "always_compute_and_write_all_64_factorial_rows": true,
+    "requires_admission_gate_for_adjudication": true,
+    "admission_failure_label": "NOT_ADJUDICATED_ADMISSION_FAILED",
+    "require_all_8_candidate_regular_cells_pass_direct_overlap_gate": true,
+    "minimum_pooled_median_absolute_estimation_error_reduction_vs_complete_case": 0.25,
+    "minimum_cells_with_lower_aipw_absolute_estimation_error": 6,
+    "zero_or_nonfinite_complete_case_error_denominator_action": "NONADJUDICATIVE_FAIL",
+    "stress_anchors_excluded": [
+      "LOG_HPPB",
+      "LOG_RPPB"
+    ]
+  },
+  "direct_mask_overlap_gate": {
+    "minimum_observed_and_unavailable_per_fold": 20,
+    "maximum_clip_fraction": 0.1,
+    "minimum_ess_over_observed": 0.5,
+    "maximum_max_abs_smd": 0.1,
+    "maximum_normalized_observed_weight": 0.05,
+    "failure_label": "INELIGIBLE_OVERLAP"
+  },
+  "pxr_boundary": {
+    "primary_join_key": "OCNT_ID",
+    "structure_role": "canonicalized_identity_QC_not_sole_join_key",
+    "parent_filter": "compound_class == 'Library' and concentration_M == 8.251e-06",
+    "parent_rows": 10747,
+    "followup_available_rows": 2722,
+    "followup_unavailable_rows": 8025,
+    "followup_indicator": "OCNT_ID_occurs_in_frozen_dose_response_training_file",
+    "formal_hit_rule": {
+      "log2fc_strictly_greater_than": 1.0,
+      "fdr_strictly_less_than": 0.05,
+      "hit_rows": 873,
+      "hit_followup_available": 869,
+      "hit_followup_unavailable": 4,
+      "otherwise_rows": 9874,
+      "otherwise_followup_available": 1853,
+      "otherwise_followup_unavailable": 8021
+    },
+    "selection_strata": "formal_hit_true_and_formal_hit_false_only",
+    "fdr_score": "-log10(max(fdr_bh,1e-12)); finite_range_0_to_12; do_not_use_source_neg_log10_fdr",
+    "parent_structure_audit": {
+      "expected_smiles_parse_failures": 0,
+      "expected_unique_canonical_smiles": 10747,
+      "required_finite_structure_descriptor_rows": 10747,
+      "descriptor_set": "pxr_structure_10_only",
+      "biogen_217_descriptor_rule_does_not_apply": true,
+      "row_drop_allowed": false,
+      "mismatch_action": "STOP_IMPLEMENTATION_OR_DATA"
+    },
+    "propensity_specifications": {
+      "pxr_structure_10": [
+        "MolWt",
+        "MolLogP",
+        "TPSA",
+        "NumHDonors",
+        "NumHAcceptors",
+        "NumRotatableBonds",
+        "RingCount",
+        "FractionCSP3",
+        "HeavyAtomCount",
+        "MolMR"
+      ],
+      "pxr_structure_screen_12": [
+        "MolWt",
+        "MolLogP",
+        "TPSA",
+        "NumHDonors",
+        "NumHAcceptors",
+        "NumRotatableBonds",
+        "RingCount",
+        "FractionCSP3",
+        "HeavyAtomCount",
+        "MolMR",
+        "log2_fc_estimate",
+        "fdr_score"
+      ]
+    },
+    "propensity_fitting": {
+      "folds": 3,
+      "splitter": "GroupKFold",
+      "shuffle": false,
+      "random_state": null,
+      "group_and_encoding": "same_Bemis_Murcko_and_acyclic_singleton_contract_as_Biogen",
+      "row_order": "ascending_retained_source_row_index_from_frozen_21003_row_CSV",
+      "reuse_fold_vector_across_both_specifications": true,
+      "scaler": "fold_specific_StandardScaler",
+      "model": "LogisticRegression_L2_C1_liblinear_no_class_weight_max_iter1000_random_state20260910",
+      "clip": [0.05, 0.95],
+      "clip_fraction": "mean((p_raw<0.05) or (p_raw>0.95)); strict_boundaries_over_all_10747_rows"
+    },
+    "smd_contract": "normalized_R_over_p_observed_mean_vs_equal_weight_full_parent_mean_divided_by_full_parent_sd_ddof0; use_original_unscaled_parent_features_not_fold_scaled_values; audit_features_equal_each_specification; zero_variance_excluded_and_recorded",
+    "fitted_diagnostic_trigger": "either_propensity_specification_independently_triggers_abstention_if_any_fitted_overlap_threshold_fails",
+    "full_library_dose_response_point_estimate_allowed": false,
+    "prohibited_estimators_for_overriding_boundary": [
+      "IPW",
+      "AIPW",
+      "imputation",
+      "unbounded_extrapolation"
+    ],
+    "abstention_label": "ABSTAIN_NONIDENTIFIABLE_FULL_LIBRARY_DOSE_RESPONSE",
+    "abstention_triggers_any": {
+      "missing_documented_promotion_branch_or_selection_variable": true,
+      "public_files_do_not_reconstruct_official_parent_and_promoted_populations": true,
+      "selection_stratum_minimum_n": 50,
+      "selection_stratum_extreme_probability": [
+        0.01,
+        0.99
+      ],
+      "maximum_clip_fraction": 0.1,
+      "minimum_ess_over_observed": 0.5,
+      "maximum_max_abs_smd": 0.1,
+      "missing_nonadvanced_dose_response_truth_without_randomized_audit_or_identification_design": true
+    },
+    "allowed_output": "selection_map_overlap_diagnostics_and_overlap_restricted_description_only"
+  },
+  "integrity": {
+    "formal_result_directory": "artifacts/confirmatory/confirm_001/full",
+    "require_empty_formal_result_directory": true,
+    "write_formal_directory_once": true,
+    "require_independent_verifier": true,
+    "require_no_canonicalized_structure_cross_split_overlap": true,
+    "require_exact_cartesian_grids": true,
+    "require_shared_prediction_mask_and_fold_vectors": true,
+    "row_replay_seed": 41001,
+    "replay_tolerance": 1e-12,
+    "failure_decision": "STOP_IMPLEMENTATION_OR_DATA"
+  },
+  "vector_hash_encoding": {
+    "float_vectors": "np.asarray(v,dtype='<f8').tobytes(order='C')",
+    "float_vectors_apply_to": [
+      "generator_p_oracle",
+      "pxr_structure_10_p_raw",
+      "pxr_structure_10_p_clipped",
+      "pxr_structure_screen_12_p_raw",
+      "pxr_structure_screen_12_p_clipped"
+    ],
+    "fold_and_source_row_integer_vectors": "np.asarray(v,dtype='<i8').tobytes(order='C')",
+    "binary_vectors": "np.asarray(v,dtype='u1').tobytes(order='C')",
+    "binary_vectors_apply_to": [
+      "R",
+      "formal_hit",
+      "availability"
+    ],
+    "ordered_text_and_canonical_smiles_vectors": "'\\n'.join(str(v) for v in values).encode('utf-8')",
+    "text_separator": "LF",
+    "terminal_LF": false,
+    "metadata_prefix": false,
+    "same_encoding_required_in_audit_summary_manifest_and_verifier": true
+  },
+  "expected_outputs": {
+    "source_manifest.json": {
+      "required": true,
+      "path": "data/external/source_freeze_20260911/source_manifest.json",
+      "sha256": "be55555aed0b2a5bed095ae8d052500becd527c97c809d6db5b7a14e7548fd78",
+      "role": "pre_result_input_hashed_but_not_written_by_formal_runner"
+    },
+    "cohort_audit.csv": {
+      "required": true
+    },
+    "structure_audit.json": {
+      "required": true
+    },
+    "availability_map.csv": {
+      "required": true,
+      "expected_rows": 8
+    },
+    "predictions.parquet": {
+      "required": true,
+      "expected_rows": 3702,
+      "row_formula": "(929_LOG_HLM_plus_922_LOG_RLM)_times_2_models"
+    },
+    "nuisance_fold_assignments.parquet": {
+      "required": true,
+      "expected_rows": 1851
+    },
+    "generator_vectors.parquet": {
+      "required": true,
+      "expected_rows": 7404,
+      "row_formula": "(929_plus_922)_times_2_regular_anchors_times_2_mechanisms"
+    },
+    "semisynthetic_scenarios.csv": {
+      "required": true,
+      "expected_rows": 6400,
+      "row_formula": "2_sentinels_times_2_regular_anchors_times_2_mechanisms_times_100_seeds_times_2_models_times_2_P_times_2_M"
+    },
+    "actual_mask_scenarios.csv": {
+      "required": true,
+      "expected_rows": 64,
+      "row_formula": "2_sentinels_times_4_anchors_times_2_models_times_2_P_times_2_M"
+    },
+    "row_replay_seed41001.parquet": {
+      "required": true,
+      "expected_rows": 59232,
+      "row_formula": "(929_plus_922)_times_2_regular_anchors_times_2_mechanisms_times_2_models_times_2_P_times_2_M"
+    },
+    "factorial_contrasts.csv": {
+      "required": true,
+      "expected_rows": 56,
+      "row_formula": "48_factorial_error_contrasts_plus_8_exploratory_augmentation_ratios"
+    },
+    "bootstrap_intervals.csv": {
+      "required": true,
+      "expected_rows": 12,
+      "row_formula": "4_H1_error_ratios_plus_4_H2_error_ratios_plus_4_H2_clip_reductions"
+    },
+    "admission_gate.json": {
+      "required": true
+    },
+    "pxr_linkage_audit.csv": {
+      "required": true,
+      "expected_rows": 10747,
+      "layout": "one_wide_row_per_parent_in_ascending_retained_source_row_index",
+      "required_fields": [
+        "source_row_index",
+        "cohort_row_index",
+        "OCNT_ID",
+        "R_followup",
+        "formal_hit",
+        "smiles_parse_ok",
+        "descriptor_10_all_finite",
+        "canonical_smiles_sha256",
+        "murcko_group_sha256",
+        "fold",
+        "MolWt",
+        "MolLogP",
+        "TPSA",
+        "NumHDonors",
+        "NumHAcceptors",
+        "NumRotatableBonds",
+        "RingCount",
+        "FractionCSP3",
+        "HeavyAtomCount",
+        "MolMR",
+        "log2_fc_estimate",
+        "fdr_bh",
+        "fdr_score",
+        "p_raw_structure_10",
+        "p_clipped_structure_10",
+        "clipped_structure_10",
+        "p_raw_structure_screen_12",
+        "p_clipped_structure_screen_12",
+        "clipped_structure_screen_12",
+        "exact_smiles_match_if_linked",
+        "batch_match_if_linked",
+        "cross_file_exact_smiles_nunique",
+        "cross_file_batch_nunique"
+      ],
+      "public_release_allowed": false
+    },
+    "pxr_selection_strata.csv": {
+      "required": true,
+      "expected_rows": 2
+    },
+    "pxr_overlap_summary.csv": {
+      "required": true,
+      "expected_rows": 2,
+      "row_formula": "one_row_each_for_pxr_structure_10_and_pxr_structure_screen_12",
+      "required_vector_hashes": [
+        "ordered_source_row_index",
+        "ordered_murcko_group",
+        "ordered_fold",
+        "ordered_p_raw",
+        "ordered_p_clipped"
+      ]
+    },
+    "pxr_boundary_decision.json": {
+      "required": true
+    },
+    "summary.json": {
+      "required": true
+    },
+    "run_manifest.json": {
+      "required": true
+    },
+    "verification.md": {
+      "required": true
+    }
+  },
+  "post_run_decisions": {
+    "priority": "1_STOP_IMPLEMENTATION_OR_DATA;2_STOP_NO_EXTERNAL_CONFIRMATION;3_admission_then_all8_direct_overlap_then_direct_translation_then_PXR_boundary",
+    "GO_WRITE_CORRECTION_BOUNDED": "integrity_pass_and_H1_H2_confirm_and_admission_pass_and_all_8_candidate_regular_cells_direct_overlap_eligible_and_direct_translation_pass_and_PXR_boundary_complete",
+    "GO_WRITE_FALSIFICATION_BOUNDARY": "integrity_pass_and_H1_H2_confirm_and_correction_gate_fails_and_failure_retained_and_PXR_abstention_boundary_complete_then_fresh_publishability_audit",
+    "STOP_NO_EXTERNAL_CONFIRMATION": "H1_or_H2_fails_any_required_endpoint_by_mechanism_cell",
+    "STOP_IMPLEMENTATION_OR_DATA": "source_grid_fold_replay_formula_hash_leakage_or_finite_output_check_fails",
+    "REVISE_BOUNDARY_SOURCE": "all_frozen_PXR_bytes_schema_parent_linkage_counts_and_integrity_checks_pass_but_external_mixed_route_selection_documentation_is_newly_unavailable_or_contradicted"
+  },
+  "prohibited_post_result_changes": [
+    "add_or_remove_prediction_model",
+    "add_or_remove_endpoint_or_anchor",
+    "delete_seed_or_cell",
+    "change_fold_assignment",
+    "change_propensity_or_loss_features",
+    "change_clipping_or_penalty",
+    "change_effect_or_overlap_threshold",
+    "pool_endpoints_to_rescue_failed_endpoint_specific_gate",
+    "promote_augmentation_or_factorial_interaction_to_confirmatory",
+    "replace_PXR_with_a_favorable_dataset_without_new_decision_and_protocol"
+  ],
+  "public_release_boundary": {
+    "include": [
+      "code",
+      "retrieval_instructions",
+      "immutable_revisions",
+      "checksums",
+      "environment_lock",
+      "aggregate_tables",
+      "figures",
+      "nonstructural_verification_artifacts"
+    ],
+    "exclude_unless_separately_authorized": [
+      "raw_source_CSV",
+      "SMILES",
+      "fingerprints",
+      "descriptor_matrices",
+      "structure_keyed_row_replay",
+      "private_or_restricted_data"
+    ]
+  },
+  "anti_claims": [
+    "no_estimator_invention",
+    "no_general_ADMET_validation_framework_claim",
+    "no_inference_of_blank_value_cause",
+    "no_claim_that_transferred_mask_recreates_other_endpoint_biology",
+    "no_claim_that_gate_pass_proves_MAR_positivity_or_transportability",
+    "no_claim_that_PXR_is_proven_MNAR",
+    "no_full_library_PXR_dose_response_identification",
+    "no_temporal_prospective_or_official_Biogen_split_claim",
+    "no_latent_uncensored_truth_claim_for_assay_floor_values",
+    "no_clinical_wet_lab_or_prospective_drug_development_validation_claim"
+  ]
+}

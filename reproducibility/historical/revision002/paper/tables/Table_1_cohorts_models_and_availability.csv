@@ -1,0 +1,18 @@
+section,item,measure,value,display_note
+Biogen cohort,All structures,n,3521,"3,521 unique canonical structures"
+Biogen cohort,Derived train split,n,2463,structure-grouped; not official or prospective
+Biogen cohort,Derived test split,n,1058,zero canonical overlap with train
+Fixed predictor risk,HLM | XGB800,mean absolute risk,0.34801839252531991,target n=929
+Fixed predictor risk,HLM | RF400,mean absolute risk,0.45447354361854847,target n=929
+Fixed predictor risk,RLM | XGB800,mean absolute risk,0.41712359284690775,target n=922
+Fixed predictor risk,RLM | RF400,mean absolute risk,0.5435499926727736,target n=922
+Anchor availability,HLM | SOL,available/total,0.59203444564047347,550/929
+Anchor availability,HLM | MDR1,available/total,0.8040904198062433,747/929
+Anchor availability,HLM | HPPB,available/total,0.067814854682454198,63/929
+Anchor availability,HLM | RPPB,available/total,0.059203444564047303,55/929
+Anchor availability,RLM | SOL,available/total,0.59436008676789576,548/922
+Anchor availability,RLM | MDR1,available/total,0.80368763557483724,741/922
+Anchor availability,RLM | HPPB,available/total,0.062906724511930495,58/922
+Anchor availability,RLM | RPPB,available/total,0.056399132321041198,52/922
+PXR boundary,Parent library,n,10747,public-file-specific parent
+PXR boundary,Dose-response follow-up,fraction,0.2532799851121243,"2,722/10,747"

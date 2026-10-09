@@ -1,0 +1,9 @@
+{
+  "status": "PASS_EXACT_OR_TOLERANCE",
+  "prediction_rows": 3702,
+  "risk_rows": 8000,
+  "maximum_prediction_difference": 0.0,
+  "maximum_risk_estimate_difference": 0.0,
+  "prediction_tolerance": 1e-12,
+  "risk_tolerance": 1e-10
+}

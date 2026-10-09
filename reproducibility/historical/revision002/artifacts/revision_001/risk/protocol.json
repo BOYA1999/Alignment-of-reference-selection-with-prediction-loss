@@ -1,0 +1,65 @@
+{
+  "analysis_id": "revision_001_risk",
+  "classification": "POST_RESULT_DIAGNOSTIC_NOT_CONFIRMATORY",
+  "parent_result": "confirm_001/full_recovery_001",
+  "reviewer_items": ["II.1", "II.2", "V", "VI"],
+  "research_questions": [
+    "How large is original complete-case systematic bias compared with mask variance?",
+    "Does the original benefit component reject stable true-probability references?",
+    "Does centered-pseudo cluster uncertainty match fixed-cohort Bernoulli-mask uncertainty?",
+    "Does restricting to values strictly above the released minimum materially alter the descriptive selection-loss relationship?"
+  ],
+  "freeze_stage": "After inspection of original results, before generating any new calibration masks",
+  "new_fixed_predictor_fits": 0,
+  "new_nuisance_fits": 0,
+  "new_data_sources": 0,
+  "original_results_modified": false,
+  "source_run_manifest_sha256": "8da9b9c1d0425fff118d983a8491aceb57ae8b6085300eacf18cd8e0d7e6eac4",
+  "predictions_sha256": "7b996d697054c0144afe2f284dd3a5b83818c0b299cd804b41314931c7678bfb",
+  "generator_vectors_sha256": "a6b817b9a3db207dd84f1a816a7374a5a21b186c853b73c2f2c422a1bfc830f7",
+  "semisynthetic_scenarios_sha256": "e2040fc4c7c4168b2786f154af1acedff95824413ac1a30f8ea5526163217a32",
+  "row_replay_seed41001_sha256": "97674bcee17dcdb28f91d8ab23b87e6130dc79840a50985fad8cc6ba4507673e",
+  "original_analysis": {
+    "seeds": "41001 through 41100, all 100 retained",
+    "summary": "Signed bias, variance, RMSE and median absolute error for all stored cells; SE, interval width, coverage and mean-SE/MC-SD for AIPW",
+    "known_probabilities": "Finite-population covariance and correlation; T_p-T identity checked numerically",
+    "gate": "Original fitted low/low candidate and stored oracle-p low-M AIPW, each component separately; original gate unchanged",
+    "same_cell_table": "Exactly 16 original candidate cells, with probability-loss association, complete-case bias/variance, coverage and all support/error components"
+  },
+  "new_calibration": {
+    "population": "Original 929 HLM and 922 RLM measured cohorts; original two fixed predictors and SOL/MDR1 coverage targets",
+    "replicates": 10000,
+    "seeds": {"LOG_HLM": 61001, "LOG_RLM": 61002},
+    "paired_uniforms": "One 10000 by N uniform matrix per endpoint reused for all mechanisms, anchors and predictors",
+    "mask_law": "Independent Bernoulli draws within each replicate conditional on fixed probabilities",
+    "mechanisms": ["original MCAR", "original MAR", "loss-rank score coefficient 0.5", "loss-rank score coefficient 2.0"],
+    "new_score": "Average tied rank of full fixed loss, standardized to zero mean and unit population SD",
+    "new_probability": "clip(expit(beta*score+intercept),0.1,0.9); intercept bisection matches original endpoint-anchor mean probability within 1e-12",
+    "new_mechanism_boundary": "Idealized outcome-informed, loss-directed calibration. Not a claim of observational MAR or an identifiable empirical selection model.",
+    "methods": ["complete case", "true-p Horvitz-Thompson", "true-p Hajek", "true-p AIPW with fixed m=T", "misspecified constant-p AIPW with fixed m=T", "true-p AIPW with fixed stored low-M from original MAR seed 41001"],
+    "fixed_m_boundary": "m=T is oracle-assisted and not deployable; stored m is held fixed independently of new mask draws, so this is conditional fixed-nuisance calibration, not recalibration of all original cross-fits",
+    "design_variance": "N^-2 sum p(1-p)/q^2*(L-m)^2, reducing to N^-2 sum (1-p)/p*(L-m)^2 when q=p; exact variance conditional on fixed loss and nuisance predictions",
+    "intervals": "Normal intervals centered at each estimate using true design variance; legacy centered-pseudo cluster intervals additionally evaluated for two AIPW references. Normal approximation is assessed, not assumed exact.",
+    "mc_uncertainty": "MC standard error of bias and coverage; Wilson 95% MC intervals for estimated coverage",
+    "threshold": "Only original benefit/noninferiority component (0.75 for MAR/stress, 1.25 for MCAR) is evaluated in new mechanisms. No formal false-positive or false-negative rate is assigned to the full conjunctive admission rule.",
+    "complete_observation_control": "p=1, true mask variance exactly zero, legacy centered-pseudo cluster SE reported",
+    "batch_size": 500,
+    "estimated_resources": "CPU only, under 1 GB memory for this task, minutes not model-training hours",
+    "stop_condition": "Run exactly the fixed mechanisms and replicates once; no adaptive extra levels, no tuning to pass"
+  },
+  "nonminimum_sensitivity": {
+    "subset": "Reference strictly greater than minimum released value for each endpoint",
+    "fixed": "Original prediction and probability vectors, original 100 masks generated over parent N then restricted",
+    "recomputed": "Subset truth, p-loss association, complete-case and oracle-Hajek mask summaries",
+    "boundary": "Changes finite population and support. Not directly interchangeable with full-cohort results; no claims about rerun cross-fitted candidate nuisance performance or latent censoring."
+  },
+  "paper_mapping": {
+    "parent_matrix_id": "A4",
+    "additional_parent_matrix_id": "A1",
+    "paper_role": "claim-carrying diagnostic correction and supporting sensitivity",
+    "section_id": "Results admission and uncertainty; Discussion interpretation",
+    "claim_links": ["C2"],
+    "target_display": "New supplementary Tables S8 onward and compact main-text summary",
+    "next_route": "Write bounded reinterpretation and retain all original decisions as historical operational outcomes"
+  }
+}

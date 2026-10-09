@@ -1,0 +1,10 @@
+Analysis,Denominator,Quantity,Result,Scope
+Original MAR,8 cells × 100 masks,CC signed bias,-0.002879 to 0.003924,Fixed measured cohorts
+Observable MW selection,16 cells × 100 refits,Low M / CC median-error ratio,0.411 to 2.298,Actual nuisance refits
+Observable MW selection,16 cells × 100 refits,Drop Ipc / CC median-error ratio,0.438 to 2.587,Same low-dimensional P
+Matched fitted comparator,16 cells × 100 paired masks,Median-error count better than fitted Hajek,Low AIPW 3/16; Drop AIPW 1/16,Same fitted P; descriptive counts
+Matched fitted comparator,16 cells × 100 paired masks,Fitted Hajek better than CC,11/16,No conditional-loss model
+Fixed concentration choice,16 cells × 100 masks in each collection,Mean error change vs always low AIPW,+4.50% bridge; +12.61% original,Fixed rule; negative utility result
+Raw full loss nuisance,"1,600 estimates per P",Known case ranks first,"1,600 / 1,600 for all three P",100 original masks per cell
+Fixed marginal alignment,"8 cells × 10,000 masks per pairing",Oracle Hajek / CC ratio,0.113 to 0.168,Idealized loss-informed pairing
+Structure-split perturbation,80 MAR cells × 100 masks per loss specification,Raw/Drop median-error ratio,"1,797 to 504,693 with case in evaluation; 0.916 to 1.167 when absent",10 partitions × 2 endpoints × 2 anchors × 2 predictors

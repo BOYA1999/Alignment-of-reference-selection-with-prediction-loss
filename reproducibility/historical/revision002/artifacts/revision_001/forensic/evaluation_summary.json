@@ -1,0 +1,49 @@
+{
+  "reviewer_item": "C4",
+  "parent_analysis": "A3",
+  "claim_links": [
+    "C2"
+  ],
+  "paper_role": "supporting",
+  "section_id": "high_dimensional_loss_configuration",
+  "item_id": "revision_C4_forensic",
+  "main_or_appendix": "brief_main_result_and_supplementary_decomposition",
+  "status": "COMPLETED_POST_RESULT_SINGLE_SEED_DIAGNOSTIC",
+  "seed": 41001,
+  "distinct_loss_vectors": 16,
+  "fold_fits": 24,
+  "row_model_predictions": 14808,
+  "dominant_feature": "Ipc",
+  "dominant_row_observed_in_any_of_eight_masks": false,
+  "dominant_absolute_pseudo_outcome_share_range": [
+    0.994646,
+    0.999735
+  ],
+  "stable_sensitivity": "clip_held_out_Ipc_to_complete_nuisance_training_fold_range_only",
+  "hyperparameter_search": false,
+  "solver_path": "independently_centered_dense_dual_ridge_alpha_10",
+  "exact_model_fit_replay": false,
+  "solver_equation_max_relative_residual": 4.17e-15,
+  "maximum_AIPW_difference_dual_vs_stored": 0.06331,
+  "clipped_median_absolute_error_lowdim_propensity": 0.005951,
+  "clipped_maximum_absolute_error_lowdim_propensity": 0.018222,
+  "clipped_median_absolute_error_full_propensity": 0.074673,
+  "clipped_maximum_absolute_error_full_propensity": 0.175386,
+  "clipped_median_absolute_error_oracle_propensity": 0.005701,
+  "clipped_maximum_absolute_error_oracle_propensity": 0.015971,
+  "frozen_file_count": 19,
+  "frozen_files_unchanged": true,
+  "source_runner_and_verifier_hash_match": true,
+  "saved_estimate_recalculation_rows": 256,
+  "saved_estimate_recalculation_maximum_absolute_difference": 2.220446049250313e-16,
+  "comparability": "Same seed, rows, masks, folds, fixed losses, propensity probabilities and ridge coefficients; only held-out Ipc values vary in the stability sensitivity.",
+  "manuscript_takeaway": "A single unobserved held-out compound with extreme Ipc extrapolation dominates the selected seed's high-dimensional AIPW risk. A dense independent ridge solve retains the anomaly, while clipping that feature to the training range removes the catastrophic scale but does not establish general estimator validity.",
+  "failure_interpretation": "Configuration-specific descriptor extrapolation; evidence does not support a general high-dimensional representation failure claim.",
+  "limitations": [
+    "Post-result diagnostic of one existing replay seed, not a new confirmation or all-seed refit.",
+    "Fresh LSQR model fits are numerically close but not bitwise identical to stored fits; their floating-point difference is not fully isolated.",
+    "The oracle rows repeat across propensity representations and are not independent evidence.",
+    "A stable numerical scale is not proof of unbiasedness, transportability, or identification."
+  ],
+  "next_route": "WRITE_NARROWED_MECHANISTIC_INTERPRETATION_NO_FURTHER_SWEEP"
+}

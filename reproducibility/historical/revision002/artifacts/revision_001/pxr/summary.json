@@ -1,0 +1,96 @@
+{
+  "analysis_id": "revision_001_pxr",
+  "review_items": [
+    "PXR_one_sided_positivity",
+    "PXR_clipping_tails",
+    "PXR_table_membership_vs_endpoint_validity"
+  ],
+  "design": "Post-result descriptive reaggregation of frozen probabilities and pinned source tables; no nuisance refit or risk estimation.",
+  "parent_n": 10747,
+  "dose_table_n": 4139,
+  "parent_table_member_n": 2722,
+  "formal_hit": {
+    "n": 873,
+    "table_member_n": 869,
+    "fraction": 0.995418098510882
+  },
+  "non_hit": {
+    "n": 9874,
+    "table_member_n": 1853,
+    "fraction": 0.18766457362770914
+  },
+  "stored_upper_extreme_trigger_is_not_missing_outcome_positivity_failure": true,
+  "positivity_condition": "p(R=1 | X=x)>0 on the target support; p near 1 alone is not a missing-outcome identification obstacle.",
+  "selection_assumption_status": "NOT_ESTABLISHED_BY_PUBLIC_RECORDS",
+  "revised_interpretation": "FULL_LIBRARY_RISK_NOT_ESTIMATED_ASSUMPTIONS_AND_LOSS_CONTRACT_UNESTABLISHED",
+  "dose_columns": [
+    "Molecule Name",
+    "SMILES",
+    "OCNT Batch",
+    "pEC50",
+    "Emax_estimate (log2FC vs. baseline)",
+    "Emax.vs.pos.ctrl_estimate (dimensionless)",
+    "pEC50_std.error (-log10(molarity))",
+    "Emax_std.error (log2FC vs. baseline)",
+    "Emax.vs.pos.ctrl_std.error (dimensionless)",
+    "pEC50_ci.lower (-log10(molarity))",
+    "pEC50_ci.upper (-log10(molarity))",
+    "Emax_ci.lower (log2FC vs. baseline)",
+    "Emax_ci.upper (log2FC vs. baseline)",
+    "Emax.vs.pos.ctrl_ci.lower (dimensionless)",
+    "Emax.vs.pos.ctrl_ci.upper (dimensionless)",
+    "Split",
+    "OCNT_ID",
+    "source"
+  ],
+  "curve_class_or_rollover_or_individual_qc_columns_present": [],
+  "predictor_loss_eligibility_contract": "Not specified for PXR; finite released parameters are not an independently validated loss-eligibility indicator.",
+  "input_sha256": {
+    "artifacts/confirmatory/confirm_001/full_recovery_001/pxr_linkage_audit.csv": "d45fb99e8271038af8b264d603699382a62c1d1fc5d4c5e519c5e2981de9c1ba",
+    "artifacts/confirmatory/confirm_001/full_recovery_001/pxr_overlap_summary.csv": "e36325a9478f35e3e0c53132c61088f80c76535e7925c9e60e2dda1b54e8b63c",
+    "data/external/source_freeze_20260911/pxr/pxr-challenge_TRAIN.csv": "fdc2252bb5763ab5742e78cb1ba692bebe131a972cf83aa1bd45e43d8c5bc223",
+    "data/external/source_freeze_20260911/pxr/pxr-challenge_single_concentration_TRAIN.csv": "e781f8405e919a248b9b832a7cb24e8a615d400ee9dc50beea0d70d8aeaa8c2f",
+    "data/external/source_freeze_20260911/pxr/README.md": "8c695adef4e113d8a59ae2c20fcfc3a5f30a82fb6bd6cd89a141a531d08995d0"
+  },
+  "frozen_19_sha256": {
+    "actual_mask_scenarios.csv": "92ce0f5302bad0e43a7310cfe3d2c85aa5d04e45f3f79765388b274a27045eb7",
+    "admission_gate.json": "fb100c8cad8d91680874f24219eae72e2e6765cd80f0c3941dd6fe43c4046d6e",
+    "availability_map.csv": "a7b38356d5783fdc3deb310ec8b46179ceecf0656e19b0f385f5b3d4a1ec63ed",
+    "bootstrap_intervals.csv": "44cade4a78cc14de38e32f63b904e319e18290bb24459bce3bbd9ee53626876c",
+    "cohort_audit.csv": "553b080eb61727af412087128a651ecdda883ef7a716386ba256a822e66efef0",
+    "factorial_contrasts.csv": "cdae19ad818539ee7b1c86daec5d231bdc2eda7c395f3eb705077f97300672ff",
+    "generator_vectors.parquet": "a6b817b9a3db207dd84f1a816a7374a5a21b186c853b73c2f2c422a1bfc830f7",
+    "nuisance_fold_assignments.parquet": "03dc22c344471ed09e51451fc9a79cd38b70f183565bf9034965f9b8b0e268a3",
+    "predictions.parquet": "7b996d697054c0144afe2f284dd3a5b83818c0b299cd804b41314931c7678bfb",
+    "pxr_boundary_decision.json": "aa4f17bcea4f42958968b0a8b8f53223bc60bca0d06d3d4834f04bcf55ada2b0",
+    "pxr_linkage_audit.csv": "d45fb99e8271038af8b264d603699382a62c1d1fc5d4c5e519c5e2981de9c1ba",
+    "pxr_overlap_summary.csv": "e36325a9478f35e3e0c53132c61088f80c76535e7925c9e60e2dda1b54e8b63c",
+    "pxr_selection_strata.csv": "fb5c4f6f2a6a3a8810bf4b677b82c68962f01193c2ad8d6cd694549bdf4339a6",
+    "row_replay_seed41001.parquet": "97674bcee17dcdb28f91d8ab23b87e6130dc79840a50985fad8cc6ba4507673e",
+    "run_manifest.json": "8da9b9c1d0425fff118d983a8491aceb57ae8b6085300eacf18cd8e0d7e6eac4",
+    "semisynthetic_scenarios.csv": "e2040fc4c7c4168b2786f154af1acedff95824413ac1a30f8ea5526163217a32",
+    "structure_audit.json": "a5233c5e7d9bfe74d201e761a59c50556d323ea67ab2d1b36f0477b1e6d4b6ea",
+    "summary.json": "784132d1df5ab6a99a934bf2c53d17c7d11f650beb4b733be222011f060986ae",
+    "verification.md": "7ef5b2cdb2d1885b074250402efd313aa9758b337b4f486147ddc10e0042af99"
+  },
+  "sources": [
+    {
+      "url": "https://openadmet.ghost.io/announcing-the-next-openadmet-blind-challenge-predicting-pxr-induction/",
+      "retrieved": "2026-09-12",
+      "supports": "additional analog/diversity follow-up, curve classification and constrained Bayesian fitting, post-processing QC and reduced final training size"
+    },
+    {
+      "url": "https://arxiv.org/html/2606.14506v1#S3",
+      "retrieved": "2026-09-12",
+      "supports": "Assumption 3.3 specifies label-observation positivity as a lower bound; preprint, June 2026"
+    }
+  ],
+  "script_sha256": "b81a1a90b9176afc5d572e63596efb3a3349712ef3e5992749c9d98850918f69",
+  "frozen_19_unchanged": true,
+  "output_sha256": {
+    "propensity_tails.csv": "3cd89f5aaff0bd865906eaf43c0110154bb0b3a5df0fd889505241bc62ae8f3a",
+    "weighting_sensitivity.csv": "50db33f75161976bca4c0656a385d84cb9261ad2aca02aa5352be21d95f53908",
+    "feature_balance.csv": "a4ba97ae1bdf9e9300c38e6eb2953f4151110b3deabb804d3d144656540770d1",
+    "parameter_completeness.csv": "10dd359ab2884f262c94bda9aef37dcb104c2bb2e855fc4c1298b2f0e3bc17d5"
+  }
+}

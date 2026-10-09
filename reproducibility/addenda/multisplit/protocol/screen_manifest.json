@@ -1,0 +1,42 @@
+{
+  "status": "PASS_SCREEN_CLEAR_TO_FULL",
+  "screen_role": "outcome_blind_partition_and_descriptor_support_only",
+  "seeds": [
+    61453,
+    61454,
+    61455,
+    61456,
+    61457,
+    61458,
+    61459,
+    61460,
+    61461,
+    61462
+  ],
+  "case_in_target_splits": [
+    61453,
+    61456,
+    61459,
+    61461
+  ],
+  "minimum_target_endpoint_rows": 908,
+  "all_target_endpoint_rows_at_least_900": true,
+  "environment": {
+    "python": "3.12.0",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "scikit_learn": "1.8.0",
+    "rdkit": "2026.03.3",
+    "xgboost": "3.3.0",
+    "pyarrow": "17.0.0",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "source_hashes": {
+    "protocol.md": "8e082a7f7841e52b12a91e5ec7c5857df14dd7e591ec85ad365044dba4a40f6a",
+    "split_assignments.csv": "bfde6fda078c3f1b7a359ee728007e79b70adf2ffffa2f9d5d2dd67bd65bc16d",
+    "source_derivative": "cd310dd3911a9f9763d0581e6202bc20aaf8a810523d01e9ab5e403681a386b4",
+    "script": "dfc356088532800b08104295fad9e7f9e3f4211b20df4b229bdbdcd0a6aa646c"
+  },
+  "output_sha256": "28ecd58cea95fcc1191afec9ab40911b8caaa5cf52cc09fac0d5d5945c5876f1"
+}

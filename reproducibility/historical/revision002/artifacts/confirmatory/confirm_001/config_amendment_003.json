@@ -1,0 +1,127 @@
+{
+  "study_id": "confirm_001",
+  "amendment_id": "config_amendment_003",
+  "created_at": "2026-09-11T08:45:00+08:00",
+  "status": "PENDING_INDEPENDENT_VERIFICATION_RECOVERY_AUDIT",
+  "amendment_class": "IMPLEMENTATION_ONLY_VERIFIER_REPLAY",
+  "protocol_amendment": {
+    "path": "artifacts/confirmatory/confirm_001/protocol_amendment_003.md",
+    "sha256": "458d0217da500b89a89c28018e07f2df18b3d741f1fb13e068451cef0a447adb"
+  },
+  "verification_failure": {
+    "path": "artifacts/confirmatory/confirm_001/independent_verification_failure_001.md",
+    "sha256": "3a6ac0a67988d3037831f9f21a084b814f78e701ec464c5e224b09018e74c8a1",
+    "state": "INDEPENDENT_VERIFICATION_FAILED_BEFORE_RESULT_ACCEPTANCE",
+    "exit_code": 1,
+    "first_failing_check": "generator probability hash mismatch"
+  },
+  "consumed_authorization": {
+    "decision_006_path": "artifacts/decisions/006_confirm_001_clear_to_recovery_smoke.md",
+    "decision_006_sha256": "96cd052f18c9442ebe9b3b3524da7b88539c0896f6541dbc675cf9cb094cee0b",
+    "decision_007_path": "artifacts/decisions/007_confirm_001_clear_to_recovery_full.md",
+    "decision_007_sha256": "faea63b749016aaaf570888ca5cbc99fda856088c53ac02f489fca3df7f45fe7",
+    "decision_007_consumed": true
+  },
+  "code_identity": {
+    "runner_path": "src/run_confirmatory.py",
+    "runner_sha256": "650a8b8f6b9bf65db69efc7ba60340aafa99c3c4b8b5bba957a8e6c6fa800c5c",
+    "original_verifier_path": "src/verify_confirmatory.py",
+    "original_verifier_sha256": "740e31590ec40f40f7783e59889d265c3d5d20296901c3968d4b593986238715",
+    "original_files_must_remain_unchanged": true
+  },
+  "immutable_full_output": {
+    "path": "artifacts/confirmatory/confirm_001/full_recovery_001",
+    "file_count": 19,
+    "run_manifest_sha256": "8da9b9c1d0425fff118d983a8491aceb57ae8b6085300eacf18cd8e0d7e6eac4",
+    "summary_sha256": "784132d1df5ab6a99a934bf2c53d17c7d11f650beb4b733be222011f060986ae",
+    "runner_verification_sha256": "7ef5b2cdb2d1885b074250402efd313aa9758b337b4f486147ddc10e0042af99",
+    "generator_vectors_sha256": "a6b817b9a3db207dd84f1a816a7374a5a21b186c853b73c2f2c422a1bfc830f7",
+    "expected_files": [
+      "actual_mask_scenarios.csv",
+      "admission_gate.json",
+      "availability_map.csv",
+      "bootstrap_intervals.csv",
+      "cohort_audit.csv",
+      "factorial_contrasts.csv",
+      "generator_vectors.parquet",
+      "nuisance_fold_assignments.parquet",
+      "predictions.parquet",
+      "pxr_boundary_decision.json",
+      "pxr_linkage_audit.csv",
+      "pxr_overlap_summary.csv",
+      "pxr_selection_strata.csv",
+      "row_replay_seed41001.parquet",
+      "run_manifest.json",
+      "semisynthetic_scenarios.csv",
+      "structure_audit.json",
+      "summary.json",
+      "verification.md"
+    ],
+    "write_allowed": false,
+    "runner_rerun_allowed": false
+  },
+  "root_cause": {
+    "runner_lowdim_order": "F_CONTIGUOUS",
+    "verifier_lowdim_order": "C_CONTIGUOUS",
+    "source_derived_values_bit_exact": true,
+    "runner_strides_bytes": {
+      "LOG_HLM": [8, 7432],
+      "LOG_RLM": [8, 7376]
+    },
+    "verifier_strides_bytes": {
+      "LOG_HLM": [88, 8],
+      "LOG_RLM": [88, 8]
+    },
+    "mcar_probability_vectors_bit_exact": 4,
+    "mar_probability_vectors_reproduced_bit_exact_after_f_order": 4,
+    "frozen_seed_threshold_comparisons": 370200,
+    "mask_flips": 0,
+    "mar_maximum_absolute_probability_difference": {
+      "LOG_HLM__LOG_SOL": 4.3520742565306136e-14,
+      "LOG_HLM__LOG_MDR1_ER": 4.808616838047897e-10,
+      "LOG_RLM__LOG_SOL": 4.440892098500626e-15,
+      "LOG_RLM__LOG_MDR1_ER": 4.8717696543576494e-12
+    }
+  },
+  "sole_code_correction": {
+    "operation": "np.asfortranarray(lowdim, dtype=np.float64)",
+    "context_keys": [
+      "lowdim",
+      "representations.lowdim_11"
+    ],
+    "require_preconversion_c_contiguous": true,
+    "require_postconversion_f_contiguous": true,
+    "require_float64": true,
+    "require_shape_unchanged": true,
+    "require_elementwise_bit_identity": true,
+    "other_context_mutation_allowed": false
+  },
+  "supplemental_checks": {
+    "stored_generator_probability_rehash": "BIT_EXACT",
+    "stored_mar_score_shift_expit_clip_replay": "BIT_EXACT",
+    "independent_source_reconstruction": "REQUIRED",
+    "original_full_verifier": "RUN_COMPLETE_WITHOUT_SKIPS",
+    "formula_rtol": 0.0,
+    "formula_atol": 1e-12,
+    "exact_hash_checks_retained": true,
+    "tolerance_relaxed": false
+  },
+  "fixed_paths": {
+    "supplemental_verifier": "src/verify_confirmatory_replay.py",
+    "amendment_audit": "artifacts/confirmatory/confirm_001/amendment_003_independent_audit.md",
+    "static_audit": "artifacts/confirmatory/confirm_001/verification_replay_001_static_audit.md",
+    "decision_008": "artifacts/decisions/008_confirm_001_clear_to_verification_replay.md",
+    "verification_output": "artifacts/confirmatory/confirm_001/full_recovery_001_independent_verification.json",
+    "paths_initially_absent": true,
+    "write_once": true
+  },
+  "authorization_sequence": [
+    "CLEAR_TO_IMPLEMENT_VERIFIER_REPLAY",
+    "CLEAR_TO_VERIFICATION_REPLAY",
+    "Decision 008",
+    "one read-only verification replay"
+  ],
+  "scientific_contract_unchanged": true,
+  "scientific_interpretation_allowed_before_pass": false,
+  "runner_execution_authorized": false
+}

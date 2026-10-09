@@ -1,0 +1,182 @@
+{
+  "study_id": "confirm_001",
+  "amendment_id": "config_amendment_004",
+  "created_at": "2026-09-11T09:12:00+08:00",
+  "status": "PENDING_INDEPENDENT_VERIFICATION_RECOVERY_AUDIT",
+  "amendment_class": "IMPLEMENTATION_ONLY_VERIFIER_REPLAY_002",
+  "protocol_amendment": {
+    "path": "artifacts/confirmatory/confirm_001/protocol_amendment_004.md",
+    "sha256": "00482a584e320e7b8188fe29a6db9f1f5bf1349874062c473e1d407273e8f3e3"
+  },
+  "failed_replay": {
+    "failure_record_path": "artifacts/confirmatory/confirm_001/independent_verification_failure_002.md",
+    "failure_record_sha256": "455c8e3928099fb31452801b5cec1c12d3ab716eaba1a03dd4ca8ee59a94e634",
+    "state": "INDEPENDENT_VERIFICATION_REPLAY_001_FAILED_BEFORE_RESULT_ACCEPTANCE",
+    "exit_code": 1,
+    "first_failing_check": "value mismatch: pxr_overlap_summary.csv/smd_json",
+    "consumed_decision_008_path": "artifacts/decisions/008_confirm_001_clear_to_verification_replay.md",
+    "consumed_decision_008_sha256": "3cc6426bdebeb739d31d8d0cee1092d7de7ac8c4625b6b2004011390fec43216",
+    "supplemental_verifier_001_path": "src/verify_confirmatory_replay.py",
+    "supplemental_verifier_001_sha256": "4e95a20d5a3c74d5c96122b80fc37cf5d44892c4438e846b781899fbf2212a57",
+    "static_audit_001_path": "artifacts/confirmatory/confirm_001/verification_replay_001_static_audit.md",
+    "static_audit_001_sha256": "df4c666f97390258e164d7c65cda527d388d7e82f7fefbfc9ba44cd6010ffe35",
+    "failed_verification_output_path": "artifacts/confirmatory/confirm_001/full_recovery_001_independent_verification.json",
+    "failed_verification_output_must_remain_absent": true
+  },
+  "prior_chain": {
+    "failure_record_001_sha256": "3a6ac0a67988d3037831f9f21a084b814f78e701ec464c5e224b09018e74c8a1",
+    "protocol_amendment_002_sha256": "d34c1053da408a3e349c2ecdc20d1e49f8aa5cda9dd491746146d621c5988d9f",
+    "config_amendment_002_sha256": "144af9c376929f24699452051abed2ddb5243ab8cdf47c8f4024e219ac278984",
+    "amendment_002_audit_sha256": "7a266a7614729ccf5bb2ff13890eabb6d2e6e32cc0ebc66ea21a34c8f1a821c3",
+    "protocol_amendment_003_sha256": "458d0217da500b89a89c28018e07f2df18b3d741f1fb13e068451cef0a447adb",
+    "config_amendment_003_sha256": "690875bca0afcd95a44946c57aa552c3287c1c80efb690cb412318565999ab60",
+    "amendment_003_audit_sha256": "61a67e578d57ce790182646c61ba8da18ce8f49d7fb9f6853f4033b21156fe75",
+    "decision_006_sha256": "96cd052f18c9442ebe9b3b3524da7b88539c0896f6541dbc675cf9cb094cee0b",
+    "decision_007_sha256": "faea63b749016aaaf570888ca5cbc99fda856088c53ac02f489fca3df7f45fe7"
+  },
+  "code_identity": {
+    "runner_path": "src/run_confirmatory.py",
+    "runner_sha256": "650a8b8f6b9bf65db69efc7ba60340aafa99c3c4b8b5bba957a8e6c6fa800c5c",
+    "original_verifier_path": "src/verify_confirmatory.py",
+    "original_verifier_sha256": "740e31590ec40f40f7783e59889d265c3d5d20296901c3968d4b593986238715",
+    "original_files_must_remain_unchanged": true
+  },
+  "immutable_full_output": {
+    "path": "artifacts/confirmatory/confirm_001/full_recovery_001",
+    "file_count": 19,
+    "run_manifest_sha256": "8da9b9c1d0425fff118d983a8491aceb57ae8b6085300eacf18cd8e0d7e6eac4",
+    "summary_sha256": "784132d1df5ab6a99a934bf2c53d17c7d11f650beb4b733be222011f060986ae",
+    "runner_verification_sha256": "7ef5b2cdb2d1885b074250402efd313aa9758b337b4f486147ddc10e0042af99",
+    "generator_vectors_sha256": "a6b817b9a3db207dd84f1a816a7374a5a21b186c853b73c2f2c422a1bfc830f7",
+    "expected_files": [
+      "actual_mask_scenarios.csv",
+      "admission_gate.json",
+      "availability_map.csv",
+      "bootstrap_intervals.csv",
+      "cohort_audit.csv",
+      "factorial_contrasts.csv",
+      "generator_vectors.parquet",
+      "nuisance_fold_assignments.parquet",
+      "predictions.parquet",
+      "pxr_boundary_decision.json",
+      "pxr_linkage_audit.csv",
+      "pxr_overlap_summary.csv",
+      "pxr_selection_strata.csv",
+      "row_replay_seed41001.parquet",
+      "run_manifest.json",
+      "semisynthetic_scenarios.csv",
+      "structure_audit.json",
+      "summary.json",
+      "verification.md"
+    ],
+    "write_allowed": false,
+    "runner_rerun_allowed": false
+  },
+  "root_cause": {
+    "defect_class": "LAYOUT_TRIGGERED_REDUCTION_ORDER_IN_VERIFIER",
+    "source_and_linkage_values_bit_exact": true,
+    "pxr_structure_10": {
+      "shape": [10747, 10],
+      "source_c_strides_bytes": [80, 8],
+      "runner_f_strides_bytes": [8, 85976],
+      "smd_cells": 10,
+      "maximum_absolute_smd_difference": 5.009881398621019e-15
+    },
+    "pxr_structure_screen_12": {
+      "shape": [10747, 12],
+      "source_c_strides_bytes": [96, 8],
+      "runner_f_strides_bytes": [8, 85976],
+      "smd_cells": 12,
+      "maximum_absolute_smd_difference": 2.2752633110911802e-14
+    },
+    "frozen_formula_tolerance": {
+      "rtol": 0.0,
+      "atol": 1e-12
+    },
+    "stored_smd_reproduced_bit_exact_after_f_order": 22,
+    "pxr_trigger_or_boundary_changes": 0
+  },
+  "inherited_lowdim_correction": {
+    "protocol_amendment": "003",
+    "operation": "np.asfortranarray(lowdim, dtype=np.float64)",
+    "context_keys": [
+      "lowdim",
+      "representations.lowdim_11"
+    ],
+    "must_remain_bit_preserving": true
+  },
+  "sole_new_code_correction": {
+    "operation": "np.asfortranarray(original, dtype=np.float64)",
+    "context_keys": [
+      "features.pxr_structure_10",
+      "features.pxr_structure_screen_12"
+    ],
+    "source_identity_keys": {
+      "features.pxr_structure_10": [
+        "MolWt",
+        "MolLogP",
+        "TPSA",
+        "NumHDonors",
+        "NumHAcceptors",
+        "NumRotatableBonds",
+        "RingCount",
+        "FractionCSP3",
+        "HeavyAtomCount",
+        "MolMR"
+      ],
+      "features.pxr_structure_screen_12": [
+        "MolWt",
+        "MolLogP",
+        "TPSA",
+        "NumHDonors",
+        "NumHAcceptors",
+        "NumRotatableBonds",
+        "RingCount",
+        "FractionCSP3",
+        "HeavyAtomCount",
+        "MolMR",
+        "log2_fc_estimate",
+        "fdr_score"
+      ]
+    },
+    "require_preconversion_c_contiguous": true,
+    "require_preconversion_not_f_contiguous": true,
+    "require_postconversion_f_contiguous": true,
+    "require_float64": true,
+    "require_shape_unchanged": true,
+    "require_source_expected_linkage_bit_identity": true,
+    "require_elementwise_bit_identity": true,
+    "other_pxr_context_mutation_allowed": false
+  },
+  "preserved_checks": {
+    "stored_generator_probability_rehash": "BIT_EXACT",
+    "stored_mar_score_shift_expit_clip_replay": "BIT_EXACT",
+    "independent_source_reconstruction": "REQUIRED",
+    "original_full_verifier": "RUN_COMPLETE_WITHOUT_SKIPS",
+    "original_smd_json_exact_comparison": true,
+    "compare_frames_patch_allowed": false,
+    "smd_map_patch_allowed": false,
+    "verify_pxr_linkage_patch_allowed": false,
+    "exact_hash_checks_retained": true,
+    "tolerance_relaxed": false
+  },
+  "fixed_paths": {
+    "supplemental_verifier": "src/verify_confirmatory_replay_002.py",
+    "amendment_audit": "artifacts/confirmatory/confirm_001/amendment_004_independent_audit.md",
+    "static_audit": "artifacts/confirmatory/confirm_001/verification_replay_002_static_audit.md",
+    "decision_009": "artifacts/decisions/009_confirm_001_clear_to_verification_replay_002.md",
+    "failed_verification_output": "artifacts/confirmatory/confirm_001/full_recovery_001_independent_verification.json",
+    "verification_output": "artifacts/confirmatory/confirm_001/full_recovery_001_independent_verification_002.json",
+    "new_paths_write_once": true
+  },
+  "authorization_sequence": [
+    "CLEAR_TO_IMPLEMENT_VERIFICATION_REPLAY_002",
+    "CLEAR_TO_VERIFICATION_REPLAY_002",
+    "Decision 009",
+    "one read-only verification replay 002",
+    "independent post-verification audit"
+  ],
+  "scientific_contract_unchanged": true,
+  "scientific_interpretation_allowed_before_pass_and_post_audit": false,
+  "runner_execution_authorized": false
+}

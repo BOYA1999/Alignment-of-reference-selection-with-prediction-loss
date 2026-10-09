@@ -1,0 +1,9 @@
+# Selective-reference clearance-model evaluation — revision 002
+
+This is a local author-review reproducibility candidate for *Bias strength and descriptor extrapolation in evaluating clearance models with selective references*. It is not an externally deposited or submission-approved release.
+
+The original results are retained alongside three post-result analyses: all-original-seed auxiliary refits and Ipc processing (30,400 estimates), actual observable-molecular-weight selection/refitting (14,400 estimates), and fixed-probability-marginal alignment (320,000 non-molecular replicate rows). The main finding is configuration dependence, not universal feature-processing or estimator superiority. The main paper, 33 references, electronic Tables S1–S16, current four main/four supplementary figures and graphical abstract are included. Editable Word files are supplied separately to the authors.
+
+Start with RUNBOOK.md. The current local checker is src/verify_revision2_release.py, not the older release checkers. It independently reaggregates 448 fitted and 192 alignment summaries and checks distribution integrity. The asset entry regenerates the current main figures, graphical abstract and new tables in a separate output directory; historical supplementary figures are copied as verified retained artifacts. The minimal case entry retrieves the pinned public source in memory and reconstructs the descriptor and 64 saved contributions.
+
+Full fixed-predictor and auxiliary reconstruction is a separate staged workflow. It has not been newly executed end to end in this revision. Local author-workspace computation and the checks above do not establish independent human validation, general-method validity or JPA acceptance. Author declarations, external access, licensing approval and all-author review remain necessary.

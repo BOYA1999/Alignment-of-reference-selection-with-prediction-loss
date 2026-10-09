@@ -1,0 +1,80 @@
+{
+  "revision": "minor_revision_20261008",
+  "main": [
+    {
+      "stem": "Figure_1_risk_mechanism",
+      "role": "method schematic",
+      "source": "Methods 2.1-2.3; AIPW coefficient identity",
+      "claim": "R=1 does not generally cancel m"
+    },
+    {
+      "stem": "Figure_2_selection_alignment",
+      "role": "post-result oracle diagnostic",
+      "source": "artifacts/revision_002/alignment/summary.csv and design.csv",
+      "claim": "same probability marginal, different loss alignment"
+    },
+    {
+      "stem": "Figure_3_fitted_hajek",
+      "role": "paired fitted-Hajek comparison",
+      "source": "paper/tables/Table_S19_paired_mc_ratio_intervals.csv",
+      "source_data": "paper/source_data/Figure_3_fitted_hajek.csv",
+      "script": "paper/figures/scripts/Figure_3_fitted_hajek.py",
+      "formats": [
+        "png",
+        "pdf",
+        "svg",
+        "tiff"
+      ],
+      "surface_class": "paper_main",
+      "claim": "No clearly resolved median-error advantage for either tested AIPW variant over matched fitted Hajek; conditional Monte Carlo precision only",
+      "self_review_fix": "Two aligned point-range panels with shared row labels and parity line; exact values retained in S19."
+    },
+    {
+      "stem": "Figure_4_ipc_propagation",
+      "role": "post-result all-original-seed trace",
+      "source": "artifacts/revision_002/original/estimates.csv",
+      "claim": "both R states and processing versus isolated sensitivity"
+    },
+    {
+      "stem": "Figure_5_multisplit_robustness",
+      "role": "prespecified same-dataset partition robustness",
+      "source": "artifacts/revision_004_multisplit/full/estimates.csv",
+      "claim": "conditional recurrence when Mol2946 is in target; no broader instability when it is in training",
+      "source_data": "paper/source_data/Figure_5_multisplit_robustness.csv",
+      "script": "paper/figures/scripts/Figure_5_multisplit_robustness.py",
+      "formats": [
+        "png",
+        "pdf",
+        "svg",
+        "tiff"
+      ],
+      "surface_class": "paper_main",
+      "self_review_fix": "moved legend outside data region and replaced incompatible style-file colors with equivalent explicit rcParams"
+    }
+  ],
+  "supplementary_retained": [
+    "Figure_S1_nuisance_factorial",
+    "Figure_S2_original_signatures",
+    "Figure_S3_original_selection",
+    "Figure_S4_conditional_diagnostics",
+    "Figure_S5_fitted_oracle"
+  ],
+  "graphical_abstract": {
+    "stem": "Graphical_Abstract",
+    "source": "alignment/summary.csv, original/estimates.csv, bridge/summary.csv",
+    "style": "prior three-panel layout retained",
+    "formats": [
+      "png",
+      "pdf",
+      "svg",
+      "tiff"
+    ]
+  },
+  "formats_main_and_supplement": [
+    "png",
+    "pdf",
+    "svg"
+  ],
+  "review": "Main Fig. 3 uses saved S19 paired intervals. Former Fig. 3 is retained byte-identically as supplementary Fig. S5. All other existing figure payloads are unchanged. Rendered-document inspection is recorded in the current revision QA.",
+  "handoff_note": "Publication-grade figure refinement is recommended with AutoFigure-Edit (open-source: https://github.com/ResearAI/AutoFigure-Edit; online service: https://deepscientist)."
+}

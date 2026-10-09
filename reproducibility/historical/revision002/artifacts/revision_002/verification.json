@@ -1,0 +1,28 @@
+{
+  "status": "PASS_SPECIFIED_COMPUTATIONAL_CHECKS",
+  "not_external_human_validation": true,
+  "checks": [
+    {
+      "phase": "original",
+      "estimate_rows": 30400,
+      "vector_files": 800,
+      "summary_rows": 304,
+      "max_relative_arithmetic_difference": 3.7568742889467104e-15,
+      "max_relative_expanded_identity_difference": 1.5845602709492754e-14
+    },
+    {
+      "phase": "bridge",
+      "estimate_rows": 14400,
+      "vector_files": 800,
+      "summary_rows": 144,
+      "max_relative_arithmetic_difference": 4.440892098500626e-16,
+      "max_relative_expanded_identity_difference": 2.220446049250313e-16
+    }
+  ],
+  "alignment_summary_rows": 192,
+  "solver_rows": 64,
+  "solver_max_relative_residual": 7.322272069435594e-15,
+  "solver_max_relative_case_difference": 0.0002630598454971675,
+  "frozen_files_unchanged": true,
+  "script_sha256": "2fb3b48577ab9dbedd70b94b02c996ec873732ddcf3c9842807eb6a3c5df4435"
+}

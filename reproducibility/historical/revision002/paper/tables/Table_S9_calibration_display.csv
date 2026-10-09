@@ -1,0 +1,9 @@
+Mechanism,Reference,Bias range,Error-ratio range,Coverage range,Ratio passes
+Original MCAR,True p; replay m,"[-0.0001, 0.0001]","[0.982, 1.019]","[0.9468, 0.9545]",8/8
+Original MCAR,Constant p; mean m,"[-0.0001, 0.0001]","[0.993, 1.006]","[0.9469, 0.9543]",8/8
+Original MAR,True p; replay m,"[-0.0001, 0.0001]","[0.887, 1.089]","[0.9489, 0.9553]",0/8
+Original MAR,Constant p; mean m,"[-0.0033, 0.0046]","[0.998, 1.001]","[0.9036, 0.9514]",0/8
+"Loss rank, β=0.5",True p; replay m,"[-0.0001, 0.0001]","[0.097, 0.129]","[0.9463, 0.9531]",8/8
+"Loss rank, β=0.5",Constant p; mean m,"[0.0228, 0.0681]","[0.999, 1.001]","[0.0000, 0.0004]",0/8
+"Loss rank, β=2.0",True p; replay m,"[-0.0003, 0.0003]","[0.073, 0.109]","[0.9464, 0.9528]",8/8
+"Loss rank, β=2.0",Constant p; mean m,"[0.0338, 0.1657]","[0.999, 1.001]","[0.0000, 0.0000]",0/8

@@ -1,0 +1,19 @@
+{
+  "decision_006_sha256": "96cd052f18c9442ebe9b3b3524da7b88539c0896f6541dbc675cf9cb094cee0b",
+  "mode": "recovery-smoke",
+  "non_adjudicative": true,
+  "roundtrip_fixture_sha256": "3961cd5b2acc70c90a10f94fd5ea17e6a382291c873401ef4beeb1765b5b6dfb",
+  "runner_sha256": "650a8b8f6b9bf65db69efc7ba60340aafa99c3c4b8b5bba957a8e6c6fa800c5c",
+  "scope": {
+    "independent_remaining_99_seed_and_direct_or_pxr_nuisance_refit": false,
+    "independent_seed41001_crossfit_propensity_and_ridge_refit": false,
+    "independent_source_feature_prediction_generator_and_seed41001_formula_reconstruction": false,
+    "prelaunch_directory_absence_checked_from_runner_record_only": true,
+    "remaining_formal_nuisance_vectors_checked_by_hash_and_grid_invariants": false
+  },
+  "smoke_json_sha256": "e94107b10faa947a883f909a0bf60605799be72ad18dcf41076883fd157b1839",
+  "smoke_output_path": "artifacts/confirmatory/confirm_001/recovery_smoke_001",
+  "smoke_run_manifest_sha256": "160d8a21d6a97bf2ed424a25bd69c901673ea1746a0ff51f8437e2bda4e296ff",
+  "status": "PASS",
+  "verifier_sha256": "740e31590ec40f40f7783e59889d265c3d5d20296901c3968d4b593986238715"
+}

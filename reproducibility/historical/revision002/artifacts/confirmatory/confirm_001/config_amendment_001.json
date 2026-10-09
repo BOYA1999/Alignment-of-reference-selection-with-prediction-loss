@@ -1,0 +1,51 @@
+{
+  "study_id": "confirm_001",
+  "amendment_id": "config_amendment_001",
+  "created_at": "2026-09-11T05:46:04+08:00",
+  "status": "PENDING_INDEPENDENT_AMENDMENT_AUDIT",
+  "base_contract": {
+    "protocol_path": "artifacts/confirmatory/confirm_001/protocol.md",
+    "protocol_sha256": "1819fa04713ee1a37df66c847825e5de3adcba736fba47c5c40b1c8db7796d7a",
+    "config_path": "artifacts/confirmatory/confirm_001/config.json",
+    "config_sha256": "04fc27fc407a562853dd362d31a4c4cbc01bdb754199d5a18014cdfcbc7a5c23",
+    "decision_path": "artifacts/decisions/003_go_confirm_001.md",
+    "decision_sha256": "0b784a409faa5858fecdd70bf77e58fbb71ab85076bf343b89bc8c7a138df9ec",
+    "immutable": true
+  },
+  "source_manifest_amendment": {
+    "path": "data/external/source_freeze_20260911/source_manifest_amendment_001.json",
+    "sha256": "5b6b3337a9b7b1a4d359062ab07807527accc37b5cb63798db69e5f23837dfe5"
+  },
+  "protocol_amendment": {
+    "path": "artifacts/confirmatory/confirm_001/protocol_amendment_001.md",
+    "sha256": "989eac8ebd6e26bdcb5cee454ec51f4c00e76ad93bf4b245b92e0a59e9ff4a49"
+  },
+  "formal_input_precedence": [
+    "artifacts/confirmatory/confirm_001/protocol.md",
+    "artifacts/confirmatory/confirm_001/config.json",
+    "data/external/source_freeze_20260911/source_manifest.json",
+    "data/external/source_freeze_20260911/source_manifest_amendment_001.json",
+    "artifacts/confirmatory/confirm_001/protocol_amendment_001.md",
+    "artifacts/confirmatory/confirm_001/config_amendment_001.json"
+  ],
+  "amended_requirements": {
+    "source_derived_vector_hashes": "Use the six corrected values in source_manifest_amendment_001.json.",
+    "base_manifest_hashing": "The formal run manifest must hash both the immutable base source manifest and its amendment.",
+    "runner_and_verifier": "Both programs must independently recompute the six vectors under the protocol Section 9 encoding and compare them to the corrected values.",
+    "rdkit_descriptor_enumeration": {
+      "expression": "sorted(Descriptors._descList, key=lambda item: item[0])",
+      "expected_count": 217,
+      "ordered_name_vector_sha256_utf8_no_terminal_lf": "84cea0bf91c3c74a704770fd5d5477dc689fc3c09e0997cd268d070acc61be73"
+    },
+    "per_row_string_hashes": "canonical_smiles_sha256 and murcko_group_sha256 are SHA-256 of the individual UTF-8 string bytes with no separator, newline, terminal LF, or metadata prefix.",
+    "result_directory": "artifacts/confirmatory/confirm_001/full/ remains the sole formal result directory and must be absent before launch."
+  },
+  "unchanged": [
+    "all source bytes and source-file SHA-256 values",
+    "all cohorts, endpoints, masks and row orders",
+    "all features, models, folds, seeds and random-number scopes",
+    "all estimands, formulas, gates, thresholds and decision precedence",
+    "all expected result grids and anti-claims"
+  ],
+  "authorization": "No smoke or formal execution is authorized until an independent amendment audit changes this amendment state by additive decision record to CLEAR_TO_RUN."
+}

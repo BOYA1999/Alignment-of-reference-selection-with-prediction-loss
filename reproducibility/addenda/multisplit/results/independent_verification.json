@@ -1,0 +1,21 @@
+{
+  "status": "PASS_INDEPENDENT_AGGREGATE_VERIFICATION",
+  "manifest_and_parent_hashes_verified": true,
+  "aggregate_matches_ten_split_files_exactly": true,
+  "grid_complete_and_unique": true,
+  "all_fold_support": true,
+  "all_required_estimates_finite": true,
+  "recomputed": {
+    "conditional_cells": 32,
+    "conditional_pass": 32,
+    "conditional_fraction": 1.0,
+    "raw_case_estimates": 3200,
+    "rank_one": 3200,
+    "rank_one_fraction": 1.0,
+    "absent_cells": 48,
+    "absent_10x": 0,
+    "absent_fraction": 0.0,
+    "partition_ratio": 74721.16804829364,
+    "xgb_lower_mae": 20
+  }
+}

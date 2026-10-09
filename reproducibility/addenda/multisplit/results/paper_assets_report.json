@@ -1,0 +1,10 @@
+{
+  "status": "PASS_REVISION4_ASSETS",
+  "source_manifest_sha256": "04ff15201db663c79557b901d6d083742424d707a17166b9d62f2a67a096537a",
+  "source_verification_sha256": "6ac73b507a3a32d4c2edc8ecb10502bfaa5f6736ad8a5d23ba598b8839ee5d70",
+  "outputs": {
+    "paper/source_data/Figure_5_multisplit_robustness.csv": "4d162d91c81291fdaeec1ea16a3a630f32d6582d1d118ca8d32f491a2d1f60fd",
+    "paper/tables/Table_S17_multisplit_display.csv": "b6ed3b4ba8bcb199b8c0f318b84f9ec6975caffab9cf40250e13f335a119480a",
+    "paper/tables/Table_S17_multisplit_cell_comparisons.csv": "62e63bcf4af2822b2e5e2ae1625ceda9d6ce595a64c9570dd47f8bdab8d4c81c"
+  }
+}

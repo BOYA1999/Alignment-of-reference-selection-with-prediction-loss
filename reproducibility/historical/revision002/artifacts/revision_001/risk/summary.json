@@ -1,0 +1,43 @@
+{
+  "analysis_id": "revision_001_risk",
+  "status": "POST_RESULT_DIAGNOSTIC_COMPLETE",
+  "scope": "Original outputs unchanged. New controlled masks calibrate descriptive benefit and interval behavior, not original gate validation.",
+  "input_hashes": {
+    "actual_mask_scenarios.csv": "92ce0f5302bad0e43a7310cfe3d2c85aa5d04e45f3f79765388b274a27045eb7",
+    "admission_gate.json": "fb100c8cad8d91680874f24219eae72e2e6765cd80f0c3941dd6fe43c4046d6e",
+    "availability_map.csv": "a7b38356d5783fdc3deb310ec8b46179ceecf0656e19b0f385f5b3d4a1ec63ed",
+    "bootstrap_intervals.csv": "44cade4a78cc14de38e32f63b904e319e18290bb24459bce3bbd9ee53626876c",
+    "cohort_audit.csv": "553b080eb61727af412087128a651ecdda883ef7a716386ba256a822e66efef0",
+    "factorial_contrasts.csv": "cdae19ad818539ee7b1c86daec5d231bdc2eda7c395f3eb705077f97300672ff",
+    "generator_vectors.parquet": "a6b817b9a3db207dd84f1a816a7374a5a21b186c853b73c2f2c422a1bfc830f7",
+    "nuisance_fold_assignments.parquet": "03dc22c344471ed09e51451fc9a79cd38b70f183565bf9034965f9b8b0e268a3",
+    "predictions.parquet": "7b996d697054c0144afe2f284dd3a5b83818c0b299cd804b41314931c7678bfb",
+    "pxr_boundary_decision.json": "aa4f17bcea4f42958968b0a8b8f53223bc60bca0d06d3d4834f04bcf55ada2b0",
+    "pxr_linkage_audit.csv": "d45fb99e8271038af8b264d603699382a62c1d1fc5d4c5e519c5e2981de9c1ba",
+    "pxr_overlap_summary.csv": "e36325a9478f35e3e0c53132c61088f80c76535e7925c9e60e2dda1b54e8b63c",
+    "pxr_selection_strata.csv": "fb5c4f6f2a6a3a8810bf4b677b82c68962f01193c2ad8d6cd694549bdf4339a6",
+    "row_replay_seed41001.parquet": "97674bcee17dcdb28f91d8ab23b87e6130dc79840a50985fad8cc6ba4507673e",
+    "run_manifest.json": "8da9b9c1d0425fff118d983a8491aceb57ae8b6085300eacf18cd8e0d7e6eac4",
+    "semisynthetic_scenarios.csv": "e2040fc4c7c4168b2786f154af1acedff95824413ac1a30f8ea5526163217a32",
+    "structure_audit.json": "a5233c5e7d9bfe74d201e761a59c50556d323ea67ab2d1b36f0477b1e6d4b6ea",
+    "summary.json": "784132d1df5ab6a99a934bf2c53d17c7d11f650beb4b733be222011f060986ae",
+    "verification.md": "7ef5b2cdb2d1885b074250402efd313aa9758b337b4f486147ddc10e0042af99"
+  },
+  "source_code_sha256": "adf061a3eedf9f6f62a19f00dfd73b0bf6491519255ea6f1aa0e7e8d31b60904",
+  "original_19_file_directory_unchanged": true,
+  "original_mar_fitted_benefit_pass": 0,
+  "original_mar_oracle_benefit_pass": 0,
+  "original_mar_all_support_pass": 2,
+  "outputs": {
+    "complete_observation_variance_check.csv": "91ff5c74526cbf4e9287858a12eeaf9d32145894ca0cb2e54a7e2f5524a94c3f",
+    "mechanism_calibration_design.csv": "36f87ed8b94ff29c969ad7d27208364378786c75bf28b569522be472e2d0233d",
+    "mechanism_calibration_replicates.parquet": "843b038cf72e363a9943d6bdd89c2afb86bd38ecb516a4de036bb4b2a64cc4c6",
+    "mechanism_calibration_summary.csv": "8f4c4d0328ba5bd889f0f4e2ce04024301076c0e6196416e9098ee74ea42328b",
+    "nonminimum_sensitivity.csv": "e838ff32248b650209bec23d41f2df9a88c5c1418b33fe05de7ebff5632ae44e",
+    "original_candidate_16_cells.csv": "4883db9be1cd0bebbcc2a654470311e8902203ae2a2787e1784cb4b380f56689",
+    "original_estimator_summary.csv": "3c3fb38035d98b2fb256cfe2de683784dad23ea38b77725f03effd33a36dfc22",
+    "original_probability_loss_association.csv": "6b3dbd85232667469d07ce96cbb4318d66727432f1417a23bbe3ce1a2f0b0e39",
+    "original_same_cell_gate_chain.csv": "dff1220cc869013317ea25c1837c02e6f2aa21b1785b513cfc75aa17f1dd9e8f",
+    "protocol.json": "ed566bd8df3e5121e7e445ac0eaad1ec1560ef670aae59804bed4a9750005de1"
+  }
+}

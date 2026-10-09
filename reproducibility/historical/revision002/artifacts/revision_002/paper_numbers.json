@@ -1,0 +1,29 @@
+{
+  "bridge_low_ratio_range": [
+    0.4109166500796804,
+    2.298086108777607
+  ],
+  "bridge_drop_ratio_range": [
+    0.437708153356223,
+    2.5871844121688
+  ],
+  "bridge_low_better_cc": 11,
+  "bridge_drop_better_cc": 10,
+  "bridge_low_25percent": 6,
+  "bridge_drop_25percent": 5,
+  "drop_better_low": 1,
+  "original_lowp_pooled_medians": {
+    "drop": 0.005515029995876497,
+    "heldout_clip": 0.0055043700170453735,
+    "low": 0.004651162479121201,
+    "raw": 323.0702500825235
+  },
+  "bridge_probability_loss_correlation_range": [
+    -0.14077675187707894,
+    0.11897013980423664
+  ],
+  "bridge_probability_weighted_shift_range": [
+    -0.019646075148432196,
+    0.014796696193866254
+  ]
+}

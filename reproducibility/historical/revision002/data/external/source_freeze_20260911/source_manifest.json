@@ -1,0 +1,302 @@
+{
+  "schema_version": "1.0",
+  "audit_id": "external_source_freeze_20260911",
+  "verified_at_utc": "2026-09-10T20:50:59.109Z",
+  "decision": "GO_DATA_READY",
+  "scope": "Source, license, schema, identity, and preprocessing provenance only; no modeling or outcome analysis.",
+  "redistribution_policy": {
+    "raw_data_in_public_package": false,
+    "release_method": "Provide pinned retrieval URLs, revisions, hashes, and attribution; keep the locally cached raw files outside the public package."
+  },
+  "sources": {
+    "biogen_adme": {
+      "official_repository": "https://github.com/molecularinformatics/Computational-ADME",
+      "revision": "b00df003de117ce9e5b381afd886095c5f2af2d5",
+      "revision_date_utc": "2024-02-13T00:11:10Z",
+      "revision_url": "https://github.com/molecularinformatics/Computational-ADME/commit/b00df003de117ce9e5b381afd886095c5f2af2d5",
+      "license": {
+        "spdx": "MIT",
+        "source": "Repository LICENSE at the pinned revision",
+        "url": "https://raw.githubusercontent.com/molecularinformatics/Computational-ADME/b00df003de117ce9e5b381afd886095c5f2af2d5/LICENSE",
+        "git_blob_sha1": "2ccfd2e7611c760f611bac0305d030a12daff532",
+        "local_path": "data/external/source_freeze_20260911/biogen/LICENSE",
+        "bytes": 1077,
+        "sha256": "06557ca6eeee99c162df4e5e819167c6103f35faffb51f7b0a4833905280a740"
+      },
+      "files": {
+        "data": {
+          "name": "ADME_public_set_3521.csv",
+          "url": "https://raw.githubusercontent.com/molecularinformatics/Computational-ADME/b00df003de117ce9e5b381afd886095c5f2af2d5/ADME_public_set_3521.csv",
+          "git_blob_sha1": "a1fc97b07b02b22c4255d0d8c5a8efec878e8015",
+          "local_path": "data/external/source_freeze_20260911/biogen/ADME_public_set_3521.csv",
+          "bytes": 388279,
+          "sha256": "2cfabc2667740c224487876c33b23124159ef43294e0f9e4d926cb6276c95a3b",
+          "rows": 3521,
+          "columns": 10,
+          "column_names": [
+            "Internal ID",
+            "Vendor ID",
+            "SMILES",
+            "CollectionName",
+            "LOG HLM_CLint (mL/min/kg)",
+            "LOG MDR1-MDCK ER (B-A/A-B)",
+            "LOG SOLUBILITY PH 6.8 (ug/mL)",
+            "LOG PLASMA PROTEIN BINDING (HUMAN) (% unbound)",
+            "LOG PLASMA PROTEIN BINDING (RAT) (% unbound)",
+            "LOG RLM_CLint (mL/min/kg)"
+          ],
+          "non_null_counts": {
+            "Internal ID": 3521,
+            "Vendor ID": 3521,
+            "SMILES": 3521,
+            "CollectionName": 3521,
+            "LOG HLM_CLint (mL/min/kg)": 3087,
+            "LOG MDR1-MDCK ER (B-A/A-B)": 2642,
+            "LOG SOLUBILITY PH 6.8 (ug/mL)": 2173,
+            "LOG PLASMA PROTEIN BINDING (HUMAN) (% unbound)": 194,
+            "LOG PLASMA PROTEIN BINDING (RAT) (% unbound)": 168,
+            "LOG RLM_CLint (mL/min/kg)": 3054
+          },
+          "duplicate_internal_id_rows": 0,
+          "duplicate_exact_smiles_rows": 0,
+          "ordered_internal_id_tab_smiles_sha256_utf8_lf": "5b31164bdda1b74e01aa7ba5c2a8da86e71471a0264db80df6fd3ff9f39b2d85"
+        },
+        "readme": {
+          "local_path": "data/external/source_freeze_20260911/biogen/README.md",
+          "bytes": 4409,
+          "sha256": "056e4811aa4c0e6ca096b8d1ae5d33a5d91f3ba02d1aad1ebce0d779c67be425"
+        }
+      },
+      "local_derived_table": {
+        "path": "evidence/upstream/expansion_ml_comparison/biogen_adme_3521.csv",
+        "bytes": 352231,
+        "sha256": "cd310dd3911a9f9763d0581e6202bc20aaf8a810523d01e9ab5e403681a386b4",
+        "rows": 3521,
+        "columns": 10,
+        "column_names": [
+          "Name",
+          "SMILES",
+          "LOG_SOL",
+          "LOG_HLM",
+          "LOG_RLM",
+          "LOG_MDR1_ER",
+          "LOG_HPPB",
+          "LOG_RPPB",
+          "cluster",
+          "ds"
+        ],
+        "source_to_derived_field_mismatches": {
+          "Name_from_Internal_ID": 0,
+          "SMILES": 0,
+          "LOG_SOL": 0,
+          "LOG_HLM": 0,
+          "LOG_RLM": 0,
+          "LOG_MDR1_ER": 0,
+          "LOG_HPPB": 0,
+          "LOG_RPPB": 0
+        },
+        "source_rows_dropped": 0,
+        "source_only_columns_not_carried_forward": [
+          "Vendor ID",
+          "CollectionName"
+        ],
+        "construction_repository": "https://github.com/PatWalters/expansion-ml-comparison.git",
+        "construction_revision": "06582771d48af8096f6b05a5a247b177189a8fa4",
+        "construction_files": {
+          "00b_prepare_biogen.py": "9fdbce90bedf7a12389065212e4c487b73aa93aa16e9368daff5cb97698290b2",
+          "clustering.py": "d5780d9628a569b8d667a3c3f799c5d10034939ab1f4d9c62a239e6e266433a5",
+          "config.py": "8d8453e5c5271d36c526c716d2a20147f7c1906138cb04f4bf892c1e39af6772",
+          "requirements.txt": "46cd31038da425de4e37a3e69bd691672a1a20ccbd3626b02cab1c2288804f1c"
+        },
+        "construction_parameters": {
+          "clustering": "BitBIRCH-Lean: ECFP4 2048 bits; n_samples_for_std=50; threshold=average_similarity+4*sampled_similarity_sd; branching_factor=50; diameter merge; 5 deterministic recluster iterations; shuffle=false",
+          "split": "Compute cluster sizes; permute value_counts index with numpy.default_rng(61453); hold out whole clusters until at least 30% of 3521 rows are assigned test.",
+          "seed": 61453,
+          "test_fraction": 0.3,
+          "clusters": 1905,
+          "singletons": 1123,
+          "largest_cluster": 49,
+          "held_out_clusters": 555,
+          "train_rows": 2463,
+          "test_rows": 1058,
+          "clusters_straddling_train_test": 0
+        },
+        "ordered_cluster_vector_sha256_utf8_lf": "c85847e68f2d726c325b0255722180201c0cca464fe0e2cbabbdb35734020a79",
+        "ordered_ds_vector_sha256_utf8_lf": "8ea3ebb25b17919946dd12111f4aa9d1f8f6c619b7ff9e28b1752501bbb89a79",
+        "independent_replay": {
+          "python": "3.12",
+          "numpy": "2.5.2",
+          "pandas": "3.0.5",
+          "scipy": "1.17.1",
+          "scikit_learn": "1.9.0",
+          "rdkit": "2026.03.5",
+          "bblean": "0.10.3",
+          "cluster_vector_exact_match": true,
+          "cluster_mismatch_rows": 0,
+          "split_vector_exact_match": true,
+          "split_mismatch_rows": 0,
+          "warning": "The split did not replay under pandas 2.3.3 and numpy 1.26.4 because tied cluster-size ordering changed; use the pinned environment or consume the frozen derived table/vector."
+        }
+      }
+    },
+    "openadmet_pxr": {
+      "official_repository": "https://huggingface.co/datasets/openadmet/pxr-challenge-train-test",
+      "doi": "10.57967/hf/9731",
+      "revision": "8041adfc295cac7f0bf85b73a2d87f21c5302ab1",
+      "last_modified_utc": "2026-09-02T10:40:11Z",
+      "license": {
+        "spdx": "CC-BY-4.0",
+        "source": "Hugging Face dataset metadata and README front matter at the pinned revision",
+        "standalone_license_file_present": false
+      },
+      "repository_inventory": {
+        "total_files": 196,
+        "top_level_files": [
+          ".gitattributes",
+          "README.md",
+          "pxr-challenge_96-compound-uscale-semi-pure_TRAIN.csv",
+          "pxr-challenge_TEST_BLINDED.csv",
+          "pxr-challenge_TEST_PHASE_1_UNBLINDED.csv",
+          "pxr-challenge_TEST_PHASE_2_UNBLINDED.csv",
+          "pxr-challenge_TRAIN.csv",
+          "pxr-challenge_counter-assay_TRAIN.csv",
+          "pxr-challenge_htchem-libraries_TRAIN.csv",
+          "pxr-challenge_single_concentration_TRAIN.csv",
+          "pxr-challenge_structure_TEST_BLINDED.csv",
+          "pxr-challenge_structure_TEST_identifiers.parquet"
+        ],
+        "structure_ground_truth_pdb_files": 184,
+        "downloaded_for_this_freeze": [
+          "README.md",
+          "pxr-challenge_TRAIN.csv",
+          "pxr-challenge_single_concentration_TRAIN.csv"
+        ],
+        "download_exclusion_reason": "Only the primary dose-response table, the single-concentration parent-screen table, and provenance README are needed for the proposed selection-process confirmation."
+      },
+      "files": {
+        "readme": {
+          "url": "https://huggingface.co/datasets/openadmet/pxr-challenge-train-test/resolve/8041adfc295cac7f0bf85b73a2d87f21c5302ab1/README.md",
+          "git_blob_sha1": "88b6b90264d6225d134d511c97ba0fc177355d66",
+          "local_path": "data/external/source_freeze_20260911/pxr/README.md",
+          "bytes": 6311,
+          "sha256": "8c695adef4e113d8a59ae2c20fcfc3a5f30a82fb6bd6cd89a141a531d08995d0"
+        },
+        "dose_response_train": {
+          "url": "https://huggingface.co/datasets/openadmet/pxr-challenge-train-test/resolve/8041adfc295cac7f0bf85b73a2d87f21c5302ab1/pxr-challenge_TRAIN.csv",
+          "git_blob_sha1": "a97d8abaf0decd677c79460a9a7e3e36b398972f",
+          "local_path": "data/external/source_freeze_20260911/pxr/pxr-challenge_TRAIN.csv",
+          "bytes": 858687,
+          "sha256": "fdc2252bb5763ab5742e78cb1ba692bebe131a972cf83aa1bd45e43d8c5bc223",
+          "rows": 4139,
+          "columns": 18,
+          "column_names": [
+            "Molecule Name",
+            "SMILES",
+            "OCNT Batch",
+            "pEC50",
+            "Emax_estimate (log2FC vs. baseline)",
+            "Emax.vs.pos.ctrl_estimate (dimensionless)",
+            "pEC50_std.error (-log10(molarity))",
+            "Emax_std.error (log2FC vs. baseline)",
+            "Emax.vs.pos.ctrl_std.error (dimensionless)",
+            "pEC50_ci.lower (-log10(molarity))",
+            "pEC50_ci.upper (-log10(molarity))",
+            "Emax_ci.lower (log2FC vs. baseline)",
+            "Emax_ci.upper (log2FC vs. baseline)",
+            "Emax.vs.pos.ctrl_ci.lower (dimensionless)",
+            "Emax.vs.pos.ctrl_ci.upper (dimensionless)",
+            "Split",
+            "OCNT_ID",
+            "source"
+          ],
+          "rows_with_any_null": 0,
+          "unique_OCNT_ID": 4139,
+          "unique_exact_SMILES": 4139
+        },
+        "single_concentration_train": {
+          "url": "https://huggingface.co/datasets/openadmet/pxr-challenge-train-test/resolve/8041adfc295cac7f0bf85b73a2d87f21c5302ab1/pxr-challenge_single_concentration_TRAIN.csv",
+          "git_blob_sha1": "f1516cf2d39c997fb4e91e0ba06f258b9b40e83d",
+          "local_path": "data/external/source_freeze_20260911/pxr/pxr-challenge_single_concentration_TRAIN.csv",
+          "bytes": 6290720,
+          "sha256": "e781f8405e919a248b9b832a7cb24e8a615d400ee9dc50beea0d70d8aeaa8c2f",
+          "rows": 21003,
+          "columns": 19,
+          "column_names": [
+            "Molecule Name",
+            "OCNT Batch",
+            "SMILES",
+            "plate_id",
+            "compound_class",
+            "concentration_M",
+            "log2_fc_estimate",
+            "log2_fc_stderr",
+            "t_statistic",
+            "p_value",
+            "fdr_bh",
+            "neg_log10_fdr",
+            "median_log2_fc",
+            "n_replicates",
+            "cohens_d",
+            "experiment_name",
+            "OCNT_ID",
+            "split",
+            "source"
+          ],
+          "unique_OCNT_ID": 10870,
+          "unique_exact_SMILES": 10870,
+          "only_null_field": "Molecule Name",
+          "null_Molecule_Name_rows": 15237,
+          "concentration_M_counts": {
+            "9.803e-07": 27,
+            "8.251e-06": 10747,
+            "3.3e-05": 9523,
+            "9.901e-05": 706
+          },
+          "compound_class_counts": {
+            "Library": 20976,
+            "Positive Control": 27
+          }
+        }
+      },
+      "selection_process_freeze": {
+        "primary_source": "https://openadmet.ghost.io/announcing-the-next-openadmet-blind-challenge-predicting-pxr-induction/",
+        "source_statement": "OpenADMET documents a two-tier screen, formal advancement of hits with log2 fold change > 1 and Benjamini-Hochberg FDR < 0.05 at the lowest nominal 10 micromolar screen, plus additional analog and diversity-library follow-up routes and post-assay QC.",
+        "parent_filter": {
+          "compound_class": "Library",
+          "concentration_M_exact": 0.000008251,
+          "interpretation": "Lowest library concentration stored in the CSV (8.251 micromolar); the source narrative calls this nominally 10 micromolar.",
+          "rows": 10747,
+          "unique_OCNT_ID": 10747,
+          "duplicate_OCNT_ID_rows": 0,
+          "ordered_OCNT_ID_sha256_utf8_lf": "df3e6a7832c051eeb8b98520c646541cb9207d2e28b07e5c19537f3206238402"
+        },
+        "join_key": "OCNT_ID",
+        "join_key_reason": "It is the stable compound identifier across assay tables. Exact SMILES and OCNT Batch are not stable across the two files.",
+        "identity_diagnostics": {
+          "parent_rows_with_dose_response_by_OCNT_ID": 2722,
+          "parent_rows_with_dose_response_by_exact_SMILES": 2375,
+          "parent_rows_with_dose_response_by_OCNT_Batch": 2700,
+          "OCNT_ID_values_with_multiple_exact_SMILES_across_files": 351,
+          "OCNT_ID_values_with_multiple_OCNT_Batch_values_across_files": 23,
+          "ordered_availability_vector_sha256_utf8_lf": "cd91cb263eadd8577ab4923b645eede5238c0afa906bf56160b4647c1d7b3d62"
+        },
+        "documented_formal_hit_rule": {
+          "expression": "log2_fc_estimate > 1 and fdr_bh < 0.05",
+          "formal_hit_rows": 873,
+          "formal_hits_with_dose_response_by_OCNT_ID": 869,
+          "formal_hits_without_dose_response_by_OCNT_ID": 4,
+          "dose_response_available_rows_not_formal_hits_at_this_concentration": 1853,
+          "ordered_formal_hit_vector_sha256_utf8_lf": "38958812c6cffbc216fc991caf23af9f9e8c640a96fe407ed84bb0150cc64b02"
+        },
+        "boundary": "Dose-response availability is a documented mixed-route, outcome-informed advancement indicator, not a binary assay outcome. Absence must be called unavailable follow-up or non-advancement, never negative activity or assay failure. The files do not annotate a row-specific selection reason."
+      }
+    }
+  },
+  "readiness_conditions": [
+    "Pin every analysis to the recorded revisions and SHA-256 values.",
+    "For Biogen, consume the frozen derived table or reproduce it only under the pinned preprocessing environment; do not silently regenerate the split under other pandas/numpy versions.",
+    "For PXR, filter the exact stored concentration 8.251e-06 M and join assay stages by OCNT_ID.",
+    "Treat PXR dose-response availability as mixed-route and outcome-informed; do not infer negative activity from absence.",
+    "Do not redistribute the locally staged raw files in a public release."
+  ]
+}

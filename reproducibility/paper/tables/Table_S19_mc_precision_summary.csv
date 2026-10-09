@@ -1,0 +1,5 @@
+numerator,denominator,settings,point_wins,upper_below_one,interval_contains_one
+aipw_low_drop,complete_case_none_none,16,10,6,5
+aipw_low_drop,hajek_low_none,16,1,0,14
+aipw_low_low,complete_case_none_none,16,11,7,5
+aipw_low_low,hajek_low_none,16,3,0,16

@@ -1,0 +1,43 @@
+{
+  "status": "PASS_SCIENTIFIC_REPLAY_PREFLIGHT",
+  "scientific_inputs_checked": 20,
+  "historical_aggregate_csv_files_checked": 9,
+  "wrapper_sha256": "460dcf1c2880c8b3aab735e7794418b12140fe4ee8833a13456869257c28e548",
+  "input_sha256": {
+    "src/run_confirmatory.py": "650a8b8f6b9bf65db69efc7ba60340aafa99c3c4b8b5bba957a8e6c6fa800c5c",
+    "src/verify_confirmatory.py": "740e31590ec40f40f7783e59889d265c3d5d20296901c3968d4b593986238715",
+    "artifacts/confirmatory/confirm_001/protocol.md": "1819fa04713ee1a37df66c847825e5de3adcba736fba47c5c40b1c8db7796d7a",
+    "artifacts/confirmatory/confirm_001/config.json": "04fc27fc407a562853dd362d31a4c4cbc01bdb754199d5a18014cdfcbc7a5c23",
+    "data/external/source_freeze_20260911/source_manifest.json": "be55555aed0b2a5bed095ae8d052500becd527c97c809d6db5b7a14e7548fd78",
+    "data/external/source_freeze_20260911/source_manifest_amendment_001.json": "5b6b3337a9b7b1a4d359062ab07807527accc37b5cb63798db69e5f23837dfe5",
+    "data/raw/expansion_data_train.csv": "c5214ad8c8a4d7d4d09082fcce24fe16c97a980a1e0873b91b8c8e474b79f6e4",
+    "data/raw/expansion_data_test.csv": "e21c0ef19795317216287e924e00ca3ef9388b7032a7fa4c7f27e2580372c85e",
+    "data/raw/expansion_data_raw.csv": "f674ec74cca1146bc386f832a32d4b8d921d3c312f92cb436cc005901c724a3c",
+    "data/external/source_freeze_20260911/biogen/ADME_public_set_3521.csv": "2cfabc2667740c224487876c33b23124159ef43294e0f9e4d926cb6276c95a3b",
+    "data/external/source_freeze_20260911/biogen/LICENSE": "06557ca6eeee99c162df4e5e819167c6103f35faffb51f7b0a4833905280a740",
+    "data/external/source_freeze_20260911/biogen/README.md": "056e4811aa4c0e6ca096b8d1ae5d33a5d91f3ba02d1aad1ebce0d779c67be425",
+    "evidence/upstream/expansion_ml_comparison/biogen_adme_3521.csv": "cd310dd3911a9f9763d0581e6202bc20aaf8a810523d01e9ab5e403681a386b4",
+    "data/external/source_freeze_20260911/pxr/README.md": "8c695adef4e113d8a59ae2c20fcfc3a5f30a82fb6bd6cd89a141a531d08995d0",
+    "data/external/source_freeze_20260911/pxr/pxr-challenge_TRAIN.csv": "fdc2252bb5763ab5742e78cb1ba692bebe131a972cf83aa1bd45e43d8c5bc223",
+    "data/external/source_freeze_20260911/pxr/pxr-challenge_single_concentration_TRAIN.csv": "e781f8405e919a248b9b832a7cb24e8a615d400ee9dc50beea0d70d8aeaa8c2f",
+    "evidence/upstream/expansion_ml_comparison/00b_prepare_biogen.py": "9fdbce90bedf7a12389065212e4c487b73aa93aa16e9368daff5cb97698290b2",
+    "evidence/upstream/expansion_ml_comparison/clustering.py": "d5780d9628a569b8d667a3c3f799c5d10034939ab1f4d9c62a239e6e266433a5",
+    "evidence/upstream/expansion_ml_comparison/config.py": "8d8453e5c5271d36c526c716d2a20147f7c1906138cb04f4bf892c1e39af6772",
+    "evidence/upstream/expansion_ml_comparison/requirements.txt": "46cd31038da425de4e37a3e69bd691672a1a20ccbd3626b02cab1c2288804f1c"
+  },
+  "environment": {
+    "python": "3.12.0",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "scikit_learn": "1.8.0",
+    "rdkit": "2026.03.3",
+    "xgboost": "3.3.0",
+    "pyarrow": "17.0.0",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "historical_platform_matches": true,
+  "scope": "Checks required scientific inputs and code. Does not replay historical author authorization or execute any model fit.",
+  "full_100_seed_execution_performed": false,
+  "original_directory_modified": false
+}

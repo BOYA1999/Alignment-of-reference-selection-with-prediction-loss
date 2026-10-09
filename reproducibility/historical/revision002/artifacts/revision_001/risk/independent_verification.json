@@ -1,0 +1,19 @@
+{
+  "analysis_id": "revision_001_risk_separate_arithmetic_readback",
+  "status": "PASS_WITH_SCOPE_LIMITATIONS",
+  "method": "Fresh readback of saved replicate and summary files. Scalar Python sums independently checked six estimators in the first replicate of every scenario; all 192 summary rows independently recomputed from saved replicates. Original 100-mask CC and Hajek values were separately regenerated and checked during derivation. No original runner or verifier was imported or executed.",
+  "raw_replicate_rows": 320000,
+  "expected_raw_replicate_rows": 320000,
+  "scenario_cells": 32,
+  "summary_rows": 192,
+  "scalar_first_replicate_formula_checks": 192,
+  "max_scalar_and_summary_readback_abs_difference": 5.495603971894525e-15,
+  "max_analytical_se_to_mc_sd_relative_difference": 0.018172547646551518,
+  "all_replicate_grid_cells_10000": true,
+  "all_probabilities_at_matched_coverage": true,
+  "all_original_output_hashes_unchanged": true,
+  "protocol_sha256": "ed566bd8df3e5121e7e445ac0eaad1ec1560ef670aae59804bed4a9750005de1",
+  "max_analytical_bias_mcse_deviation": 2.90219763303311,
+  "formula_tolerance": 1e-12,
+  "limitations": "Separate arithmetic checks validate these saved diagnostic derivations, not all original nuisance fits or the scientific adequacy of the original gate. Near-nominal normal-interval coverage is conditional on fixed loss and nuisance vectors and known design probabilities."
+}

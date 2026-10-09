@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="640.8pt" height="250.2pt" viewBox="0 0 640.8 250.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>JPA reproducibility package</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 250.2 
+L 640.8 250.2 
+L 640.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 30.18672 189.14328 
+L 178.78608 189.14328 
+Q 194.66208 189.14328 194.66208 183.03228 
+L 194.66208 57.39012 
+Q 194.66208 51.27912 178.78608 51.27912 
+L 30.18672 51.27912 
+Q 14.31072 51.27912 14.31072 57.39012 
+L 14.31072 183.03228 
+Q 14.31072 189.14328 30.18672 189.14328 
+z
+" clip-path="url(#pcdcb360991)" style="fill: #e5f2f3; stroke: #2a7f8e; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 246.10032 189.14328 
+L 394.69968 189.14328 
+Q 410.57568 189.14328 410.57568 183.03228 
+L 410.57568 57.39012 
+Q 410.57568 51.27912 394.69968 51.27912 
+L 246.10032 51.27912 
+Q 230.22432 51.27912 230.22432 57.39012 
+L 230.22432 183.03228 
+Q 230.22432 189.14328 246.10032 189.14328 
+z
+" clip-path="url(#pcdcb360991)" style="fill: #f7e8e8; stroke: #b64b4b; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 462.01392 189.14328 
+L 610.61328 189.14328 
+Q 626.48928 189.14328 626.48928 183.03228 
+L 626.48928 57.39012 
+Q 626.48928 51.27912 610.61328 51.27912 
+L 462.01392 51.27912 
+Q 446.13792 51.27912 446.13792 57.39012 
+L 446.13792 183.03228 
+Q 446.13792 189.14328 462.01392 189.14328 
+z
+" clip-path="url(#pcdcb360991)" style="fill: #faf1dd; stroke: #d39424; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 195.387353 120.2112 
+Q 212.442555 120.2112 228.26792 120.2112 
+" clip-path="url(#pcdcb360991)" style="fill: none; stroke: #6b7280; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 224.26792 118.2112 
+L 228.26792 120.2112 
+L 224.26792 122.2112 
+z
+" clip-path="url(#pcdcb360991)" style="fill: #6b7280; stroke: #6b7280; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 411.300953 120.2112 
+Q 428.356155 120.2112 444.18152 120.2112 
+" clip-path="url(#pcdcb360991)" style="fill: none; stroke: #6b7280; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 440.18152 118.2112 
+L 444.18152 120.2112 
+L 440.18152 122.2112 
+z
+" clip-path="url(#pcdcb360991)" style="fill: #6b7280; stroke: #6b7280; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 94.9608 238.7646 
+L 545.8392 238.7646 
+Q 561.7152 238.7646 561.7152 232.6536 
+L 561.7152 216.765 
+Q 561.7152 210.654 545.8392 210.654 
+L 94.9608 210.654 
+Q 79.0848 210.654 79.0848 216.765 
+L 79.0848 232.6536 
+Q 79.0848 238.7646 94.9608 238.7646 
+z
+" clip-path="url(#pcdcb360991)" style="fill: #23395b"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #23395b" x="320.4" y="24.071363" transform="rotate(-0 320.4 24.071363)">Interpreting selective-reference evaluation of clearance models</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8.2px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7280" x="320.4" y="39.404344" transform="rotate(-0 320.4 39.404344)">Measured Biogen cohorts: HLM n=929 and RLM n=922 | Fixed RF and XGBoost models</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #2a7f8e" x="34.632" y="74.12535" transform="rotate(-0 34.632 74.12535)">1  Hold probability marginals</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 7.3px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #20262e" x="31.4568" y="96.192572" transform="rotate(-0 31.4568 96.192572)">Same probabilities; changed pairing</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 7.3px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #20262e" x="31.4568" y="121.858772" transform="rotate(-0 31.4568 121.858772)">Hajek / CC: 0.883–1.104 original</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 7.3px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #20262e" x="31.4568" y="147.524972" transform="rotate(-0 31.4568 147.524972)">0.113–0.168 aligned / reversed</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 7.3px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #2a7f8e" x="31.4568" y="173.191172" transform="rotate(-0 31.4568 173.191172)">Loss-informed oracle diagnostic</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #b64b4b" x="250.5456" y="74.12535" transform="rotate(-0 250.5456 74.12535)">2  Trace all original seeds</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 7.3px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #20262e" x="247.3704" y="96.103603" transform="rotate(-0 247.3704 96.103603)">100 seeds; both observation states</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 7.3px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #20262e" x="247.3704" y="121.858772" transform="rotate(-0 247.3704 121.858772)">Raw Ipc dropped before full refit</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 7.3px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #20262e" x="247.3704" y="147.436003" transform="rotate(-0 247.3704 147.436003)">Low-P median error: 323.07 → 0.00552</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 7.3px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #b64b4b" x="247.3704" y="173.102203" transform="rotate(-0 247.3704 173.102203)">Fixed drug-property models</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #d39424" x="466.4592" y="74.098631" transform="rotate(-0 466.4592 74.098631)">3  Refit under MW selection</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 7.3px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #20262e" x="463.284" y="96.197134" transform="rotate(-0 463.284 96.197134)">Observable molecular variables only</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 7.3px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #20262e" x="463.284" y="121.858772" transform="rotate(-0 463.284 121.858772)">Low M beats CC: 11/16 settings</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 7.3px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #20262e" x="463.284" y="147.524972" transform="rotate(-0 463.284 147.524972)">Drop Ipc beats CC: 10/16 settings</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 7.3px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #d39424" x="463.284" y="173.191172" transform="rotate(-0 463.284 173.191172)">Drop beats low M in only 1/16</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 8.3px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #23395b" x="320.4" y="197.2098" transform="rotate(-0 320.4 197.2098)">Original frozen results retained; new refits and alignment controls are post-result</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 9.2px; font-family: 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="320.4" y="227.21202" transform="rotate(-0 320.4 227.21202)">Check bias strength, feature extrapolation and the uncertainty target separately</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pcdcb360991">
+   <rect x="2.88" y="2.88" width="635.04" height="244.44"/>
+  </clipPath>
+ </defs>
+</svg>

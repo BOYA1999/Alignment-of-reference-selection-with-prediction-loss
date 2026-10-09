@@ -1,0 +1,123 @@
+{
+  "scope": "Review-only reaggregation and conditional Monte Carlo precision; no training, manuscript edit, new confirmatory experiment or population inference.",
+  "settings": 16,
+  "masks_per_setting": 100,
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 923,
+  "resampling": "Same paired seed index matrix applied to all settings and methods; seeds sorted 71001 through 71100; percentile intervals, linear quantiles.",
+  "index_matrix_sha256": "cace62f5ea0a18f2252cdc717bf76228086629bab0b0fac21afecd42e6625fdc",
+  "aggregation": "Equal-setting arithmetic mean of each setting mean absolute error; not median of all errors, not molecule weighting. Equivalent to pooling 1600 estimates per method only because all 16 settings have 100 masks.",
+  "method_labels": {
+    "hajek_low_none": "Hajek self-normalized IPW with fitted cross-fitted low-dimensional logistic propensity; no loss model.",
+    "ht_low_none": "Horvitz-Thompson with fitted cross-fitted low-dimensional propensity; denominator is full target cohort size.",
+    "aipw_low_low": "AIPW with fitted low-dimensional propensity and low-dimensional conditional-loss ridge.",
+    "aipw_low_drop": "AIPW with same fitted low-dimensional propensity and full conditional-loss ridge after raw Ipc removal.",
+    "complete_case_none_none": "Observed-case mean loss."
+  },
+  "equal_setting_mean_absolute_errors": {
+    "aipw_low_drop": 0.009488226071474877,
+    "aipw_low_low": 0.008240879463138126,
+    "aipw_oracle_drop": 0.009317576541930737,
+    "aipw_oracle_low": 0.007901168149980747,
+    "complete_case_none_none": 0.00876054106388098,
+    "hajek_low_none": 0.007764890179688111,
+    "hajek_oracle_none": 0.007605284203361706,
+    "ht_low_none": 0.010401555156568074,
+    "ht_oracle_none": 0.012717525074330842
+  },
+  "comparisons": [
+    {
+      "numerator": "aipw_low_low",
+      "denominator": "complete_case_none_none",
+      "point_wins": 11,
+      "ratio_min": 0.4109166500796804,
+      "ratio_max": 2.298086108777607,
+      "median_setting_ratio": 0.7826086868727502
+    },
+    {
+      "numerator": "aipw_low_drop",
+      "denominator": "complete_case_none_none",
+      "point_wins": 10,
+      "ratio_min": 0.437708153356223,
+      "ratio_max": 2.5871844121688,
+      "median_setting_ratio": 0.883634426425715
+    },
+    {
+      "numerator": "aipw_low_low",
+      "denominator": "hajek_low_none",
+      "point_wins": 3,
+      "ratio_min": 0.9303048021323668,
+      "ratio_max": 1.1918794751440709,
+      "median_setting_ratio": 1.0700651163712118
+    },
+    {
+      "numerator": "aipw_low_drop",
+      "denominator": "hajek_low_none",
+      "point_wins": 1,
+      "ratio_min": 0.9909600813713063,
+      "ratio_max": 1.6315116519703707,
+      "median_setting_ratio": 1.1920652171937993
+    },
+    {
+      "numerator": "hajek_low_none",
+      "denominator": "complete_case_none_none",
+      "point_wins": 11,
+      "ratio_min": 0.4417010953160853,
+      "ratio_max": 2.180096976202147,
+      "median_setting_ratio": 0.7506216895941669
+    },
+    {
+      "numerator": "ht_low_none",
+      "denominator": "complete_case_none_none",
+      "point_wins": 8,
+      "ratio_min": 0.4243840119936899,
+      "ratio_max": 3.301227502988508,
+      "median_setting_ratio": 0.9786789862527303
+    }
+  ],
+  "bootstrap_counts": [
+    {
+      "numerator": "aipw_low_drop",
+      "denominator": "complete_case_none_none",
+      "settings": 16,
+      "point_wins": 10,
+      "upper_below_one": 6,
+      "interval_contains_one": 5
+    },
+    {
+      "numerator": "aipw_low_drop",
+      "denominator": "hajek_low_none",
+      "settings": 16,
+      "point_wins": 1,
+      "upper_below_one": 0,
+      "interval_contains_one": 14
+    },
+    {
+      "numerator": "aipw_low_low",
+      "denominator": "complete_case_none_none",
+      "settings": 16,
+      "point_wins": 11,
+      "upper_below_one": 7,
+      "interval_contains_one": 5
+    },
+    {
+      "numerator": "aipw_low_low",
+      "denominator": "hajek_low_none",
+      "settings": 16,
+      "point_wins": 3,
+      "upper_below_one": 0,
+      "interval_contains_one": 16
+    }
+  ],
+  "summary_to_estimates_max_difference": 1.0408340855860843e-17,
+  "inputs_unchanged": true,
+  "input_sha256": {
+    "artifacts\\revision_002\\bridge\\summary.csv": "74321c3f3fc581ff4703e1ea7b75a44205e29372a2030eb3b3e670865a7de9cb",
+    "artifacts\\revision_002\\bridge\\estimates.csv": "ade325ca2c9bf6766a96f0f2a6396b25ae78f586c694de99b49be1feed602e46"
+  },
+  "script_sha256": "174ea17cc8547ded84fa45dfd0f17868cc1697e074bb3bc0fa84fa8eee57dc43",
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3"
+  }
+}

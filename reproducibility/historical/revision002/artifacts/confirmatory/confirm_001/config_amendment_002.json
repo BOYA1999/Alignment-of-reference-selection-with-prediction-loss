@@ -1,0 +1,142 @@
+{
+  "study_id": "confirm_001",
+  "amendment_id": "config_amendment_002",
+  "created_at": "2026-09-11T07:31:30+08:00",
+  "status": "PENDING_INDEPENDENT_RECOVERY_AMENDMENT_AUDIT",
+  "base_contract": {
+    "protocol_path": "artifacts/confirmatory/confirm_001/protocol.md",
+    "protocol_sha256": "1819fa04713ee1a37df66c847825e5de3adcba736fba47c5c40b1c8db7796d7a",
+    "config_path": "artifacts/confirmatory/confirm_001/config.json",
+    "config_sha256": "04fc27fc407a562853dd362d31a4c4cbc01bdb754199d5a18014cdfcbc7a5c23",
+    "config_amendment_001_path": "artifacts/confirmatory/confirm_001/config_amendment_001.json",
+    "config_amendment_001_sha256": "9008878d6a8c23aae059cf3b4aefcdc813bdd7387cbf1aa84fd6d38db620ec3a",
+    "protocol_amendment_002_path": "artifacts/confirmatory/confirm_001/protocol_amendment_002.md",
+    "protocol_amendment_002_sha256": "d34c1053da408a3e349c2ecdc20d1e49f8aa5cda9dd491746146d621c5988d9f",
+    "immutable": true
+  },
+  "failed_execution": {
+    "decision_004_path": "artifacts/decisions/004_confirm_001_clear_to_smoke.md",
+    "decision_004_sha256": "0e9ab1a55bbe4fa99409c17d1a2c8d9087b9f84f4eedc81ba819edc3b8af39d8",
+    "decision_005_path": "artifacts/decisions/005_confirm_001_clear_to_full.md",
+    "decision_005_sha256": "753068d66e5ca6dfd78dbcd1e2a56a81be87ea7908da214eb1a7ddd68675c025",
+    "failure_record_path": "artifacts/confirmatory/confirm_001/failure_001.md",
+    "failure_record_sha256": "a75a4b853bf9ce5469873870d0375e077f2dd2be7d5e6981febf5abd41667267",
+    "output_path": "artifacts/confirmatory/confirm_001/full",
+    "status": "FAILED_BEFORE_SCIENTIFIC_DECISION",
+    "required_absent_files": [
+      "summary.json",
+      "verification.md",
+      "run_manifest.json"
+    ],
+    "failed_code_snapshots": {
+      "artifacts/confirmatory/confirm_001/failure_001_code_snapshot/run_confirmatory_failed.py": "9ce5f27e25e043db622b550446683ca830ec5536cc3e3f54897ed13fd4b22499",
+      "artifacts/confirmatory/confirm_001/failure_001_code_snapshot/verify_confirmatory_failed.py": "fc26475e8b99e0c64da5ff6b1073bec82f9a59e1247bb8021223f7f9c04fbe37"
+    },
+    "partial_inventory": {
+      "actual_mask_scenarios.csv": {
+        "bytes": 84954,
+        "sha256": "15b89765bf9d3247645a8b97c5bf21bf2b3447622aaca2ab02827896847a02d4"
+      },
+      "admission_gate.json": {
+        "bytes": 14580,
+        "sha256": "3bbb6886a6713ef43ead4463acdf81c11d339de775ecce079c0be38fa7fb0e51"
+      },
+      "availability_map.csv": {
+        "bytes": 997,
+        "sha256": "8291139c6048263012959b90d2ab616f02d4ccf5a524090e4d649034c7d26b2f"
+      },
+      "bootstrap_intervals.csv": {
+        "bytes": 3118,
+        "sha256": "632f2c2f098f43422f31070fe17504bb52401caf20e9cec26a211c949ccee6c2"
+      },
+      "cohort_audit.csv": {
+        "bytes": 1270,
+        "sha256": "9f271e285b0edfd63d8456a6d7423d8289be8345aae0b5c0a8d5cf616aee0453"
+      },
+      "factorial_contrasts.csv": {
+        "bytes": 6018,
+        "sha256": "13d465916d644586a7bfa607114575c29031fa4169e0c811b7183c54d49c2986"
+      },
+      "generator_vectors.parquet": {
+        "bytes": 99662,
+        "sha256": "a6b817b9a3db207dd84f1a816a7374a5a21b186c853b73c2f2c422a1bfc830f7"
+      },
+      "nuisance_fold_assignments.parquet": {
+        "bytes": 100191,
+        "sha256": "03dc22c344471ed09e51451fc9a79cd38b70f183565bf9034965f9b8b0e268a3"
+      },
+      "predictions.parquet": {
+        "bytes": 112752,
+        "sha256": "7b996d697054c0144afe2f284dd3a5b83818c0b299cd804b41314931c7678bfb"
+      },
+      "pxr_boundary_decision.json": {
+        "bytes": 905,
+        "sha256": "aa4f17bcea4f42958968b0a8b8f53223bc60bca0d06d3d4834f04bcf55ada2b0"
+      },
+      "pxr_linkage_audit.csv": {
+        "bytes": 4473735,
+        "sha256": "d44c0b510d236e28c2b1d0afb120b4af73ed3d6a22e673ea836306650b5cbb34"
+      },
+      "pxr_overlap_summary.csv": {
+        "bytes": 2680,
+        "sha256": "879191d9f7a9adcf08f24afb4cc3e04dc393007ceda68d58c17ade65139506fd"
+      },
+      "pxr_selection_strata.csv": {
+        "bytes": 157,
+        "sha256": "0896b31c96259383d2fd08536c00833c6a1f08ca08eafc65bd37f4478eb48793"
+      },
+      "row_replay_seed41001.parquet": {
+        "bytes": 3666061,
+        "sha256": "97674bcee17dcdb28f91d8ab23b87e6130dc79840a50985fad8cc6ba4507673e"
+      },
+      "semisynthetic_scenarios.csv": {
+        "bytes": 13017555,
+        "sha256": "6283a264ed7aa519a36f01e031f7c54dcf04390b526c3071d3d098ae40ad3b12"
+      },
+      "structure_audit.json": {
+        "bytes": 4758,
+        "sha256": "a5233c5e7d9bfe74d201e761a59c50556d323ea67ab2d1b36f0477b1e6d4b6ea"
+      }
+    }
+  },
+  "recovery": {
+    "smoke_output_path": "artifacts/confirmatory/confirm_001/recovery_smoke_001",
+    "smoke_verification_path": "artifacts/confirmatory/confirm_001/recovery_smoke_001_independent_verification.json",
+    "full_output_path": "artifacts/confirmatory/confirm_001/full_recovery_001",
+    "runner_mode_smoke": "recovery-smoke",
+    "runner_mode_full": "recovery-full",
+    "paths_must_be_absent_before_launch": true,
+    "write_once": true,
+    "failed_output_is_evidence_only": true
+  },
+  "csv_roundtrip_contract": {
+    "result_csv_write_float_format": "%.17g",
+    "result_csv_read_float_precision": "round_trip",
+    "apply_only_to_generated_result_csvs": true,
+    "frozen_source_csv_readers_unchanged": true,
+    "formula_replay_rtol": 0.0,
+    "formula_replay_atol": 1e-12,
+    "tolerance_relaxed": false,
+    "recovery_smoke_requires_large_ratio_fixture": true,
+    "recovery_smoke_minimum_ratio_magnitude": 100000.0
+  },
+  "formal_input_precedence": [
+    "artifacts/confirmatory/confirm_001/protocol.md",
+    "artifacts/confirmatory/confirm_001/config.json",
+    "data/external/source_freeze_20260911/source_manifest.json",
+    "data/external/source_freeze_20260911/source_manifest_amendment_001.json",
+    "artifacts/confirmatory/confirm_001/protocol_amendment_001.md",
+    "artifacts/confirmatory/confirm_001/config_amendment_001.json",
+    "artifacts/confirmatory/confirm_001/failure_001.md",
+    "artifacts/confirmatory/confirm_001/protocol_amendment_002.md",
+    "artifacts/confirmatory/confirm_001/config_amendment_002.json"
+  ],
+  "unchanged": [
+    "all source bytes, source hashes, and input CSV parsing",
+    "all cohorts, endpoints, masks, and row orders",
+    "all features, models, folds, seeds, and random-number scopes",
+    "all estimands, formulas, gates, thresholds, and decision precedence",
+    "all expected result grids and anti-claims"
+  ],
+  "authorization": "No recovery execution is authorized until an independent amendment audit, repaired-code static audit, and additive Decision 006 clear the fixed recovery smoke. Recovery full additionally requires smoke PASS, independent smoke verification, and Decision 007."
+}

@@ -1,0 +1,15 @@
+{
+  "input_hashes": {
+    "artifacts\\revision_002\\bridge\\estimates.csv": "ade325ca2c9bf6766a96f0f2a6396b25ae78f586c694de99b49be1feed602e46",
+    "artifacts\\revision_002\\original\\estimates.csv": "b105a9f201a8502c98a34c69f7b740e784d39c5edb418ed1d3fadfea80f3df72",
+    "artifacts\\revision_003\\protocol.md": "8396a8fe5c951d9ffe70f8ce42fb7d4dea7eea3a1d031f83c56b12cbcbd64cf7",
+    "src\\revision3_incremental.py": "73f6b7f01a3071b95ea1bd1f0c767677cad1d13a7a98d905e861a213efe296d2"
+  },
+  "output_hashes": {
+    "choice_by_setting.csv": "c75a0ce5e7680297a5c67f8cb4441d0c2dfb96313519dc959f6aea9d42d7d68e",
+    "choice_rows.csv": "a78ba54130457cf2184849ebf1fd08180351c06a832679711abe0974c0c15329",
+    "diagnostic_by_setting.csv": "81f5a1a6347b41129d0bd707e4b82b8546d9dbf2d688719f49aeb03d71c8e91e",
+    "summary.json": "260f4227d4fcc345b02aff3999c27264f8ee8b2b101f903c305f461f6eb92774"
+  },
+  "scope": "Post-result diagnostic test, no retraining or independent confirmation"
+}

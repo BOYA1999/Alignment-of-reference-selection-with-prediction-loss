@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "amendment_id": "source_manifest_amendment_001",
+  "created_at": "2026-09-11T05:46:04+08:00",
+  "status": "PRE_RESULT_METADATA_CORRECTION",
+  "base_manifest": {
+    "path": "data/external/source_freeze_20260911/source_manifest.json",
+    "sha256": "be55555aed0b2a5bed095ae8d052500becd527c97c809d6db5b7a14e7548fd78",
+    "immutable": true
+  },
+  "reason": "Six source-derived vector hashes were originally serialized as UTF-8 line records with a terminal LF. The confirm_001 protocol subsequently fixed a global no-terminal-LF rule for text vectors and raw uint8 bytes for binary vectors. Both contracts cannot be satisfied simultaneously, so the formal analysis uses the corrected values below while retaining the immutable base manifest as provenance.",
+  "scope": {
+    "source_file_bytes_changed": false,
+    "row_order_changed": false,
+    "cohort_or_split_changed": false,
+    "scientific_design_changed": false,
+    "models_seeds_thresholds_or_estimands_changed": false,
+    "formal_result_existed_at_detection": false
+  },
+  "encoding_contract": {
+    "ordered_text": "'\\n'.join(str(v) for v in values).encode('utf-8')",
+    "terminal_lf": false,
+    "binary": "np.asarray(v,dtype='u1').tobytes(order='C')",
+    "metadata_prefix": false
+  },
+  "corrections": [
+    {
+      "dataset": "Biogen_public_ADME",
+      "vector": "ordered_internal_id_tab_smiles",
+      "type": "ordered_text",
+      "base_manifest_field": "sources.biogen_adme.files.data.ordered_internal_id_tab_smiles_sha256_utf8_lf",
+      "old_sha256": "5b31164bdda1b74e01aa7ba5c2a8da86e71471a0264db80df6fd3ff9f39b2d85",
+      "old_encoding": "same_text_plus_terminal_LF",
+      "corrected_sha256": "040e6d7526d1ebc4f0be2f955f85ec06d7f37614b0ee2c039f5d7981461939f9"
+    },
+    {
+      "dataset": "Biogen_public_ADME",
+      "vector": "ordered_cluster",
+      "type": "ordered_text",
+      "base_manifest_field": "sources.biogen_adme.local_derived_table.ordered_cluster_vector_sha256_utf8_lf",
+      "old_sha256": "c85847e68f2d726c325b0255722180201c0cca464fe0e2cbabbdb35734020a79",
+      "old_encoding": "same_text_plus_terminal_LF",
+      "corrected_sha256": "b30601402d774e5064f7024027f6cf39a66366986c2a703c67c6ae0a691bee0c"
+    },
+    {
+      "dataset": "Biogen_public_ADME",
+      "vector": "ordered_ds",
+      "type": "ordered_text",
+      "base_manifest_field": "sources.biogen_adme.local_derived_table.ordered_ds_vector_sha256_utf8_lf",
+      "old_sha256": "8ea3ebb25b17919946dd12111f4aa9d1f8f6c619b7ff9e28b1752501bbb89a79",
+      "old_encoding": "same_text_plus_terminal_LF",
+      "corrected_sha256": "7f0fe717a49feaad22355269ed584979ef68b6a029304c74ceb09b69da4ee827"
+    },
+    {
+      "dataset": "OpenADMET_PXR",
+      "vector": "ordered_parent_OCNT_ID",
+      "type": "ordered_text",
+      "base_manifest_field": "sources.openadmet_pxr.selection_process_freeze.parent_filter.ordered_OCNT_ID_sha256_utf8_lf",
+      "old_sha256": "df3e6a7832c051eeb8b98520c646541cb9207d2e28b07e5c19537f3206238402",
+      "old_encoding": "same_text_plus_terminal_LF",
+      "corrected_sha256": "7b9b757a49fbfb8d1848721aae251d34908670c0acda9c36246c71283293e168"
+    },
+    {
+      "dataset": "OpenADMET_PXR",
+      "vector": "ordered_availability",
+      "type": "binary",
+      "base_manifest_field": "sources.openadmet_pxr.selection_process_freeze.identity_diagnostics.ordered_availability_vector_sha256_utf8_lf",
+      "old_sha256": "cd91cb263eadd8577ab4923b645eede5238c0afa906bf56160b4647c1d7b3d62",
+      "old_encoding": "UTF-8_zero_one_lines_plus_terminal_LF",
+      "corrected_sha256": "74efc08da49d87b9bd33f746df6ad683e2dfcdbcbc1a740c32172ce08e4a2faa"
+    },
+    {
+      "dataset": "OpenADMET_PXR",
+      "vector": "ordered_formal_hit",
+      "type": "binary",
+      "base_manifest_field": "sources.openadmet_pxr.selection_process_freeze.documented_formal_hit_rule.ordered_formal_hit_vector_sha256_utf8_lf",
+      "old_sha256": "38958812c6cffbc216fc991caf23af9f9e8c640a96fe407ed84bb0150cc64b02",
+      "old_encoding": "UTF-8_zero_one_lines_plus_terminal_LF",
+      "corrected_sha256": "584db5b185e75848a5f5c9f99d5d1e12bc83b92bd7adc4f8bf8791398fe3515d"
+    }
+  ],
+  "application_rule": "For confirm_001 only, each corrected_sha256 supersedes the corresponding old_sha256 as the formal vector-integrity expectation. All other fields and all byte-level source hashes remain authoritative from the immutable base manifest."
+}

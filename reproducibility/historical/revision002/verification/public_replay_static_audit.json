@@ -1,0 +1,18 @@
+{
+  "status": "PASS_BOUNDED_STATIC_REVIEW",
+  "script": "src/replay_confirmation.py",
+  "script_sha256": "460dcf1c2880c8b3aab735e7794418b12140fe4ee8833a13456869257c28e548",
+  "checks": {
+    "run_full_12_positional_arguments_match": true,
+    "base_config_and_corrected_source_amendment_match_scientific_dependencies": true,
+    "all_nine_historical_aggregate_csvs_required_and_hash_checked": true,
+    "missing_or_empty_comparison_cannot_pass": true,
+    "full_mode_scope_acknowledges_model_and_nuisance_refits": true,
+    "requested_diagnostic_states_reported_separately": true,
+    "completion_requires_requested_diagnostics_finished": true,
+    "optimized_python_rejected": true,
+    "risk_pxr_forensic_path_redirection_compatible": true,
+    "dynamic_imports_and_ast_parsing_pass": true
+  },
+  "scope": "Separate read-only static interface, dependency and output-isolation review; no model fitting, full replay or original verifier execution. Input preflight is documented separately and is not end-to-end scientific reproduction."
+}

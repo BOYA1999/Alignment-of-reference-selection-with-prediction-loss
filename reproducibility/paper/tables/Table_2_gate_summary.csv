@@ -1,0 +1,7 @@
+analysis,estimand_or_test,status,evidence
+H1,oracle/full-fitted error ratio,PASS,4/4 cells; threshold <=0.50
+H2,low/full propensity error and clipping,PASS,4/4 cells; thresholds <=0.50 and >=0.20
+Original admission,lowdim_11/lowdim_11,Not met,MCAR 8/8; MAR 0/8; relative-benefit rule
+Direct overlap,regular empirical masks,PASS,8/8 cells
+Direct translation,error improvement,Not adjudicated,original rule; descriptive improvement 4/8
+PXR,selection-record audit,Not estimated,identification assumptions and endpoint-loss contract unestablished

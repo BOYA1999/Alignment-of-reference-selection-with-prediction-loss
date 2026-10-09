@@ -1,0 +1,14 @@
+{
+  "status": "PASS_SPECIFIED_READBACK",
+  "choice_rows": 3200,
+  "summary_rows": 128,
+  "diagnostic_rows": 320,
+  "nuisance_files_read": 1600,
+  "max_expanded_formula_difference": 2.220446049250313e-16,
+  "unobserved_reference_perturbation_invariant": true,
+  "pairwise_auc_checks": 320,
+  "conditional_choice_bootstrap_recomputed": true,
+  "prior_inputs_unchanged": true,
+  "verifier_sha256": "cb43de35523f9a49f56a2d6595202c10ea29cddef28eb232c10ecac480681f1b",
+  "scope": "Independent arithmetic/readback code, not independent datasets or human scientific validation"
+}

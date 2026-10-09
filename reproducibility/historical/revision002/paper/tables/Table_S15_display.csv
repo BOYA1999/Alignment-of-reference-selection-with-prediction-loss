@@ -1,0 +1,25 @@
+Pairing,Reference,Settings,Bias range,RMSE range,Error ratio range
+aligned,complete case,8,0.0205 to 0.0600,0.0210 to 0.0607,1.000 to 1.000
+aligned,constant q true mean,8,0.0205 to 0.0599,0.0209 to 0.0606,0.999 to 1.002
+aligned,AIPW mean,8,-0.0001 to 0.0001,0.0043 to 0.0106,0.113 to 0.142
+aligned,AIPW replay,8,-0.0001 to 0.0001,0.0043 to 0.0105,0.113 to 0.143
+aligned,hajek,8,0.0000 to 0.0002,0.0043 to 0.0106,0.113 to 0.142
+aligned,ht,8,-0.0001 to 0.0002,0.0057 to 0.0145,0.147 to 0.211
+original,complete case,8,-0.0034 to 0.0045,0.0047 to 0.0095,1.000 to 1.000
+original,constant q true mean,8,-0.0034 to 0.0045,0.0047 to 0.0095,0.999 to 1.002
+original,AIPW mean,8,-0.0001 to 0.0001,0.0047 to 0.0103,0.884 to 1.106
+original,AIPW replay,8,-0.0001 to 0.0001,0.0047 to 0.0104,0.894 to 1.117
+original,hajek,8,-0.0001 to 0.0001,0.0047 to 0.0103,0.883 to 1.104
+original,ht,8,-0.0001 to 0.0003,0.0077 to 0.0187,1.455 to 2.006
+random,complete case,8,-0.0018 to 0.0006,0.0045 to 0.0096,1.000 to 1.000
+random,constant q true mean,8,-0.0017 to 0.0006,0.0045 to 0.0096,0.997 to 1.002
+random,AIPW mean,8,-0.0001 to 0.0000,0.0046 to 0.0101,1.023 to 1.097
+random,AIPW replay,8,-0.0000 to 0.0000,0.0046 to 0.0101,1.017 to 1.094
+random,hajek,8,-0.0001 to 0.0000,0.0046 to 0.0101,1.021 to 1.102
+random,ht,8,-0.0002 to 0.0002,0.0074 to 0.0185,1.647 to 2.022
+reversed,complete case,8,-0.0633 to -0.0246,0.0251 to 0.0640,1.000 to 1.000
+reversed,constant q true mean,8,-0.0632 to -0.0245,0.0250 to 0.0639,1.000 to 1.002
+reversed,AIPW mean,8,-0.0001 to 0.0001,0.0060 to 0.0136,0.135 to 0.168
+reversed,AIPW replay,8,-0.0001 to 0.0000,0.0060 to 0.0137,0.134 to 0.166
+reversed,hajek,8,-0.0002 to -0.0001,0.0060 to 0.0135,0.135 to 0.168
+reversed,ht,8,-0.0002 to 0.0002,0.0098 to 0.0238,0.246 to 0.301

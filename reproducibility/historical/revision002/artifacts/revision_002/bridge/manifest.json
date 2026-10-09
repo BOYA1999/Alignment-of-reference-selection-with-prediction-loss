@@ -1,0 +1,41 @@
+{
+  "phase": "bridge",
+  "smoke_only": false,
+  "settings": 800,
+  "rows": 14400,
+  "duration_seconds": 49.7981972694397,
+  "finished_utc": "2026-09-12T13:40:55.149271+00:00",
+  "source_hashes": {
+    "protocol": "6b077ef5631f6d00bf1ce13f9850ad0edcb49b749be3d0ecb3e6bcd1a9a22d0a",
+    "script": "ecf68c6a1dc110a0cefa8fb92c47eac7c84d3e8f21bcfa42ed3be76cb39642ca",
+    "revision001_zip": "42ff32affb08a4c42d4f3d0f1aa2e6dd4ce87de5c19aa4e4bae0bb1735f1ae73"
+  },
+  "frozen_files_unchanged": true,
+  "frozen_sha256": {
+    "actual_mask_scenarios.csv": "92ce0f5302bad0e43a7310cfe3d2c85aa5d04e45f3f79765388b274a27045eb7",
+    "admission_gate.json": "fb100c8cad8d91680874f24219eae72e2e6765cd80f0c3941dd6fe43c4046d6e",
+    "availability_map.csv": "a7b38356d5783fdc3deb310ec8b46179ceecf0656e19b0f385f5b3d4a1ec63ed",
+    "bootstrap_intervals.csv": "44cade4a78cc14de38e32f63b904e319e18290bb24459bce3bbd9ee53626876c",
+    "cohort_audit.csv": "553b080eb61727af412087128a651ecdda883ef7a716386ba256a822e66efef0",
+    "factorial_contrasts.csv": "cdae19ad818539ee7b1c86daec5d231bdc2eda7c395f3eb705077f97300672ff",
+    "generator_vectors.parquet": "a6b817b9a3db207dd84f1a816a7374a5a21b186c853b73c2f2c422a1bfc830f7",
+    "nuisance_fold_assignments.parquet": "03dc22c344471ed09e51451fc9a79cd38b70f183565bf9034965f9b8b0e268a3",
+    "predictions.parquet": "7b996d697054c0144afe2f284dd3a5b83818c0b299cd804b41314931c7678bfb",
+    "pxr_boundary_decision.json": "aa4f17bcea4f42958968b0a8b8f53223bc60bca0d06d3d4834f04bcf55ada2b0",
+    "pxr_linkage_audit.csv": "d45fb99e8271038af8b264d603699382a62c1d1fc5d4c5e519c5e2981de9c1ba",
+    "pxr_overlap_summary.csv": "e36325a9478f35e3e0c53132c61088f80c76535e7925c9e60e2dda1b54e8b63c",
+    "pxr_selection_strata.csv": "fb5c4f6f2a6a3a8810bf4b677b82c68962f01193c2ad8d6cd694549bdf4339a6",
+    "row_replay_seed41001.parquet": "97674bcee17dcdb28f91d8ab23b87e6130dc79840a50985fad8cc6ba4507673e",
+    "run_manifest.json": "8da9b9c1d0425fff118d983a8491aceb57ae8b6085300eacf18cd8e0d7e6eac4",
+    "semisynthetic_scenarios.csv": "e2040fc4c7c4168b2786f154af1acedff95824413ac1a30f8ea5526163217a32",
+    "structure_audit.json": "a5233c5e7d9bfe74d201e761a59c50556d323ea67ab2d1b36f0477b1e6d4b6ea",
+    "summary.json": "784132d1df5ab6a99a934bf2c53d17c7d11f650beb4b733be222011f060986ae",
+    "verification.md": "7ef5b2cdb2d1885b074250402efd313aa9758b337b4f486147ddc10e0042af99"
+  },
+  "output_hashes": {
+    "design.csv": "eff8404ebe7dea8a4c611ea9cd2d419af4a6b06fa8a106acfa03343e978e8a46",
+    "estimates.csv": "ade325ca2c9bf6766a96f0f2a6396b25ae78f586c694de99b49be1feed602e46",
+    "summary.csv": "74321c3f3fc581ff4703e1ea7b75a44205e29372a2030eb3b3e670865a7de9cb",
+    "timings.csv": "e1ec5fb6b7c0ae3f8002edf56a92d50148426f92f3850473164f5c1a9f808d27"
+  }
+}

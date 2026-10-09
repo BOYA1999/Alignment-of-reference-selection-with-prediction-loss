@@ -1,0 +1,28 @@
+{
+  "conditional_mechanism_recurrence": {
+    "supported": true,
+    "eligible_mar_cells": 32,
+    "cells_meeting_both_10x_rules": 32,
+    "cell_fraction": 1.0,
+    "raw_estimates_with_case": 3200,
+    "case_rank_one_count": 3200,
+    "case_rank_one_fraction": 1.0
+  },
+  "partition_sensitivity": {
+    "supported": true,
+    "median_raw_error_case_in_target": 461.159502056474,
+    "median_raw_error_case_not_in_target": 0.006171738398928914,
+    "ratio": 74721.16804829364
+  },
+  "broader_raw_ipc_instability_without_case": {
+    "supported": false,
+    "eligible_mar_cells": 48,
+    "cells_raw_to_drop_at_least_10x": 0,
+    "cell_fraction": 0.0
+  },
+  "predictor_ordering": {
+    "split_endpoint_comparisons": 20,
+    "ecfp_rf_lower_mae": 0,
+    "ecfp_desc_xgb_lower_mae": 20
+  }
+}

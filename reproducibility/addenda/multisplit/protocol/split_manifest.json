@@ -1,0 +1,25 @@
+{
+  "status": "PASS_OUTCOME_BLIND_SPLIT_RECONSTRUCTION",
+  "seeds": [
+    61453,
+    61454,
+    61455,
+    61456,
+    61457,
+    61458,
+    61459,
+    61460,
+    61461,
+    61462
+  ],
+  "rows_per_seed": 3521,
+  "assignment_rows": 35210,
+  "original_seed_exact_match": true,
+  "source_sha256": "cd310dd3911a9f9763d0581e6202bc20aaf8a810523d01e9ab5e403681a386b4",
+  "protocol_sha256": "8e082a7f7841e52b12a91e5ec7c5857df14dd7e591ec85ad365044dba4a40f6a",
+  "script_sha256": "b4b21cc3ac52577b89e57eeb0134ed6004cbc1ef0501ce0574bd13ca1c9cd11b",
+  "output_sha256": {
+    "split_assignments.csv": "bfde6fda078c3f1b7a359ee728007e79b70adf2ffffa2f9d5d2dd67bd65bc16d",
+    "split_screen_counts.csv": "401b95a2e14f67b74de1296283c7fbc7a0f0626e3b731f137c1025b148e174d8"
+  }
+}
